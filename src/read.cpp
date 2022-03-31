@@ -6,6 +6,7 @@ extern int itemnum, elementnum;
 extern string input_filename;
 extern vector< vector<bool> > conflict_graph;
 extern vector<int> conflict_num;
+extern unordered_set<int> item_can_cover_element;
 
 vector<Item> read_initdata(string filename){
     vector<Item> items;

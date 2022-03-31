@@ -4,11 +4,12 @@
 #include"../include/algorithm.h"
 #include"../include/check.h"
 #include"../include/generate.h"
+#include"../include/preprocess.h"
 //the order is important
 
 using namespace std;
 
-#define RUN 2
+#define RUN 3
 //0 represents generating data
 //1 represents running data
 //2 represents others
@@ -33,6 +34,7 @@ unordered_map<int, int> element_cover_times;    //solution covers elements times
 vector<int> tabulist;           //the list of item tabu
 vector<int> stay;               //how many turns an item is in the solution
 vector<int> uncovered;          //elements that uncovered by solution
+vector< unordered_set<int> > item_can_cover_element;
 
 int main(){
     //ensure every time the result is different
@@ -72,10 +74,11 @@ int main(){
         //}
     }
     else{
-        check();
-        data = read_data("data/add/test.txt");
-        run();
-        print_solution();
+        // check();
+        // data = read_data("data/add/test.txt");
+        // run();
+        // print_solution();
+        preprocess();
     }
 
 //    system("pause");

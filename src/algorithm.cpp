@@ -1,4 +1,5 @@
 #include"../include/main.h"
+#include"../include/preprocess.h"
 
 using namespace std;
 
@@ -15,7 +16,7 @@ extern string input_filename, output_filename;
 extern vector<Item> data;
 extern vector< vector<bool> > conflict_graph;
 extern vector<int> conflict_num;       //the number of items it conflicts with
-extern vector<int> candidate_conflict_num; //conflict times between candidates
+extern vector<int>  candidate_conflict_num; //conflict times between candidates
 extern vector<int> cover_of_candidate; //how many elements a candidate can cover, 0 if not in candidate
 extern unordered_set<int> candidate;   //items that not in solution and not conflicts with the items in solution
 extern unordered_set<int> solution;    //current result, the items that have been selected
@@ -415,6 +416,7 @@ void local_search(){
 }
 
 void run(){
+    preprocess();
     initial();          //finish some initial works
     greedy();           //construct a initial solution with greedy algorithm 
     local_search(); 

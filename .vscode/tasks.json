@@ -12,6 +12,7 @@
                 "${fileDirname}/check.cpp",
                 "${fileDirname}/find_filename_linux.cpp",
                 "${fileDirname}/generate.cpp",
+                "${fileDirname}/preprocess.cpp",
                 "${fileDirname}/read.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
