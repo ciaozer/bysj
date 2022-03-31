@@ -68,6 +68,7 @@ int main(){
             generate_add_data_once(path);
             data = read_data(path);
             run();
+            print_solution();
         //}
     }
     else{

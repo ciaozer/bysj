@@ -7,8 +7,8 @@ using namespace std;
 
 #define DENSITY 0.1     //the density of conflict graph
 #define RAND 1000       //the precision of random number
-#define ADD_TIMES 3     //how many times an item will be added
-#define RATE 0.5        //the posibility add into solution 
+#define ADD_TIMES 2     //how many times an item will be added
+#define RATE 0.7        //the posibility add into solution 
 
 extern int itemnum, elementnum;
 extern vector<Item> data;
