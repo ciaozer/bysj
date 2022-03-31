@@ -6,7 +6,7 @@
 using namespace std;
 
 string filename = "check.txt";
-string input_filename_for_check = "data/random_data/test.txt";
+string input_filename_for_check = "data/add/test.txt";
 
 //extern string input_filename;
 extern int itemnum, elementnum;

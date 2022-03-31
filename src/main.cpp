@@ -11,12 +11,12 @@ using namespace std;
 #define RUN 2
 //0 represents generating data
 //1 represents running data
-//2 represents generateing add data
-//3 represents others
+//2 represents others
 
 #define GENERATE 2
 //0 represents using ORLibrary
 //1 represents generating random data
+//2 represents generating added data
 
 int itemnum, elementnum;
 int best_cover_num;
@@ -53,43 +53,28 @@ int main(){
             data = read_data(new_filenames[i]);
             run();
             cout << "the solution size is: " << solution.size() << endl;
-
-            //output the sorted solution
-            vector<int> sorted_solution;
-            for( auto it = solution.begin(); it!=solution.end(); it++ )
-                sorted_solution.push_back(*it);
-            sort(sorted_solution.begin(), sorted_solution.end());
-            for( int i=0; i<sorted_solution.size(); i++ ){
-                cout << sorted_solution[i] << " ";
-                if( i%10 == 9 )
-                    cout << endl;
-            }
-            cout << endl;
+            print_solution();
         }    
     }
     else if( RUN == 2 ){
-        for( int i=0; i<10; i++ ){
-            //run random data
-            string path = "data/random_data/random";
-            path = path + to_string(i) + ".txt";
+        string path = "data/random_data/test.txt";
+        data = read_data(path);
+        run();
+        print_solution();
+        //now the element cover times is right
+
+        path = "data/add/test.txt";
+        //while( get_cover_num(element_cover_times) != elementnum ){
+            generate_add_data_once(path);
             data = read_data(path);
             run();
-            generate(GENERATE);
-            uncovered.clear();
-
-            //repair it
-            path = "data/add/add";
-            path = path + to_string(i) + ".txt";
-            while( get_cover_num(element_cover_times) == elementnum ){
-                data = read_data(path);
-                run();
-                uncovered.clear();
-                cout << "i'm here" << i << endl;
-            }
-        }
+        //}
     }
     else{
-
+        check();
+        data = read_data("data/add/test.txt");
+        run();
+        print_solution();
     }
 
 //    system("pause");

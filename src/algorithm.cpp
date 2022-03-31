@@ -3,9 +3,9 @@
 using namespace std;
 
 #define TABUSTEP 3      //the depth of tabu search
-#define CUTOFF 3       //cutoff time in local search
+#define CUTOFF 10       //cutoff time in local search
 #define NOTBETTERCUT 2  //tabu search not better cut
-#define REINFORCE 1     //1 represents use reinforce learning
+#define REINFORCE 0     //1 represents use reinforce learning
 #define REMOVENUM 2     //the number of removed items in perturbation
 
 extern int itemnum, elementnum;
@@ -25,8 +25,18 @@ extern vector<int> tabulist;           //the list of item tabu
 extern vector<int> stay;               //how many turns an item is in the solution
  
 void initial(){
+    //clear all the things
+    candidate_conflict_num.clear();
+    cover_of_candidate.clear();
+    candidate.clear();
+    solution.clear();
+    best_solution.clear();
+    tabulist.clear();
+    stay.clear();
+
     for( int i=0; i<itemnum; i++ ){
         //no item is in solution, every item is in candidate
+        
         candidate.insert(i);
         candidate_conflict_num.push_back(conflict_num[i]);
         cover_of_candidate.push_back(data[i].covernum);
@@ -408,4 +418,18 @@ void run(){
     initial();          //finish some initial works
     greedy();           //construct a initial solution with greedy algorithm 
     local_search(); 
+}
+
+void print_solution(){
+    //output the sorted solution
+    vector<int> sorted_solution;
+    for( auto it = solution.begin(); it!=solution.end(); it++ )
+        sorted_solution.push_back(*it);
+    sort(sorted_solution.begin(), sorted_solution.end());
+    for( int i=0; i<sorted_solution.size(); i++ ){
+        cout << sorted_solution[i] << " ";
+        if( i%10 == 9 )
+            cout << endl;
+    }
+    cout << endl;
 }

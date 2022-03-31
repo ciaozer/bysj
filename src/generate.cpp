@@ -7,6 +7,8 @@ using namespace std;
 
 #define DENSITY 0.1     //the density of conflict graph
 #define RAND 1000       //the precision of random number
+#define ADD_TIMES 3     //how many times an item will be added
+#define RATE 0.5        //the posibility add into solution 
 
 extern int itemnum, elementnum;
 extern vector<Item> data;
@@ -14,6 +16,7 @@ extern vector< vector<bool> > conflict_graph;
 extern vector<int> conflict_num;     
 extern unordered_map<int, int> element_cover_times;
 extern vector<int> uncovered;
+extern unordered_set<int> solution;
 
 void generate_conflict_graph(){
     conflict_graph = vector< vector<bool> >(itemnum, vector<bool>(itemnum, false));
@@ -144,7 +147,66 @@ void get_uncovered_elements(){
     }
 }
 
-void generate_add_data(string filename){
+int add_into_solution(int element_idx){
+    //return the index of the chosen item 
+
+    int idx = rand() % solution.size();
+    auto it = solution.begin();
+    while( idx-- )
+        it++;
+    if( !data[*it].elements.count(element_idx) )
+        return *it;
+    return add_into_solution(element_idx);
+}
+
+int add_into_nonsolution(int element_idx){
+    //return the index of the chosen item 
+    
+    //the item that not in solution
+    vector<int> nonsolution;
+    for( int i=0; i<itemnum; i++ ){
+        if( solution.count(i) == 0 )
+            nonsolution.push_back(i);
+    }
+
+    int idx = rand() % nonsolution.size();
+    int it = nonsolution[idx];
+    if( !data[it].elements.count(element_idx) )
+        return it;
+    return add_into_nonsolution(element_idx);
+}
+
+void add_uncovered_elements(){
+    get_uncovered_elements();
+    int tmp = get_cover_num(element_cover_times);
+    cout << "covered size is: " << tmp << endl;
+    cout << "uncovered size is: " << uncovered.size() << endl;
+    for( int i=0; i<uncovered.size(); i++ ){
+        cout << uncovered[i] << " ";
+    }
+    cout << endl;
+
+    //add uncovered elements to items randomly
+    for( int i=0; i<uncovered.size(); i++ ){
+        int cnt = 0;                //add times
+        int idx;                    //the chosen item
+
+        while( cnt < ADD_TIMES ){
+            double tmp = rand() / RAND_MAX;
+            if( tmp < RATE )
+                idx = add_into_solution(uncovered[i]);
+            else 
+                idx = add_into_nonsolution(uncovered[i]);
+            cnt++;
+            data[idx].covernum++;
+            data[idx].elements.insert(uncovered[i]);
+        }
+    }
+    uncovered.clear();  //ensure the uncovered is right
+}
+
+void generate_add_data_once(string filename){
+    add_uncovered_elements();
     ofstream outfile;
     outfile.open(filename, ios::out);
     if( !outfile.is_open() ){
@@ -173,37 +235,23 @@ void generate_add_data(string filename){
     outfile.close();
 }
 
-void add_uncovered_elements(){
-    get_uncovered_elements();
-    int tmp = get_cover_num(element_cover_times);
-    cout << "covered size is: " << tmp << endl;
-    cout << "uncovered size is: " << uncovered.size() << endl;
-    for( int i=0; i<uncovered.size(); i++ ){
-        cout << uncovered[i] << " ";
-    }
-    cout << endl;
+void generate_add_data(){
+    for( int i=0; i<10; i++ ){
+        string path = "data/random_data/random";
+        path = path + to_string(i) + ".txt";
+        data = read_data(path);
+        run();
+        //now the element cover times is right
 
-    //add uncovered elements to items randomly
-    int add_times = itemnum / 10;  //how many times an element will be added
-    for( int i=0; i<uncovered.size(); i++ ){
-        int cnt = 0;                //add times
-        unordered_set<int> added;  //which item has added
-        while( cnt < add_times ){
-            int idx = rand() % itemnum;
-
-            //added before or item has it before
-            if( added.count(idx) || data[idx].elements.count(uncovered[i]) ){
-                continue;
-            }
-
-            cnt++;
-            added.insert(idx);
-            data[idx].covernum++;
-            data[idx].elements.insert(uncovered[i]);
+        path = "data/add/add";
+        path = path + to_string(i) + ".txt";
+        while( get_cover_num(element_cover_times) != elementnum ){
+            generate_add_data_once(path);
+            uncovered.clear();      //ensure the uncovered is right
+            data = read_data(path);
+            run();
         }
     }
-
-    generate_add_data("data/add/test.txt");
 }
 
 void generate(int status){
@@ -216,7 +264,7 @@ void generate(int status){
         generate_random();
         break;
     case 2:
-        add_uncovered_elements();
+        generate_add_data();
         break;
     
     default:

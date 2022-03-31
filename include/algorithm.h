@@ -26,3 +26,5 @@ void update_element_cover_times_final();
 void local_search();
 
 void run();
+
+void print_solution();

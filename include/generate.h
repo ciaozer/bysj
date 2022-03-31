@@ -8,8 +8,14 @@ void generate_random_once(string filename);
 
 void get_uncovered_elements();
 
-void generate_add_data(string filename);
+int add_into_solution(int element_idx);
+
+int add_into_nonsolution(int element_idx);
 
 void add_uncovered_elements();
+
+void generate_add_data_once(string filename);
+
+void generate_add_data();
 
 void generate(int status);
