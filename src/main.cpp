@@ -40,7 +40,7 @@ int main(){
     // cin >> randnum;
     // srand(randnum);
 
-    //srand(time(NULL));
+    srand(time(NULL));
 
     if( RUN == 0 ){
         generate(GENERATE);

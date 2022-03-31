@@ -8,7 +8,7 @@ using namespace std;
 #define DENSITY 0.1     //the density of conflict graph
 #define RAND 1000       //the precision of random number
 #define ADD_TIMES 2     //how many times an item will be added
-#define RATE 0.7        //the posibility add into solution 
+#define RATE 0.8        //the posibility add into solution 
 
 extern int itemnum, elementnum;
 extern vector<Item> data;
@@ -21,12 +21,11 @@ extern unordered_set<int> solution;
 void generate_conflict_graph(){
     conflict_graph = vector< vector<bool> >(itemnum, vector<bool>(itemnum, false));
     conflict_num = vector<int>(itemnum, 0);
-    //srand(time(NULL));
     //this will make sand same every time
-    float tmp;
+    double tmp;
     for( int i=0; i<itemnum; i++ )
         for( int j=i+1; j<itemnum; j++ ){
-            tmp = rand() % RAND / (float)RAND;
+            tmp = rand() % RAND / (double)RAND;
             if( tmp < DENSITY ){
                 conflict_graph[i][j] = true;
                 conflict_graph[j][i] = true;
@@ -97,7 +96,6 @@ void generate_random_once(string filename){
 
     generate_conflict_graph();
 
-    //srand(time(NULL));
     for( int i=0; i<itemnum; i++ ){
         //generate a rand_covernum
         int offset = rand() % (2*max_offset);
@@ -192,7 +190,8 @@ void add_uncovered_elements(){
         int idx;                    //the chosen item
 
         while( cnt < ADD_TIMES ){
-            double tmp = rand() / RAND_MAX;
+            //must divide double or it will be 0
+            double tmp = rand() / (double)RAND_MAX;
             if( tmp < RATE )
                 idx = add_into_solution(uncovered[i]);
             else 

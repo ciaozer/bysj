@@ -3,7 +3,7 @@
 using namespace std;
 
 #define TABUSTEP 3      //the depth of tabu search
-#define CUTOFF 10       //cutoff time in local search
+#define CUTOFF 30       //cutoff time in local search
 #define NOTBETTERCUT 2  //tabu search not better cut
 #define REINFORCE 0     //1 represents use reinforce learning
 #define REMOVENUM 2     //the number of removed items in perturbation
