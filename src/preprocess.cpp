@@ -109,6 +109,7 @@ int UP_once(){
         //no result
         if( can_cover == 0 ){
             status = 0;
+            cout << "the element " << it->first << " can't be covered!" << endl;
             break;
         }
         if( can_cover == 1 ){
@@ -145,8 +146,18 @@ int UP_once(){
     return status;
 }
 
-bool UP(){
+void UP(){
     bool has_solution = true;
+    //initial the three variable, in case that 0
+    for( int i=0; i<n_item; i++ ){
+        M_item[i] = unordered_set<int>();
+        G_item[i] = unordered_set<int>();
+    }
+    //element counts from 1
+    for( int i=1; i<=n_element; i++ ){
+        N_ele[i] = unordered_set<int>();
+    }
+
     while(1){
         int status = UP_once();
         if( M_item.size() == 0 ){
@@ -155,6 +166,7 @@ bool UP(){
         }
         if( status == 0 ){
             has_solution = false;
+            cout << "no solution" << endl;
             break;
         }
         if( status == 1 ){
@@ -167,15 +179,9 @@ bool UP(){
     cout << "finish UP" << endl;
     cout << "the pre_solution size is: " << pre_solution.size() << endl;
     print_solution(pre_solution);
-
-    return has_solution;
 }
 
 void preprocess(){
     pre_read("up.txt");
-    bool has_solution = UP();
-    if( !has_solution ){
-        cout << "no solution" << endl;
-        exit(0);
-    }
+    UP();
 }
