@@ -55,14 +55,14 @@ int main(){
             data = read_data(new_filenames[i]);
             run();
             cout << "the solution size is: " << solution.size() << endl;
-            print_solution();
+            print_solution(solution);
         }    
     }
     else if( RUN == 2 ){
         string path = "data/random_data/test.txt";
         data = read_data(path);
         run();
-        print_solution();
+        print_solution(solution);
         //now the element cover times is right
 
         path = "data/add/test.txt";
@@ -70,7 +70,7 @@ int main(){
             generate_add_data_once(path);
             data = read_data(path);
             run();
-            print_solution();
+            print_solution(solution);
         //}
     }
     else{

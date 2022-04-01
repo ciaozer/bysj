@@ -1,4 +1,5 @@
 #include"../include/main.h"
+#include"../include/algorithm.h"
 
 using namespace std;
 
@@ -50,6 +51,7 @@ void pre_read(string filename){
 
     }
     infile.close();
+    cout << "finish pre_read" << endl;
 }
 
 void update_N_ele(vector<int> to_do_item, vector<int> to_do_element){
@@ -113,7 +115,8 @@ int UP_once(){
             status = 1;
             
             //the chosen item
-            int item = it->first;
+            int item = *(it->second.begin());
+
 
             //add the chosen item into solution
             pre_solution.insert(item);
@@ -160,6 +163,11 @@ bool UP(){
         else
             break;
     }
+
+    cout << "finish UP" << endl;
+    cout << "the pre_solution size is: " << pre_solution.size() << endl;
+    print_solution(pre_solution);
+
     return has_solution;
 }
 

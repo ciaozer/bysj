@@ -27,4 +27,4 @@ void local_search();
 
 void run();
 
-void print_solution();
+void print_solution(unordered_set<int> solution);
