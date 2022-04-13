@@ -5,8 +5,13 @@
 
 using namespace std;
 
+/*
+    input solution in check.txt
+    input data name in input_filename_for_check
+*/
+
 string filename = "check.txt";
-string input_filename_for_check = "data/add/test.txt";
+string input_filename_for_check = "data/random_data/test.txt";
 
 //extern string input_filename;
 extern int itemnum, elementnum;

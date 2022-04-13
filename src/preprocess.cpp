@@ -9,8 +9,22 @@ unordered_map<int, unordered_set<int> > N_ele;     //items that can cover elemen
 unordered_map<int, unordered_set<int> > M_item;    //elements that covered by item i
 unordered_map<int, unordered_set<int> > G_item;    //items that conflict with item i
 unordered_set<int> pre_solution;
+int uncover_element;
+vector<int> to_do_item;
+vector<int> to_do_element;
 
 void pre_read(string filename){
+
+    //initial the three variable, in case that 0
+    for( int i=0; i<n_item; i++ ){
+        M_item[i] = unordered_set<int>();
+        G_item[i] = unordered_set<int>();
+    }
+    //element counts from 1
+    for( int i=1; i<=n_element; i++ ){
+        N_ele[i] = unordered_set<int>();
+    }
+
     ifstream infile;
     infile.open(filename, ios::in);
 
@@ -109,7 +123,8 @@ int UP_once(){
         //no result
         if( can_cover == 0 ){
             status = 0;
-            cout << "the element " << it->first << " can't be covered!" << endl;
+            uncover_element = it->first;
+            cout << "the element " << uncover_element << " can't be covered!" << endl;
             break;
         }
         if( can_cover == 1 ){
@@ -122,8 +137,8 @@ int UP_once(){
             //add the chosen item into solution
             pre_solution.insert(item);
             
-            vector<int> to_do_element;
-            vector<int> to_do_item;
+            to_do_element.clear();
+            to_do_item.clear();
 
             //find the elements the chosen item covers
             for( auto it=M_item[item].begin(); it!=M_item[item].end(); it++ ){
@@ -147,17 +162,6 @@ int UP_once(){
 }
 
 void UP(){
-    bool has_solution = true;
-    //initial the three variable, in case that 0
-    for( int i=0; i<n_item; i++ ){
-        M_item[i] = unordered_set<int>();
-        G_item[i] = unordered_set<int>();
-    }
-    //element counts from 1
-    for( int i=1; i<=n_element; i++ ){
-        N_ele[i] = unordered_set<int>();
-    }
-
     while(1){
         int status = UP_once();
         if( M_item.size() == 0 ){
@@ -165,12 +169,11 @@ void UP(){
             break;
         }
         if( status == 0 ){
-            has_solution = false;
             cout << "no solution" << endl;
             break;
         }
         if( status == 1 ){
-            status = UP_once();
+            continue;
         }
         else
             break;

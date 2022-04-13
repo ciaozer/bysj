@@ -14,7 +14,7 @@ using namespace std;
 //1 represents running data
 //2 represents others
 
-#define GENERATE 2
+#define GENERATE 3
 //0 represents using ORLibrary
 //1 represents generating random data
 //2 represents generating added data
@@ -74,11 +74,18 @@ int main(){
         //}
     }
     else{
-        // check();
+        //check();
         // data = read_data("data/add/test.txt");
         // run();
         // print_solution();
-        preprocess();
+        generate_random_once("up.txt");
+        // data = read_data("data/random_data/test.txt");
+        // run();
+        // print_solution(solution);
+        // get_uncovered_elements();
+        // print_uncovered();
+        //preprocess();
+        generate(GENERATE);
     }
 
 //    system("pause");
