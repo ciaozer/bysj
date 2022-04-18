@@ -398,6 +398,7 @@ void local_search(){
 }
 
 void print_solution(unordered_set<int> solution){
+    cout << "the solution size is: " << solution.size() << endl;
     //output the sorted solution
     vector<int> sorted_solution;
     for( auto it = solution.begin(); it!=solution.end(); it++ )
