@@ -10,7 +10,9 @@ using namespace std;
 #define RAND 1000       //the precision of random number
 #define ADD_TIMES 20     //how many times an item will be added
 #define RATE 0.4        //the posibility add into solution 
-#define AVG_COVER_TIMES 10  //the average of element be covered times
+#define AVG_COVER_TIMES 35 //the average of element be covered times
+#define ITEMNUM 1000
+#define ELEMENTNUM 10000
 
 extern int itemnum, elementnum;
 extern vector<Item> data;
@@ -27,8 +29,7 @@ extern unordered_map<int, unordered_set<int> > M_item;
 extern unordered_map<int, unordered_set<int> > G_item;    
 extern unordered_set<int> pre_solution;
 extern int uncover_element;
-extern vector<int> to_do_item;
-extern vector<int> to_do_element;
+extern unordered_set<int> total_to_do_item;
 
 void generate_data(string filename){
     //generate data according to data
@@ -98,8 +99,8 @@ void generate_OR(){
 }
 
 void generate_random_once(string filename){
-    itemnum = 2000;
-    elementnum = 100000;
+    itemnum = ITEMNUM;
+    elementnum = ELEMENTNUM;
     int avg_cover_num = elementnum/itemnum*AVG_COVER_TIMES;
     int max_offset = avg_cover_num/2; 
     //cout << max_offset << endl; 
@@ -263,21 +264,19 @@ void generate_up(){
             //add uncover_element into an item that not in to_do_item
             int tmp;
             while(1){
+                //can be changed, if the data structure it set
                 tmp = rand() % n_item;
-                bool in_it = false; 
-                for( int i=0; i<to_do_item.size(); i++ ){
-                    if( tmp == to_do_item[i] ){
-                        in_it = true;
-                        break;
-                    }
-                }
-                if( in_it == false )
-                    break;
+                if( total_to_do_item.count(tmp) )
+                    continue;
+                break;
             }
 
             //update data
             data[tmp].covernum++;
             data[tmp].elements.insert(uncover_element);
+
+            cout << "add " << uncover_element << " into " << tmp << endl << endl;
+
             generate_data("up.txt");
         }
         else 

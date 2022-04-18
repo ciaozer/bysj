@@ -78,14 +78,12 @@ int main(){
         // data = read_data("data/add/test.txt");
         // run();
         // print_solution();
-        generate_random_once("up.txt");
-        // data = read_data("data/random_data/test.txt");
+        // generate_random_once("up.txt");
+        // data = read_data("up.txt");
         // run();
         // print_solution(solution);
-        // get_uncovered_elements();
-        // print_uncovered();
-        //preprocess();
-        generate(GENERATE);
+        preprocess();
+        //generate(GENERATE);
     }
 
 //    system("pause");

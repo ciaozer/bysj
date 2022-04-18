@@ -10,8 +10,8 @@ unordered_map<int, unordered_set<int> > M_item;    //elements that covered by it
 unordered_map<int, unordered_set<int> > G_item;    //items that conflict with item i
 unordered_set<int> pre_solution;
 int uncover_element;
-vector<int> to_do_item;
-vector<int> to_do_element;
+unordered_set<int> total_to_do_item;
+unordered_set<int> total_to_do_element;
 
 void pre_read(string filename){
 
@@ -137,18 +137,21 @@ int UP_once(){
             //add the chosen item into solution
             pre_solution.insert(item);
             
-            to_do_element.clear();
-            to_do_item.clear();
+            vector<int> to_do_element;
+            vector<int> to_do_item;
 
             //find the elements the chosen item covers
             for( auto it=M_item[item].begin(); it!=M_item[item].end(); it++ ){
                 to_do_element.push_back(*it);
+                total_to_do_element.insert(*it);
             }
 
             //find the chosen item and its conflict item set
             to_do_item.push_back(item);
+            total_to_do_item.insert(item);
             for( auto it=G_item[item].begin(); it!=G_item[item].end(); it++ ){
                 to_do_item.push_back(*it);
+                total_to_do_item.insert(*it);
             }
 
             update_N_ele(to_do_item, to_do_element);
@@ -180,6 +183,8 @@ void UP(){
     }
 
     cout << "finish UP" << endl;
+    cout << "now we decrease " << total_to_do_item.size() << " items and ";
+    cout << total_to_do_element.size() << " elements" << endl;
     cout << "the pre_solution size is: " << pre_solution.size() << endl;
     print_solution(pre_solution);
 }
