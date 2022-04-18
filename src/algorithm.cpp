@@ -1,57 +1,36 @@
 #include"../include/main.h"
 #include"../include/preprocess.h"
+#include"../include/read.h"
 
 using namespace std;
 
-#define TABUSTEP 3      //the depth of tabu search
-#define CUTOFF 1000       //cutoff time in local search
-#define NOTBETTERCUT 2  //tabu search not better cut
-#define REINFORCE 0     //1 represents use reinforce learning
-#define REMOVENUM 2     //the number of removed items in perturbation
-
 extern int itemnum, elementnum;
 extern int best_cover_num;
-extern string input_filename, output_filename;
  
-extern vector<Item> data;
+extern unordered_map<int, Item> data;
 extern vector< vector<bool> > conflict_graph;
-extern vector<int> conflict_num;       //the number of items it conflicts with
-extern vector<int>  candidate_conflict_num; //conflict times between candidates
-extern vector<int> cover_of_candidate; //how many elements a candidate can cover, 0 if not in candidate
 extern unordered_set<int> candidate;   //items that not in solution and not conflicts with the items in solution
 extern unordered_set<int> solution;    //current result, the items that have been selected
 extern unordered_set<int> best_solution;
 extern unordered_map<int, int> element_cover_times;    //solution covers elements times
-extern vector<int> tabulist;           //the list of item tabu
-extern vector<int> stay;               //how many turns an item is in the solution
  
 void initial(){
     //clear all the things
-    candidate_conflict_num.clear();
-    cover_of_candidate.clear();
     candidate.clear();
     solution.clear();
     best_solution.clear();
-    tabulist.clear();
-    stay.clear();
 
-    for( int i=0; i<itemnum; i++ ){
+    for( auto it=data.begin(); it!=data.end(); it++ ){
         //no item is in solution, every item is in candidate
         
-        candidate.insert(i);
-        candidate_conflict_num.push_back(conflict_num[i]);
-        cover_of_candidate.push_back(data[i].covernum);
-
-        //initial tabu list
-        tabulist.push_back(TABUSTEP);
+        candidate.insert(it->first);
+        it->second.candidate_conflict_num = it->second.conflict_num;
+        it->second.cover_of_candidate = it->second.covernum;
     }
 
     //elements count from 1
     for( int i=1; i<=elementnum; i++ )
         element_cover_times[i] = 0;
-
-    //initial stay
-    stay = vector<int>(itemnum, 0);
 
     cout << "finish initial" << endl;
 }
@@ -133,8 +112,8 @@ void update_candidate_messege(bool add, int idx){
                 conflict_cnt++;
         }
 
-        cover_of_candidate[*it] = cover_cnt;
-        candidate_conflict_num[*it] = conflict_cnt;
+        data[*it].cover_of_candidate = cover_cnt;
+        data[*it].candidate_conflict_num = conflict_cnt;
     }
 }
 
@@ -163,13 +142,15 @@ void greedy(){
 
         //traverse candidate to get the best item
         for( auto it=candidate.begin(); it!=candidate.end(); it++ ){
+            
             //not conflict with other candidate
-            if( candidate_conflict_num[*it] == 0 ){
+            if( data[*it].candidate_conflict_num == 0 ){
                 idx = *it;
                 break;
             }
             is_conflict = true;
-            current = (double)cover_of_candidate[*it] / candidate_conflict_num[*it];
+            current = (double)data[*it].cover_of_candidate / (double)data[*it].candidate_conflict_num;
+            
             //include equal to deal with the situation that current_max = 0, it will never go on
             if( current >= best ){
                 idx = *it;
@@ -179,7 +160,7 @@ void greedy(){
 
         candidate.erase(idx);
         solution.insert(idx);
-        stay[idx]++;
+        data[idx].stay++;
 
         if( is_conflict )
             update_candidate_messege(true, idx);
@@ -228,10 +209,10 @@ int calculate_increase(int before, int idx, unordered_set<int> solution, unorder
         }
     }
 
-    int ans = get_cover_num(element_cover_times);
-    ans -= before;
-    return ans;
-    //return get_cover_num(element_cover_times) - before;
+    // int ans = get_cover_num(element_cover_times);
+    // ans -= before;
+    // return ans;
+    return get_cover_num(element_cover_times) - before;
 }
 
 int choose_remove_item(){
@@ -242,7 +223,7 @@ int choose_remove_item(){
     int before = get_cover_num(element_cover_times);
     for( auto it=solution.begin(); it!=solution.end(); it++ ){
         //don't choose the item that has been chosen recently
-        if( tabulist[*it] < TABUSTEP )
+        if( data[*it].tabulist < TABUSTEP )
             continue;
         current_increase = calculate_increase(before, *it, solution, element_cover_times);
         if( current_increase > best_increase ){
@@ -254,39 +235,39 @@ int choose_remove_item(){
 }
 
 void update_tabu_list(int idx){
-    for( int i=0; i<itemnum; i++ ){
+    for( auto it=data.begin(); it!=data.end(); it++ ){
         //the chosen item's tabu set to 1
-        if( i == idx ) 
-            tabulist[i] = 1;
+        if( it->first == idx ) 
+            it->second.tabulist = 1;
         
         //other item's tabu should increase, but not out of bound
-        else if( tabulist[i] < TABUSTEP )
-            tabulist[i]++;
+        else if( it->second.tabulist < TABUSTEP )
+            it->second.tabulist++;
     }
 }
 
 void perturbation(){
     if( REINFORCE == 1 ){
         //choose two items that have the most stay turns
-        int stay_most_1 = *solution.begin();
-        int stay_most_2 = *(solution.begin()++);
-        if( stay[stay_most_1] < stay[stay_most_2] )
-            swap(stay_most_1, stay_most_2);
+        int stay_most_1_idx = *solution.begin();
+        int stay_most_2_idx = *(solution.begin()++);
+        if( data[stay_most_1_idx].stay < data[stay_most_2_idx].stay )
+            swap(stay_most_1_idx, stay_most_2_idx);
         auto it = solution.begin();
         it++;
         for( it++; it!=solution.end(); it++ ){
-            if( stay[*it] > stay_most_1 ){
-                stay_most_2 = stay_most_1;
-                stay_most_1 = *it;
+            if( data[*it].stay > data[stay_most_1_idx].stay ){
+                stay_most_2_idx = stay_most_1_idx;
+                stay_most_1_idx = *it;
             }
-            else if( stay[*it] > stay[stay_most_2] )
-                stay_most_2 = *it;
+            else if( data[*it].stay > data[stay_most_2_idx].stay )
+                stay_most_2_idx = *it;
         }
 
         //remove two items that have the most stay turns
         for( int i=0; i<2; i++ ){
             for( auto it=solution.begin(); it!=solution.end(); it++ ){
-                if( *it == stay_most_1 || *it == stay_most_2 ){
+                if( *it == stay_most_1_idx || *it == stay_most_2_idx ){
                     int remove_item = *it;
                     solution.erase(remove_item);
                     update_candidate_messege(false, remove_item);
@@ -372,7 +353,7 @@ void local_search(){
 
             //calculate how many turns an item is in the solution
             for( auto it=solution.begin(); it!=solution.end(); it++ ){
-                stay[*it]++;
+                data[*it].stay++;
             }
 
             current_cover_times = get_cover_num(element_cover_times);
@@ -400,6 +381,7 @@ void local_search(){
 
     }
 
+    //update solution
     solution = best_solution;
 
     //print the local search result
@@ -415,13 +397,6 @@ void local_search(){
     update_element_cover_times_final();
 }
 
-void run(){
-    //preprocess();
-    initial();          //finish some initial works
-    greedy();           //construct a initial solution with greedy algorithm 
-    local_search(); 
-}
-
 void print_solution(unordered_set<int> solution){
     //output the sorted solution
     vector<int> sorted_solution;
@@ -434,4 +409,13 @@ void print_solution(unordered_set<int> solution){
             cout << endl;
     }
     cout << endl;
+}
+
+void run(string filename){
+    data = read_data(filename);
+    //preprocess();
+    initial();          //finish some initial works
+    greedy();           //construct a initial solution with greedy algorithm 
+    local_search(); 
+    print_solution(solution);
 }

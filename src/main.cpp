@@ -22,19 +22,16 @@ using namespace std;
 int itemnum, elementnum;
 int best_cover_num;
 
-vector<Item> data;
+unordered_map<int, Item> data;
 vector< vector<bool> > conflict_graph;
-vector<int> conflict_num;       //the number of items it conflicts with
-vector<int> candidate_conflict_num; //conflict times between candidates
-vector<int> cover_of_candidate; //how many elements a candidate can cover, 0 if not in candidate
 unordered_set<int> candidate;   //items that not in solution and not conflicts with the items in solution
 unordered_set<int> solution;    //current result, the items that have been selected
 unordered_set<int> best_solution;
 unordered_map<int, int> element_cover_times;    //solution covers elements times
-vector<int> tabulist;           //the list of item tabu
-vector<int> stay;               //how many turns an item is in the solution
 vector<int> uncovered;          //elements that uncovered by solution
-vector< unordered_set<int> > item_can_cover_element;
+unordered_map<int, unordered_set<int> > N_ele;     //items that can cover element j
+unordered_map<int, unordered_set<int> > M_item;    //elements that covered by item i
+unordered_map<int, unordered_set<int> > G_item;    //items that conflict with item i
 
 int main(){
     //ensure every time the result is different
@@ -52,37 +49,30 @@ int main(){
         for( int i=0; i<new_filenames.size(); i++ ){
             cout << "executing " << new_filenames[i] << endl;
             new_filenames[i] = "data/OR_data/" + new_filenames[i];
-            data = read_data(new_filenames[i]);
-            run();
+            run(new_filenames[i]);
             cout << "the solution size is: " << solution.size() << endl;
             print_solution(solution);
         }    
     }
     else if( RUN == 2 ){
         string path = "data/random_data/test.txt";
-        data = read_data(path);
-        run();
+        run(path);
         print_solution(solution);
         //now the element cover times is right
 
         path = "data/add/test.txt";
         //while( get_cover_num(element_cover_times) != elementnum ){
             generate_add_data_once(path);
-            data = read_data(path);
-            run();
+            run(path);
             print_solution(solution);
         //}
     }
     else{
         //check();
-        // data = read_data("data/add/test.txt");
-        // run();
-        // print_solution();
+        // run("data/add/test.txt");
         // generate_random_once("up.txt");
-        // data = read_data("up.txt");
-        // run();
-        // print_solution(solution);
-        preprocess();
+        run("up.txt");
+        //preprocess();
         //generate(GENERATE);
     }
 

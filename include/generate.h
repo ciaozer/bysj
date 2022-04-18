@@ -1,3 +1,5 @@
+void order_data();
+
 void generate_data(string filename);
 
 void generate_conflict_graph();

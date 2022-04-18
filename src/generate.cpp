@@ -15,15 +15,12 @@ using namespace std;
 #define ELEMENTNUM 10000
 
 extern int itemnum, elementnum;
-extern vector<Item> data;
-extern vector< vector<bool> > conflict_graph;
-extern vector<int> conflict_num;     
+extern unordered_map<int, Item> data;
+extern vector< vector<bool> > conflict_graph;  
 extern unordered_map<int, int> element_cover_times;
 extern vector<int> uncovered;
 extern unordered_set<int> solution;
 
-extern int n_item, n_element;
-extern vector< vector<int> > adj_matrix;
 extern unordered_map<int, unordered_set<int> > N_ele;     
 extern unordered_map<int, unordered_set<int> > M_item;    
 extern unordered_map<int, unordered_set<int> > G_item;    
@@ -31,8 +28,19 @@ extern unordered_set<int> pre_solution;
 extern int uncover_element;
 extern unordered_set<int> total_to_do_item;
 
+unordered_map<int, Item> ordered_data;
+
+void order_data(){
+    for( auto it=data.begin(); it!=data.end(); it++ ){
+        ordered_data[it->first] = it->second;
+    }
+}
+
 void generate_data(string filename){
     //generate data according to data
+
+    order_data();
+
     ofstream outfile;
     outfile.open(filename, ios::out);
     if( !outfile.is_open() ){
@@ -40,9 +48,10 @@ void generate_data(string filename){
         cout << "i am generate_data";
         return ;
     }
+
     outfile << itemnum << " " << elementnum << endl;
     for( int i=0; i<itemnum; i++ ){
-        Item itemtmp = data[i];
+        Item itemtmp = ordered_data[i];
 
         //show the item number and what elements it covers
         outfile << i << " " << itemtmp.covernum << endl;
@@ -52,7 +61,7 @@ void generate_data(string filename){
         outfile << endl;
 
         //show what items it conflicts with
-        outfile << conflict_num[i] << endl;
+        outfile << itemtmp.conflict_num << endl;
         for( int j=0; j<itemnum; j++ )
             if( conflict_graph[i][j] )
                 outfile << j << " ";
@@ -63,7 +72,6 @@ void generate_data(string filename){
 
 void generate_conflict_graph(){
     conflict_graph = vector< vector<bool> >(itemnum, vector<bool>(itemnum, false));
-    conflict_num = vector<int>(itemnum, 0);
     //this will make sand same every time
     double tmp;
     for( int i=0; i<itemnum; i++ )
@@ -72,8 +80,8 @@ void generate_conflict_graph(){
             if( tmp < DENSITY ){
                 conflict_graph[i][j] = true;
                 conflict_graph[j][i] = true;
-                conflict_num[i]++;
-                conflict_num[j]++;
+                data[i].conflict_num++;
+                data[j].conflict_num++;
             }
         }
 }
@@ -105,24 +113,18 @@ void generate_random_once(string filename){
     int max_offset = avg_cover_num/2; 
     //cout << max_offset << endl; 
 
-    ofstream outfile;
-    outfile.open(filename, ios::out);
-    if( !outfile.is_open() ){
-        cout << "read file error" << endl;
-        return ;
-    }
-    outfile << itemnum << " " << elementnum << endl;
-
     generate_conflict_graph();
 
     for( int i=0; i<itemnum; i++ ){
+        Item itemtmp;
+
         //generate a rand_covernum
         int offset = rand() % (2*max_offset);
         //cout << offset << " ";
         offset -= max_offset;
         int rand_covernum = avg_cover_num + offset;
         //cout << rand_covernum << endl;
-        outfile << i << " " << rand_covernum << endl;
+        itemtmp.covernum = rand_covernum;
 
         //generate cover elements
         unordered_set<int> rand_elements;
@@ -135,18 +137,10 @@ void generate_random_once(string filename){
             }
             rand_covernum--;
             rand_elements.insert(element);
-            outfile << element << " ";
         }   
-        outfile << endl;
-
-        //show what items it conflicts with
-        outfile << conflict_num[i] << endl;
-        for( int j=0; j<itemnum; j++ )
-            if( conflict_graph[i][j] )
-                outfile << j << " ";
-        outfile << endl;
+        itemtmp.elements = rand_elements;
+        data[i] = itemtmp;
     }
-    outfile.close();
 }
 
 void generate_random(){
@@ -158,6 +152,7 @@ void generate_random(){
 }
 
 void get_uncovered_elements(){
+    uncovered.clear();
     for( auto it=element_cover_times.begin(); it!=element_cover_times.end(); it++ ){
         if( it->second == 0 ){
             uncovered.push_back(it->first);
@@ -166,6 +161,7 @@ void get_uncovered_elements(){
 }
 
 void print_uncovered(){
+    get_uncovered_elements();
     cout << "uncovered size is: " << uncovered.size() << endl;
     for( int i=0; i<uncovered.size(); i++ ){
         cout << uncovered[i] << " ";
@@ -237,8 +233,7 @@ void generate_add_data(){
     for( int i=0; i<10; i++ ){
         string path = "data/random_data/random";
         path = path + to_string(i) + ".txt";
-        data = read_data(path);
-        run();
+        run(path);
         //now the element cover times is right
 
         path = "data/add/add";
@@ -246,15 +241,13 @@ void generate_add_data(){
         while( get_cover_num(element_cover_times) != elementnum ){
             generate_add_data_once(path);
             uncovered.clear();      //ensure the uncovered is right
-            data = read_data(path);
-            run();
+            run(path);
         }
     }
 }
 
 void generate_up(){
     while(1){
-        pre_read("up.txt");
         data = read_data("up.txt");
         uncover_element = 0;
         UP();
@@ -265,7 +258,7 @@ void generate_up(){
             int tmp;
             while(1){
                 //can be changed, if the data structure it set
-                tmp = rand() % n_item;
+                tmp = rand() % itemnum;
                 if( total_to_do_item.count(tmp) )
                     continue;
                 break;
