@@ -32,6 +32,7 @@ vector<int> uncovered;          //elements that uncovered by solution
 unordered_map<int, unordered_set<int> > N_ele;     //items that can cover element j
 unordered_map<int, unordered_set<int> > M_item;    //elements that covered by item i
 unordered_map<int, unordered_set<int> > G_item;    //items that conflict with item i
+unordered_map<int, int> weight; //element is key
 
 int main(){
     //ensure every time the result is different

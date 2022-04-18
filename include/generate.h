@@ -2,6 +2,8 @@ void order_data();
 
 void generate_data(string filename);
 
+void generate_weight();
+
 void generate_conflict_graph();
 
 void generate_or_data(string filename);

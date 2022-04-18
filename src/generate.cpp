@@ -13,6 +13,14 @@ using namespace std;
 #define AVG_COVER_TIMES 35 //the average of element be covered times
 #define ITEMNUM 1000
 #define ELEMENTNUM 10000
+#define WEIGHT 1
+/*
+    0 represents no weight
+    1 represents random
+    2 represents some elements with very high weight
+    3 represents with negative weight
+*/
+#define RAND_WEIGHT 10  //the max weight
 
 extern int itemnum, elementnum;
 extern unordered_map<int, Item> data;
@@ -27,12 +35,17 @@ extern unordered_map<int, unordered_set<int> > G_item;
 extern unordered_set<int> pre_solution;
 extern int uncover_element;
 extern unordered_set<int> total_to_do_item;
+extern unordered_map<int, int> weight; //element is key
 
-unordered_map<int, Item> ordered_data;
+map<int, Item> ordered_data;
+map<int, int> ordered_weight;
 
 void order_data(){
     for( auto it=data.begin(); it!=data.end(); it++ ){
         ordered_data[it->first] = it->second;
+    }
+    for( auto it=weight.begin(); it!=weight.end(); it++ ){
+        ordered_weight[it->first] = it->second;
     }
 }
 
@@ -50,6 +63,16 @@ void generate_data(string filename){
     }
 
     outfile << itemnum << " " << elementnum << endl;
+
+    //output weight
+    int cnt = 0;
+    for( auto it=ordered_weight.begin(); it!=ordered_weight.end(); it++, cnt++ ){
+        cout << it->second << " ";
+        if( cnt % 10 == 19 )
+            cout << endl;
+    }
+    cout << endl;
+
     for( int i=0; i<itemnum; i++ ){
         Item itemtmp = ordered_data[i];
 
@@ -68,6 +91,33 @@ void generate_data(string filename){
         outfile << endl;
     }
     outfile.close();
+}
+
+void generate_weight(){
+    switch (WEIGHT)
+    {
+    case 0:
+        for( auto it=weight.begin(); it!=weight.end(); it++ ){
+            it->second = 1;
+        }
+        break;
+
+    case 1:
+        for( auto it=weight.begin(); it!=weight.end(); it++ ){
+            int rand_weight = (rand() % RAND_WEIGHT) + 1;
+            it->second = rand_weight;
+        }
+        break;
+
+    case 2:
+        break;
+
+    case 3:
+        break;
+
+    default:
+        break;
+    }
 }
 
 void generate_conflict_graph(){
