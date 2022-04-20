@@ -2,12 +2,15 @@
 
 using namespace std;
 
+#define TABUSTEP 3
+
 extern int itemnum, elementnum;
 extern vector< vector<bool> > conflict_graph;
 extern unordered_map<int, unordered_set<int> > N_ele;     //items that can cover element j
 extern unordered_map<int, unordered_set<int> > M_item;    //elements that covered by item i
 extern unordered_map<int, unordered_set<int> > G_item;    //items that conflict with item i
 extern unordered_map<int, int> weight;
+extern bool is_weight;                                      //whether the example is weighted
 
 unordered_map<int, Item> read_initdata(string filename){
     unordered_map<int, Item> items;
@@ -81,8 +84,11 @@ unordered_map<int, Item> read_data(string filename){
     infile >> itemnum >> elementnum;
 
     //input element weight
-    for( int i=1; i<=elementnum; i++ )
+    for( int i=1; i<=elementnum; i++ ){
         infile >> weight[i];
+        if( weight[i] != 1 )
+            is_weight = true;
+    }
     
     conflict_graph = vector< vector<bool> >(itemnum, vector<bool>(itemnum, false));
 

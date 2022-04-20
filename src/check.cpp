@@ -15,7 +15,7 @@ string input_filename_for_check = "up.txt";
 
 //extern string input_filename;
 extern int itemnum, elementnum;
-extern vector<Item> data;
+extern unordered_map<int, Item> data;
 extern vector< vector<bool> > conflict_graph;
 extern vector<int> conflict_num;       //the number of items it conflicts with
 unordered_set<int> test_solution;

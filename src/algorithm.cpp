@@ -4,8 +4,15 @@
 
 using namespace std;
 
+#define TABUSTEP 3      //the depth of tabu search
+#define CUTOFF 20       //cutoff time in local search
+#define NOTBETTERCUT 2  //tabu search not better cut
+#define REINFORCE 0     //1 represents use reinforce learning
+#define REMOVENUM 2     //the number of removed items in perturbation
+
 extern int itemnum, elementnum;
 extern int best_cover_num;
+extern int best_score;
  
 extern unordered_map<int, Item> data;
 extern vector< vector<bool> > conflict_graph;
@@ -13,6 +20,8 @@ extern unordered_set<int> candidate;   //items that not in solution and not conf
 extern unordered_set<int> solution;    //current result, the items that have been selected
 extern unordered_set<int> best_solution;
 extern unordered_map<int, int> element_cover_times;    //solution covers elements times
+extern unordered_map<int, int> weight; //element is key
+extern bool is_weight;
  
 void initial(){
     //clear all the things
@@ -129,6 +138,15 @@ int get_cover_num(unordered_map<int, int> element_cover_times){
     return cnt;
 }
 
+int get_score(unordered_map<int, int> element_cover_times){
+    int score = 0;
+    for( int i=1; i<=elementnum; i++ ){
+        if( element_cover_times[i] )
+            score += weight[i];
+    }
+    return score;
+}
+
 void greedy(){
     int idx;    //the index of the chosen item
     //choose by covernum/conflictnum
@@ -149,7 +167,7 @@ void greedy(){
                 break;
             }
             is_conflict = true;
-            current = (double)data[*it].cover_of_candidate / (double)data[*it].candidate_conflict_num;
+            current = (double)data[*it].cover_of_candidate * weight[*it] / (double)data[*it].candidate_conflict_num;
             
             //include equal to deal with the situation that current_max = 0, it will never go on
             if( current >= best ){
@@ -170,8 +188,10 @@ void greedy(){
 
     best_solution = solution;
     best_cover_num = get_cover_num(element_cover_times);
+    best_score = get_score(element_cover_times);
     cout << "finish greedy" << endl;
     cout << "after greedy, " << best_cover_num << " elements have been covered" << endl;
+    cout << "now the score is: " << best_score << endl;
 
 }
 
@@ -212,7 +232,8 @@ int calculate_increase(int before, int idx, unordered_set<int> solution, unorder
     // int ans = get_cover_num(element_cover_times);
     // ans -= before;
     // return ans;
-    return get_cover_num(element_cover_times) - before;
+    //return get_cover_num(element_cover_times) - before;
+    return get_score(element_cover_times) - before;
 }
 
 int choose_remove_item(){
@@ -220,7 +241,8 @@ int choose_remove_item(){
     int best_increase = INT8_MIN;
     int current_increase;
     int idx;    //the index of the return item
-    int before = get_cover_num(element_cover_times);
+    //int before = get_cover_num(element_cover_times);
+    int before = get_score(element_cover_times);
     for( auto it=solution.begin(); it!=solution.end(); it++ ){
         //don't choose the item that has been chosen recently
         if( data[*it].tabulist < TABUSTEP )
@@ -312,6 +334,7 @@ void local_search(){
     while( best_cover_num<elementnum && endtime-begintime < CUTOFF ){
         int not_better_cnt = 0;
         int current_cover_times;
+        int current_score;
 
         //local search for local optimal, if find a feasible solution then quit
         while( not_better_cnt<NOTBETTERCUT && best_cover_num<elementnum ){
@@ -357,14 +380,20 @@ void local_search(){
             }
 
             current_cover_times = get_cover_num(element_cover_times);
-            cout << "best: " << best_cover_num;
-            cout << "     current: " << current_cover_times << endl;
+            current_score = get_score(element_cover_times);
+            cout << "best cover: " << best_cover_num;
+            cout << "     current cover: " << current_cover_times;
+            cout << "     best score: " << best_score;
+            cout << "     current score: " << current_score << endl;
 
             //update best and check whether better
-            if( current_cover_times <= best_cover_num )
+            if( best_cover_num < current_cover_times )
+                best_cover_num = current_cover_times;
+            if( current_score <= best_score )
                 not_better_cnt++;
             else{
                 best_cover_num = current_cover_times;
+                best_score = current_score;
                 best_solution = solution;
                 not_better_cnt = 0;
             }
@@ -392,6 +421,7 @@ void local_search(){
         cout << "can't find a feasible solution" << endl;
         cout << "only cover " << best_cover_num << " elements" << endl;
     }
+    cout << "the score is: " << best_score << endl;
 
     //update element cover times with the final solution
     update_element_cover_times_final();
@@ -414,9 +444,10 @@ void print_solution(unordered_set<int> solution){
 
 void run(string filename){
     data = read_data(filename);
-    //preprocess();
+    preprocess();
     initial();          //finish some initial works
     greedy();           //construct a initial solution with greedy algorithm 
     local_search(); 
+    proprocess();
     print_solution(solution);
 }

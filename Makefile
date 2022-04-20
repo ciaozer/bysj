@@ -15,3 +15,4 @@ $(OBJ): ./obj/%.o: ./src/%.cpp
 .PHONY:
 clean:
 	-rm -rf main
+	-rm -rf ./obj/*.o

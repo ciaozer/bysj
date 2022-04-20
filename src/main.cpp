@@ -33,6 +33,8 @@ unordered_map<int, unordered_set<int> > N_ele;     //items that can cover elemen
 unordered_map<int, unordered_set<int> > M_item;    //elements that covered by item i
 unordered_map<int, unordered_set<int> > G_item;    //items that conflict with item i
 unordered_map<int, int> weight; //element is key
+bool is_weight = false;       //whether the example is weighted
+int best_score;
 
 int main(){
     //ensure every time the result is different
@@ -70,11 +72,13 @@ int main(){
     }
     else{
         //check();
-        // run("data/add/test.txt");
+        //run("data/add/test.txt");
         // generate_random_once("up.txt");
-        run("up.txt");
+        //generate_random_once("data/random_data/test.txt");
+        run("data/random_data/test.txt");
         //preprocess();
         //generate(GENERATE);
+
     }
 
 //    system("pause");

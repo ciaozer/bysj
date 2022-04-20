@@ -9,12 +9,6 @@
 #include<map>
 using namespace std;
 
-#define TABUSTEP 3      //the depth of tabu search
-#define CUTOFF 10       //cutoff time in local search
-#define NOTBETTERCUT 2  //tabu search not better cut
-#define REINFORCE 0     //1 represents use reinforce learning
-#define REMOVENUM 2     //the number of removed items in perturbation
-
 struct Item{
     int covernum;                   //the size of the elements it can cover
     int conflict_num;               //the number of items it conflicts with

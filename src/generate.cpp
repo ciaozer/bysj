@@ -10,9 +10,9 @@ using namespace std;
 #define RAND 1000       //the precision of random number
 #define ADD_TIMES 20     //how many times an item will be added
 #define RATE 0.4        //the posibility add into solution 
-#define AVG_COVER_TIMES 35 //the average of element be covered times
-#define ITEMNUM 1000
-#define ELEMENTNUM 10000
+#define AVG_COVER_TIMES 15 //the average of element be covered times
+#define ITEMNUM 200
+#define ELEMENTNUM 1000
 #define WEIGHT 1
 /*
     0 represents no weight
@@ -20,7 +20,7 @@ using namespace std;
     2 represents some elements with very high weight
     3 represents with negative weight
 */
-#define RAND_WEIGHT 10  //the max weight
+#define RAND_WEIGHT 100  //the max weight
 
 extern int itemnum, elementnum;
 extern unordered_map<int, Item> data;
@@ -67,11 +67,11 @@ void generate_data(string filename){
     //output weight
     int cnt = 0;
     for( auto it=ordered_weight.begin(); it!=ordered_weight.end(); it++, cnt++ ){
-        cout << it->second << " ";
-        if( cnt % 10 == 19 )
-            cout << endl;
+        outfile << it->second << " ";
+        if( cnt % 20 == 19 )
+            outfile << endl;
     }
-    cout << endl;
+    outfile << endl;
 
     for( int i=0; i<itemnum; i++ ){
         Item itemtmp = ordered_data[i];
@@ -97,15 +97,15 @@ void generate_weight(){
     switch (WEIGHT)
     {
     case 0:
-        for( auto it=weight.begin(); it!=weight.end(); it++ ){
-            it->second = 1;
+        for( int i=1; i<=elementnum; i++ ){
+            weight[i] = 1;
         }
         break;
 
     case 1:
-        for( auto it=weight.begin(); it!=weight.end(); it++ ){
+        for( int i=1; i<=elementnum; i++ ){
             int rand_weight = (rand() % RAND_WEIGHT) + 1;
-            it->second = rand_weight;
+            weight[i] = rand_weight;
         }
         break;
 
@@ -122,7 +122,10 @@ void generate_weight(){
 
 void generate_conflict_graph(){
     conflict_graph = vector< vector<bool> >(itemnum, vector<bool>(itemnum, false));
-    //this will make sand same every time
+    //if not initial, the conflict_num will lose 1, but i don't know why
+    for( auto it=data.begin(); it!=data.end(); it++ ){
+        it->second.conflict_num = 0;
+    }   
     double tmp;
     for( int i=0; i<itemnum; i++ )
         for( int j=i+1; j<itemnum; j++ ){
@@ -139,6 +142,7 @@ void generate_conflict_graph(){
 void generate_or_data(string filename){
     //generate data to the filename
     generate_conflict_graph();
+    generate_weight();
     generate_data(filename);
 }
 
@@ -163,7 +167,7 @@ void generate_random_once(string filename){
     int max_offset = avg_cover_num/2; 
     //cout << max_offset << endl; 
 
-    generate_conflict_graph();
+    generate_weight();
 
     for( int i=0; i<itemnum; i++ ){
         Item itemtmp;
@@ -187,10 +191,14 @@ void generate_random_once(string filename){
             }
             rand_covernum--;
             rand_elements.insert(element);
-        }   
+        }
         itemtmp.elements = rand_elements;
         data[i] = itemtmp;
     }
+
+    //generate cover first or conflict message will lose
+    generate_conflict_graph();
+    generate_data(filename);
 }
 
 void generate_random(){

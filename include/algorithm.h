@@ -11,6 +11,8 @@ void update_candidate_messege(bool add, int idx);
 
 int get_cover_num(unordered_map<int, int> element_cover_times);
 
+int get_score(unordered_map<int, int> element_cover_times);
+
 void greedy();
 
 int calculate_increase(int before, int idx, unordered_set<int> solution, unordered_map<int, int> element_cover_times);

@@ -4,14 +4,35 @@
 
 using namespace std;
 
+extern int itemnum, elementnum;
 extern unordered_map<int, Item> data;
 extern unordered_map<int, unordered_set<int> > N_ele;     //items that can cover element j
 extern unordered_map<int, unordered_set<int> > M_item;    //elements that covered by item i
 extern unordered_map<int, unordered_set<int> > G_item;    //items that conflict with item i
+extern unordered_map<int, int> element_cover_times;
+extern unordered_set<int> solution;
+
 unordered_set<int> pre_solution;
 int uncover_element;
 unordered_set<int> total_to_do_item;
 unordered_set<int> total_to_do_element;
+
+bool subset_to(unordered_set<int> set1, unordered_set<int> set2){
+/*
+    check whether there subset relation between set1 and set2
+    if set1 is the subset of set2 then return true
+*/
+    //check whether set1 is the subset of set2
+    bool is_subset = true;
+    for( auto it=set1.begin(); it!=set1.end(); it++ ){
+        if( set2.count(*it) == 0 ){
+            is_subset = false;
+            break;
+        }
+    }
+
+    return is_subset;
+}
 
 void update_N_ele(vector<int> to_do_item, vector<int> to_do_element){
     for( int i=0; i<to_do_element.size(); i++ ){
@@ -52,6 +73,18 @@ void update_G_item(vector<int> to_do_item, vector<int> to_do_element){
                 it->second.erase(to_do_item[i]);
             }
         }
+    }
+}
+
+void update_ele_cover(vector<int> to_do_element){
+    for( int i=0; i<to_do_element.size(); i++ ){
+        element_cover_times[to_do_element[i]] = 1;
+    }
+}
+            
+void update_data_item(vector<int> to_do_item){
+    for( int i=0; i<to_do_item.size(); i++ ){
+        data.erase(to_do_item[i]);
     }
 }
 
@@ -102,6 +135,8 @@ int UP_once(){
             update_N_ele(to_do_item, to_do_element);
             update_M_item(to_do_item, to_do_element);
             update_G_item(to_do_item, to_do_element);
+            update_ele_cover(to_do_element);
+            update_data_item(to_do_item);
             break;
         }
     }
@@ -123,8 +158,9 @@ void UP(){
         if( status == 1 ){
             continue;
         }
-        else
+        else{
             break;
+        }
     }
 
     cout << "finish UP" << endl;
@@ -134,7 +170,59 @@ void UP(){
     print_solution(pre_solution);
 }
 
+bool rule1(){
+/*
+    if M_item(i) subset M_item(j)
+    then delete item i
+    only have to update item, decrease
+*/
+    vector<int> to_do_item;
+    vector<int> to_do_element;
+
+    for( auto it1=M_item.begin(); it1!=M_item.end(); it1++ ){
+        for( auto it2=M_item.begin(); it2!=M_item.end(); it2++ ){
+            if( it1 == it2 )    
+                continue;
+            if( subset_to(it1->second, it2->second) )
+                to_do_item.push_back(it1->first);
+        }
+    }
+
+    // for( int i=1; i<5; i++ ){
+    //     for( int j=1; j<5; j++ ){
+    //         if( i==j )  continue;
+    //         if( subset_to(M_item, i, j) )
+    //             to_do_item.push_back(i);
+    //     }
+    // }
+
+    update_M_item(to_do_item, to_do_element);
+    update_G_item(to_do_item, to_do_element);
+    update_data_item(to_do_item);
+
+    cout << "rule1 decrease " << to_do_item.size() << " items" << endl;
+
+    for( int i=0; i<to_do_item.size(); i++ ){
+        cout << to_do_item[i] << " ";
+    }
+    cout << endl;
+
+    if( to_do_item.size() )
+        return true;
+    return false;
+}
+
 void preprocess(){
-    data = read_data("up.txt");
-    UP();
+    bool stop_flag = true;  //if all the process don't have any action then stop
+    while(1){
+        UP();
+        if( rule1() )       stop_flag = false;
+        if( stop_flag )     break;
+    }
+    cout << "finish preprocess" << endl;
+}
+
+void proprocess(){
+    for( auto it=pre_solution.begin(); it!=pre_solution.end(); it++ )
+        solution.insert(*it);
 }
