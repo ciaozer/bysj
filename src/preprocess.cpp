@@ -183,19 +183,24 @@ bool rule1(){
         for( auto it2=M_item.begin(); it2!=M_item.end(); it2++ ){
             if( it1 == it2 )    
                 continue;
-            if( subset_to(it1->second, it2->second) )
+            if( subset_to(it1->second, it2->second) ){
                 to_do_item.push_back(it1->first);
+                break;
+            }
         }
     }
 
-    // for( int i=1; i<5; i++ ){
-    //     for( int j=1; j<5; j++ ){
-    //         if( i==j )  continue;
-    //         if( subset_to(M_item, i, j) )
-    //             to_do_item.push_back(i);
-    //     }
-    // }
+    unordered_set<int> to_do_element_set;
+    for( int i=0; i<to_do_item.size(); i++ ){
+        for( auto it=M_item[to_do_item[i]].begin(); it!=M_item[to_do_item[i]].end(); it++ ){
+            if( to_do_element_set.count(*it) == 0 ){
+                to_do_element_set.insert(*it);
+                to_do_element.push_back(*it);
+            }
+        }
+    }
 
+    update_N_ele(to_do_item, to_do_element);
     update_M_item(to_do_item, to_do_element);
     update_G_item(to_do_item, to_do_element);
     update_data_item(to_do_item);
@@ -215,6 +220,7 @@ bool rule1(){
 void preprocess(){
     bool stop_flag = true;  //if all the process don't have any action then stop
     while(1){
+        stop_flag = true;
         UP();
         if( rule1() )       stop_flag = false;
         if( stop_flag )     break;

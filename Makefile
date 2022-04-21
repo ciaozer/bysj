@@ -1,7 +1,7 @@
 SRC = $(wildcard ./src/*.cpp)
 OBJ = $(patsubst ./src/%.cpp, ./obj/%.o, $(SRC))
 
-CC = g++
+CC = g++ -std=c++11
 TARGET = main
 INC_PATH = ./include/
 CFLAGS = -I
