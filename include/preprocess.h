@@ -12,9 +12,15 @@ void update_data_item(vector<int> to_do_item);
 
 int UP_once();
 
-void UP();
+bool UP();
 
 bool rule1();
+
+bool rule2();
+
+bool rule3();
+
+bool rule4();
 
 void preprocess();
 

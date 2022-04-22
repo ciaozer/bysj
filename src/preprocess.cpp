@@ -16,6 +16,7 @@ unordered_set<int> pre_solution;
 int uncover_element;
 unordered_set<int> total_to_do_item;
 unordered_set<int> total_to_do_element;
+unordered_set<int> check_element;       //for rule1
 
 bool subset_to(unordered_set<int> set1, unordered_set<int> set2){
 /*
@@ -137,6 +138,10 @@ int UP_once(){
             update_G_item(to_do_item, to_do_element);
             update_ele_cover(to_do_element);
             update_data_item(to_do_item);
+
+            cout << "UP_once decrease " << to_do_item.size() << " items";
+            cout << " and " << to_do_element.size() << " elements" << endl;
+
             break;
         }
     }
@@ -144,18 +149,22 @@ int UP_once(){
     return status;
 }
 
-void UP(){
+bool UP(){
+    bool is_useful = false;
     while(1){
         int status = UP_once();
         if( M_item.size() == 0 ){
             cout << "finish by UP!" << endl;
+            is_useful = false;
             break;
         }
         if( status == 0 ){
             cout << "no solution" << endl;
+            is_useful = false;
             break;
         }
         if( status == 1 ){
+            is_useful = true;
             continue;
         }
         else{
@@ -164,15 +173,52 @@ void UP(){
     }
 
     cout << "finish UP" << endl;
-    cout << "now we decrease " << total_to_do_item.size() << " items and ";
-    cout << total_to_do_element.size() << " elements" << endl;
-    cout << "the pre_solution size is: " << pre_solution.size() << endl;
-    print_solution(pre_solution);
+
+    return is_useful;
 }
 
 bool rule1(){
 /*
-    if M_item(i) subset M_item(j)
+    if N_ele[i] subset N_ele[j] 
+    then delete j
+    first think it can be covered
+    finally have to check
+*/
+    vector<int> to_do_item;
+    vector<int> to_do_element;
+
+    for( auto it1=N_ele.begin(); it1!=N_ele.end(); it1++ ){
+        for( auto it2=N_ele.begin(); it2!=N_ele.end(); it2++ ){
+            if( it1 == it2 )
+                continue;
+            if( subset_to(it1->second, it2->second) ){
+                to_do_element.push_back(it2->first);
+                total_to_do_element.insert(it2->first);
+                check_element.insert(it2->first);
+                break;  //avoid same element
+            }
+        }
+    }
+
+    update_N_ele(to_do_item, to_do_element);
+    update_M_item(to_do_item, to_do_element);
+    update_ele_cover(to_do_element);
+
+    cout << "rule1 decrease " << to_do_element.size() << " element" << endl;
+
+    // for( int i=0; i<to_do_element.size(); i++ ){
+    //     cout << to_do_element[i] << " ";
+    // }
+    // cout << endl;
+
+    if( to_do_element.size() )
+        return true;
+    return false;
+}
+
+bool rule2(){
+/*
+    if M_item(i) subset M_item(j) and G_item(j) subset G_item(i)
     then delete item i
     only have to update item, decrease
 */
@@ -183,19 +229,97 @@ bool rule1(){
         for( auto it2=M_item.begin(); it2!=M_item.end(); it2++ ){
             if( it1 == it2 )    
                 continue;
-            if( subset_to(it1->second, it2->second) ){
+            if( subset_to(it1->second, it2->second) && subset_to(G_item[it2->first], G_item[it1->first]) ){
                 to_do_item.push_back(it1->first);
-                break;
+                total_to_do_item.insert(it1->first);
+                break;  //avoid same item 
             }
         }
     }
 
+    // unordered_set<int> to_do_element_set;
+    // for( int i=0; i<to_do_item.size(); i++ ){
+    //     for( auto it=M_item[to_do_item[i]].begin(); it!=M_item[to_do_item[i]].end(); it++ ){
+    //         if( to_do_element_set.count(*it) == 0 ){
+    //             to_do_element_set.insert(*it);
+    //             to_do_element.push_back(*it);
+    //         }
+    //     }
+    // }
+
+    update_N_ele(to_do_item, to_do_element);
+    update_M_item(to_do_item, to_do_element);
+    update_G_item(to_do_item, to_do_element);
+    update_data_item(to_do_item);
+
+    cout << "rule2 decrease " << to_do_item.size() << " items" << endl;
+
+    for( int i=0; i<to_do_item.size(); i++ ){
+        cout << to_do_item[i] << " ";
+    }
+    cout << endl;
+
+    if( to_do_item.size() )
+        return true;
+    return false;
+}
+
+bool rule3(){
+/*
+    if a G_item[i] == 0, put it into presolution
+*/
+    bool is_useful = false;
+    vector<int> to_do_item;
+    vector<int> to_do_element;
     unordered_set<int> to_do_element_set;
+    for( auto it=G_item.begin(); it!=G_item.end(); it++ ){
+        if( it->second.size() == 0 ){
+            is_useful = true;
+            to_do_item.push_back(it->first);
+            total_to_do_item.insert(it->first);
+        }
+    }
     for( int i=0; i<to_do_item.size(); i++ ){
         for( auto it=M_item[to_do_item[i]].begin(); it!=M_item[to_do_item[i]].end(); it++ ){
             if( to_do_element_set.count(*it) == 0 ){
                 to_do_element_set.insert(*it);
                 to_do_element.push_back(*it);
+                total_to_do_element.insert(*it);
+            }
+        }
+    }
+
+    update_N_ele(to_do_item, to_do_element);
+    update_M_item(to_do_item, to_do_element);
+    update_G_item(to_do_item, to_do_element);
+    update_ele_cover(to_do_element);
+    update_data_item(to_do_item);
+
+    cout << "rule3 decrease " << to_do_item.size() << " items";
+    cout << " and " << to_do_element.size() << " elements" << endl;
+
+    for( int i=0; i<to_do_item.size(); i++ ){
+        cout << to_do_item[i] << " ";
+    }
+    cout << endl;
+
+    return is_useful;
+}
+
+bool rule4(){
+/*
+    if N_ele[i] subset G_item[j]
+    then delete j
+*/
+    vector<int> to_do_item;
+    vector<int> to_do_element;
+
+    for( auto it1=N_ele.begin(); it1!=N_ele.end(); it1++ ){
+        for( auto it2=G_item.begin(); it2!=G_item.end(); it2++ ){
+            if( subset_to(it1->second, it2->second) ){
+                to_do_item.push_back(it2->first);
+                total_to_do_item.insert(it2->first);
+                break;  //avoid same item
             }
         }
     }
@@ -205,7 +329,7 @@ bool rule1(){
     update_G_item(to_do_item, to_do_element);
     update_data_item(to_do_item);
 
-    cout << "rule1 decrease " << to_do_item.size() << " items" << endl;
+    cout << "rule4 decrease " << to_do_item.size() << " item" << endl;
 
     for( int i=0; i<to_do_item.size(); i++ ){
         cout << to_do_item[i] << " ";
@@ -221,11 +345,17 @@ void preprocess(){
     bool stop_flag = true;  //if all the process don't have any action then stop
     while(1){
         stop_flag = true;
-        UP();
+        if( UP() )          stop_flag = false;
         if( rule1() )       stop_flag = false;
+        if( rule2() )       stop_flag = false;
+        if( rule3() )       stop_flag = false;
+        if( rule4() )       stop_flag = false;
         if( stop_flag )     break;
     }
     cout << "finish preprocess" << endl;
+    cout << "now we decrease " << total_to_do_item.size() << " items and ";
+    cout << total_to_do_element.size() << " elements" << endl;
+    print_solution(pre_solution);
 }
 
 void proprocess(){
