@@ -22,6 +22,8 @@ bool rule3();
 
 bool rule4();
 
+void init();
+
 void preprocess();
 
 void proprocess();

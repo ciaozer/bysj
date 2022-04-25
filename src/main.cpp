@@ -14,7 +14,7 @@ using namespace std;
 //1 represents running data
 //2 represents others
 
-#define GENERATE 3
+#define GENERATE 2
 //0 represents using ORLibrary
 //1 represents generating random data
 //2 represents generating added data
@@ -35,6 +35,7 @@ unordered_map<int, unordered_set<int> > G_item;    //items that conflict with it
 unordered_map<int, int> weight; //element is key
 bool is_weight = false;       //whether the example is weighted
 int best_score;
+bool have_solution = true;
 
 int main(){
     //ensure every time the result is different
@@ -48,37 +49,40 @@ int main(){
         generate(GENERATE);
     }
     else if( RUN == 1 ){
-        vector<string> new_filenames = find_filename_linux("data/OR_data");
+        vector<string> new_filenames = find_filename_linux("data/random_data");
         for( int i=0; i<new_filenames.size(); i++ ){
             cout << "executing " << new_filenames[i] << endl;
-            new_filenames[i] = "data/OR_data/" + new_filenames[i];
+            new_filenames[i] = "data/random_data/" + new_filenames[i];
             run(new_filenames[i]);
-            cout << "the solution size is: " << solution.size() << endl;
-            print_solution(solution);
+            int total = get_total_score();
+            cout << "total score is " << total << endl;
+            cout << "loss is " << total-best_score << endl << endl;
         }    
     }
     else if( RUN == 2 ){
-        string path = "data/random_data/test.txt";
-        run(path);
-        print_solution(solution);
-        //now the element cover times is right
-
-        path = "data/add/test.txt";
+        string path = "data/add/test.txt";
         //while( get_cover_num(element_cover_times) != elementnum ){
             generate_add_data_once(path);
             run(path);
-            print_solution(solution);
         //}
     }
     else{
         //check();
-        //run("data/add/test.txt");
         // generate_random_once("up.txt");
+        // run("up.txt");
+        // generate_add_data_once("up.txt");
+        // run("up.txt");
         //generate_random_once("data/random_data/test.txt");
-        run("data/random_data/test.txt");
+        //run("data/random_data/random3.txt");
         //preprocess();
         //generate(GENERATE);
-
+        for( int i=0; i<10; i++ ){
+            string input_path = "data/random_data/random";
+            input_path = input_path + to_string(i) + ".txt";
+            string output_path = "data/maxsat100/maxsat";
+            output_path = output_path + to_string(i) + ".txt";
+            change_to_maxsat(input_path, output_path);
+        }
     }
 
 //    system("pause");

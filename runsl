@@ -1,0 +1,12 @@
+cd ./0-----SL
+./run300 ../data/maxsat/maxsat0.txt >> ../sllog.txt
+./run300 ../data/maxsat/maxsat1.txt >> ../sllog.txt
+./run300 ../data/maxsat/maxsat2.txt >> ../sllog.txt
+./run300 ../data/maxsat/maxsat3.txt >> ../sllog.txt
+./run300 ../data/maxsat/maxsat4.txt >> ../sllog.txt
+./run300 ../data/maxsat/maxsat5.txt >> ../sllog.txt
+./run300 ../data/maxsat/maxsat6.txt >> ../sllog.txt
+./run300 ../data/maxsat/maxsat7.txt >> ../sllog.txt
+./run300 ../data/maxsat/maxsat8.txt >> ../sllog.txt
+./run300 ../data/maxsat/maxsat9.txt >> ../sllog.txt
+cd ..

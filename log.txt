@@ -1,1170 +1,827 @@
-finish pre_read
-the element 26750 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 3
-1921 1934 1941 
-add 26750 into 779
+executing random6.txt
+finish read_data
+finish initial
+finish greedy
+after greedy, 5656 elements have been covered
+now the score is: 289441
+best cover: 5656     current cover: 5783     best score: 289441     current score: 296613
+best cover: 5783     current cover: 5912     best score: 296613     current score: 302740
+best cover: 5912     current cover: 6033     best score: 302740     current score: 309584
+best cover: 6033     current cover: 6108     best score: 309584     current score: 313951
+best cover: 6108     current cover: 6214     best score: 313951     current score: 319136
+best cover: 6214     current cover: 6297     best score: 319136     current score: 323149
+best cover: 6297     current cover: 6353     best score: 323149     current score: 325948
+best cover: 6353     current cover: 6384     best score: 325948     current score: 326882
+best cover: 6384     current cover: 6467     best score: 326882     current score: 330651
+best cover: 6467     current cover: 6491     best score: 330651     current score: 332149
+best cover: 6491     current cover: 6524     best score: 332149     current score: 333153
+best cover: 6524     current cover: 6535     best score: 333153     current score: 333685
+best cover: 6535     current cover: 6559     best score: 333685     current score: 335060
+best cover: 6559     current cover: 6587     best score: 335060     current score: 335996
+best cover: 6587     current cover: 6627     best score: 335996     current score: 338594
+best cover: 6627     current cover: 6695     best score: 338594     current score: 342457
+best cover: 6695     current cover: 6708     best score: 342457     current score: 343294
+best cover: 6708     current cover: 6799     best score: 343294     current score: 347594
+best cover: 6799     current cover: 6814     best score: 347594     current score: 348527
+best cover: 6814     current cover: 6816     best score: 348527     current score: 348665
+best cover: 6816     current cover: 6845     best score: 348665     current score: 350203
+best cover: 6845     current cover: 6844     best score: 350203     current score: 350085
+best cover: 6845     current cover: 6830     best score: 350203     current score: 349452
+best cover: 6845     current cover: 6828     best score: 350203     current score: 349258
+best cover: 6845     current cover: 6839     best score: 350203     current score: 349710
+best cover: 6845     current cover: 6837     best score: 350203     current score: 349814
+best cover: 6845     current cover: 6907     best score: 350203     current score: 353527
+best cover: 6907     current cover: 6907     best score: 353527     current score: 353527
+best cover: 6907     current cover: 6939     best score: 353527     current score: 354871
+best cover: 6939     current cover: 6939     best score: 354871     current score: 354871
+best cover: 6939     current cover: 6950     best score: 354871     current score: 355599
+best cover: 6950     current cover: 6950     best score: 355599     current score: 355599
+best cover: 6950     current cover: 6958     best score: 355599     current score: 355932
+best cover: 6958     current cover: 6958     best score: 355932     current score: 355932
+best cover: 6958     current cover: 6961     best score: 355932     current score: 356026
+best cover: 6961     current cover: 6961     best score: 356026     current score: 356026
+best cover: 6961     current cover: 6961     best score: 356026     current score: 356026
+best cover: 6961     current cover: 6959     best score: 356026     current score: 355777
+best cover: 6961     current cover: 6991     best score: 356026     current score: 357459
+best cover: 6991     current cover: 7006     best score: 357459     current score: 358242
+best cover: 7006     current cover: 7013     best score: 358242     current score: 358517
+best cover: 7013     current cover: 7013     best score: 358517     current score: 358517
+best cover: 7013     current cover: 7013     best score: 358517     current score: 358517
+best cover: 7013     current cover: 7006     best score: 358517     current score: 358242
+best cover: 7013     current cover: 7013     best score: 358517     current score: 358517
+best cover: 7013     current cover: 7003     best score: 358517     current score: 358120
+best cover: 7013     current cover: 7032     best score: 358517     current score: 359318
+best cover: 7032     current cover: 7062     best score: 359318     current score: 360501
+best cover: 7062     current cover: 7073     best score: 360501     current score: 361185
+best cover: 7073     current cover: 7083     best score: 361185     current score: 361429
+best cover: 7083     current cover: 7083     best score: 361429     current score: 361429
+best cover: 7083     current cover: 7083     best score: 361429     current score: 361429
+best cover: 7083     current cover: 7085     best score: 361429     current score: 361196
+best cover: 7085     current cover: 7083     best score: 361429     current score: 361429
+best cover: 7085     current cover: 7079     best score: 361429     current score: 361152
+best cover: 7085     current cover: 7113     best score: 361429     current score: 362373
+best cover: 7113     current cover: 7137     best score: 362373     current score: 363778
+best cover: 7137     current cover: 7160     best score: 363778     current score: 364504
+best cover: 7160     current cover: 7160     best score: 364504     current score: 364504
+best cover: 7160     current cover: 7160     best score: 364504     current score: 364504
+best cover: 7160     current cover: 7155     best score: 364504     current score: 364263
+best cover: 7160     current cover: 7160     best score: 364504     current score: 364504
+best cover: 7160     current cover: 7136     best score: 364504     current score: 363360
+best cover: 7160     current cover: 7160     best score: 364504     current score: 364504
+best cover: 7160     current cover: 7155     best score: 364504     current score: 364263
+best cover: 7160     current cover: 7160     best score: 364504     current score: 364504
+best cover: 7160     current cover: 7127     best score: 364504     current score: 363257
+best cover: 7160     current cover: 7160     best score: 364504     current score: 364504
+finish local search
+can't find a feasible solution
+only cover 7160 elements
+the score is: 364504
+the solution size is: 65
+5 57 73 106 112 120 191 211 226 297 
+302 312 317 322 328 374 443 461 549 565 
+601 604 652 698 758 760 780 828 840 878 
+895 901 928 955 1007 1074 1130 1156 1178 1220 
+1249 1269 1278 1376 1424 1439 1444 1484 1514 1548 
+1600 1634 1651 1698 1723 1728 1739 1750 1856 1873 
+1878 1903 1907 1924 1932 
+total score is 508587
+loss is 144083
+
+executing random7.txt
+finish read_data
+finish initial
+finish greedy
+after greedy, 5817 elements have been covered
+now the score is: 295232
+best cover: 5817     current cover: 5935     best score: 295232     current score: 301026
+best cover: 5935     current cover: 6008     best score: 301026     current score: 304752
+best cover: 6008     current cover: 6054     best score: 304752     current score: 307666
+best cover: 6054     current cover: 6104     best score: 307666     current score: 310412
+best cover: 6104     current cover: 6144     best score: 310412     current score: 312385
+best cover: 6144     current cover: 6176     best score: 312385     current score: 313765
+best cover: 6176     current cover: 6191     best score: 313765     current score: 314854
+best cover: 6191     current cover: 6242     best score: 314854     current score: 316912
+best cover: 6242     current cover: 6288     best score: 316912     current score: 319004
+best cover: 6288     current cover: 6333     best score: 319004     current score: 321288
+best cover: 6333     current cover: 6342     best score: 321288     current score: 321976
+best cover: 6342     current cover: 6417     best score: 321976     current score: 325463
+best cover: 6417     current cover: 6430     best score: 325463     current score: 326263
+best cover: 6430     current cover: 6439     best score: 326263     current score: 327085
+best cover: 6439     current cover: 6439     best score: 327085     current score: 327085
+best cover: 6439     current cover: 6424     best score: 327085     current score: 325711
+best cover: 6439     current cover: 6423     best score: 327085     current score: 325293
+best cover: 6439     current cover: 6424     best score: 327085     current score: 325711
+best cover: 6439     current cover: 6414     best score: 327085     current score: 324965
+best cover: 6439     current cover: 6424     best score: 327085     current score: 325711
+best cover: 6439     current cover: 6423     best score: 327085     current score: 325293
+best cover: 6439     current cover: 6424     best score: 327085     current score: 325711
+best cover: 6439     current cover: 6378     best score: 327085     current score: 323274
+best cover: 6439     current cover: 6433     best score: 327085     current score: 326057
+best cover: 6439     current cover: 6432     best score: 327085     current score: 326583
+best cover: 6439     current cover: 6436     best score: 327085     current score: 326538
+best cover: 6439     current cover: 6432     best score: 327085     current score: 326583
+best cover: 6439     current cover: 6467     best score: 327085     current score: 328925
+best cover: 6467     current cover: 6467     best score: 328925     current score: 328925
+best cover: 6467     current cover: 6508     best score: 328925     current score: 330953
+best cover: 6508     current cover: 6508     best score: 330953     current score: 330953
+best cover: 6508     current cover: 6516     best score: 330953     current score: 331288
+best cover: 6516     current cover: 6518     best score: 331288     current score: 331190
+best cover: 6518     current cover: 6516     best score: 331288     current score: 331288
+best cover: 6518     current cover: 6503     best score: 331288     current score: 330962
+best cover: 6518     current cover: 6577     best score: 331288     current score: 333990
+best cover: 6577     current cover: 6626     best score: 333990     current score: 336120
+best cover: 6626     current cover: 6655     best score: 336120     current score: 337735
+best cover: 6655     current cover: 6737     best score: 337735     current score: 341249
+best cover: 6737     current cover: 6758     best score: 341249     current score: 342787
+best cover: 6758     current cover: 6811     best score: 342787     current score: 345679
+best cover: 6811     current cover: 6821     best score: 345679     current score: 346803
+best cover: 6821     current cover: 6838     best score: 346803     current score: 347495
+best cover: 6838     current cover: 6856     best score: 347495     current score: 348611
+best cover: 6856     current cover: 6964     best score: 348611     current score: 353623
+best cover: 6964     current cover: 7016     best score: 353623     current score: 355838
+best cover: 7016     current cover: 7043     best score: 355838     current score: 357196
+best cover: 7043     current cover: 7068     best score: 357196     current score: 358496
+best cover: 7068     current cover: 7112     best score: 358496     current score: 360597
+best cover: 7112     current cover: 7128     best score: 360597     current score: 361629
+best cover: 7128     current cover: 7148     best score: 361629     current score: 362175
+best cover: 7148     current cover: 7159     best score: 362175     current score: 362582
+best cover: 7159     current cover: 7174     best score: 362582     current score: 363006
+best cover: 7174     current cover: 7201     best score: 363006     current score: 364169
+best cover: 7201     current cover: 7215     best score: 364169     current score: 364762
+best cover: 7215     current cover: 7259     best score: 364762     current score: 366942
+best cover: 7259     current cover: 7262     best score: 366942     current score: 367093
+best cover: 7262     current cover: 7286     best score: 367093     current score: 368387
+best cover: 7286     current cover: 7291     best score: 368387     current score: 368898
+best cover: 7291     current cover: 7278     best score: 368898     current score: 368777
+best cover: 7291     current cover: 7291     best score: 368898     current score: 368898
+finish local search
+can't find a feasible solution
+only cover 7291 elements
+the score is: 368898
+the solution size is: 66
+42 43 53 90 97 129 165 216 226 248 
+291 313 346 350 388 397 407 473 482 488 
+498 501 525 546 558 576 639 652 658 687 
+692 775 799 820 827 833 949 1035 1135 1141 
+1157 1236 1269 1287 1299 1309 1363 1372 1383 1466 
+1488 1492 1535 1542 1577 1609 1626 1627 1639 1670 
+1734 1813 1853 1885 1929 1986 
+total score is 506490
+loss is 137592
+
+executing random2.txt
+finish read_data
+finish initial
+finish greedy
+after greedy, 5414 elements have been covered
+now the score is: 274855
+best cover: 5414     current cover: 5634     best score: 274855     current score: 286437
+best cover: 5634     current cover: 5810     best score: 286437     current score: 295116
+best cover: 5810     current cover: 5984     best score: 295116     current score: 302742
+best cover: 5984     current cover: 6117     best score: 302742     current score: 309544
+best cover: 6117     current cover: 6292     best score: 309544     current score: 318562
+best cover: 6292     current cover: 6428     best score: 318562     current score: 325216
+best cover: 6428     current cover: 6481     best score: 325216     current score: 327598
+best cover: 6481     current cover: 6520     best score: 327598     current score: 329725
+best cover: 6520     current cover: 6565     best score: 329725     current score: 331726
+best cover: 6565     current cover: 6680     best score: 331726     current score: 337105
+best cover: 6680     current cover: 6725     best score: 337105     current score: 339664
+best cover: 6725     current cover: 6768     best score: 339664     current score: 342411
+best cover: 6768     current cover: 6798     best score: 342411     current score: 343703
+best cover: 6798     current cover: 6821     best score: 343703     current score: 345089
+best cover: 6821     current cover: 6908     best score: 345089     current score: 349574
+best cover: 6908     current cover: 6927     best score: 349574     current score: 350627
+best cover: 6927     current cover: 6938     best score: 350627     current score: 351531
+best cover: 6938     current cover: 6972     best score: 351531     current score: 352926
+best cover: 6972     current cover: 6974     best score: 352926     current score: 353153
+best cover: 6974     current cover: 6974     best score: 353153     current score: 353222
+best cover: 6974     current cover: 6981     best score: 353222     current score: 353331
+best cover: 6981     current cover: 7025     best score: 353331     current score: 355653
+best cover: 7025     current cover: 7042     best score: 355653     current score: 356293
+best cover: 7042     current cover: 7039     best score: 356293     current score: 356268
+best cover: 7042     current cover: 7042     best score: 356293     current score: 356293
+best cover: 7042     current cover: 7042     best score: 356293     current score: 356078
+best cover: 7042     current cover: 7062     best score: 356293     current score: 357018
+best cover: 7062     current cover: 7096     best score: 357018     current score: 358823
+best cover: 7096     current cover: 7110     best score: 358823     current score: 360016
+best cover: 7110     current cover: 7154     best score: 360016     current score: 362239
+best cover: 7154     current cover: 7154     best score: 362239     current score: 362239
+best cover: 7154     current cover: 7137     best score: 362239     current score: 361757
+best cover: 7154     current cover: 7128     best score: 362239     current score: 361672
+best cover: 7154     current cover: 7137     best score: 362239     current score: 361757
+best cover: 7154     current cover: 7128     best score: 362239     current score: 361540
+best cover: 7154     current cover: 7156     best score: 362239     current score: 362639
+best cover: 7156     current cover: 7176     best score: 362639     current score: 363243
+best cover: 7176     current cover: 7174     best score: 363243     current score: 363391
+best cover: 7174     current cover: 7170     best score: 363391     current score: 363299
+best cover: 7174     current cover: 7165     best score: 363391     current score: 363439
+best cover: 7165     current cover: 7213     best score: 363439     current score: 365812
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365781
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7211     best score: 365812     current score: 365477
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365781
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7211     best score: 365812     current score: 365477
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365781
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7211     best score: 365812     current score: 365477
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365781
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7211     best score: 365812     current score: 365477
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365781
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7211     best score: 365812     current score: 365477
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365781
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7211     best score: 365812     current score: 365477
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365781
+best cover: 7213     current cover: 7213     best score: 365812     current score: 365812
+finish local search
+can't find a feasible solution
+only cover 7213 elements
+the score is: 365812
+the solution size is: 62
+4 6 8 18 22 56 64 67 185 227 
+366 413 418 452 507 603 608 618 637 654 
+685 693 698 777 788 821 822 851 854 877 
+919 970 1033 1075 1089 1111 1202 1207 1279 1311 
+1322 1334 1413 1424 1448 1465 1470 1495 1500 1504 
+1523 1576 1667 1713 1736 1751 1775 1817 1829 1847 
+1916 1925 
+total score is 501728
+loss is 135916
+
+executing random0.txt
+finish read_data
+finish initial
+finish greedy
+after greedy, 5908 elements have been covered
+now the score is: 299342
+best cover: 5908     current cover: 6114     best score: 299342     current score: 309071
+best cover: 6114     current cover: 6247     best score: 309071     current score: 315654
+best cover: 6247     current cover: 6356     best score: 315654     current score: 321637
+best cover: 6356     current cover: 6456     best score: 321637     current score: 326689
+best cover: 6456     current cover: 6570     best score: 326689     current score: 332009
+best cover: 6570     current cover: 6670     best score: 332009     current score: 336886
+best cover: 6670     current cover: 6723     best score: 336886     current score: 339770
+best cover: 6723     current cover: 6773     best score: 339770     current score: 341847
+best cover: 6773     current cover: 6846     best score: 341847     current score: 346018
+best cover: 6846     current cover: 6878     best score: 346018     current score: 347416
+best cover: 6878     current cover: 6929     best score: 347416     current score: 350209
+best cover: 6929     current cover: 6971     best score: 350209     current score: 352608
+best cover: 6971     current cover: 7006     best score: 352608     current score: 354348
+best cover: 7006     current cover: 7029     best score: 354348     current score: 355368
+best cover: 7029     current cover: 7055     best score: 355368     current score: 356281
+best cover: 7055     current cover: 7065     best score: 356281     current score: 356719
+best cover: 7065     current cover: 7075     best score: 356719     current score: 357175
+best cover: 7075     current cover: 7062     best score: 357175     current score: 357285
+best cover: 7062     current cover: 7073     best score: 357285     current score: 358085
+best cover: 7073     current cover: 7073     best score: 358085     current score: 358085
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7059     best score: 358085     current score: 357100
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+best cover: 7073     current cover: 7050     best score: 358085     current score: 357001
+best cover: 7073     current cover: 7066     best score: 358085     current score: 357617
+finish local search
+can't find a feasible solution
+only cover 7073 elements
+the score is: 358085
+the solution size is: 67
+1 20 29 40 141 148 149 154 156 189 
+222 244 256 258 262 268 319 359 381 425 
+450 455 476 505 532 585 727 753 762 765 
+825 839 880 900 926 948 952 989 1020 1062 
+1063 1099 1176 1189 1207 1224 1228 1250 1276 1288 
+1295 1311 1325 1388 1399 1421 1516 1562 1578 1612 
+1692 1748 1826 1842 1887 1970 1971 
+total score is 504876
+loss is 146791
+
+executing random1.txt
+finish read_data
+finish initial
+finish greedy
+after greedy, 5767 elements have been covered
+now the score is: 294937
+best cover: 5767     current cover: 6008     best score: 294937     current score: 306517
+best cover: 6008     current cover: 6147     best score: 306517     current score: 313846
+best cover: 6147     current cover: 6274     best score: 313846     current score: 319971
+best cover: 6274     current cover: 6371     best score: 319971     current score: 324725
+best cover: 6371     current cover: 6496     best score: 324725     current score: 331470
+best cover: 6496     current cover: 6599     best score: 331470     current score: 336865
+best cover: 6599     current cover: 6669     best score: 336865     current score: 340007
+best cover: 6669     current cover: 6733     best score: 340007     current score: 342825
+best cover: 6733     current cover: 6795     best score: 342825     current score: 346083
+best cover: 6795     current cover: 6838     best score: 346083     current score: 348086
+best cover: 6838     current cover: 6875     best score: 348086     current score: 349755
+best cover: 6875     current cover: 6886     best score: 349755     current score: 351232
+best cover: 6886     current cover: 6886     best score: 351232     current score: 351232
+best cover: 6886     current cover: 6885     best score: 351232     current score: 351173
+best cover: 6886     current cover: 6892     best score: 351232     current score: 351309
+best cover: 6892     current cover: 6950     best score: 351309     current score: 353738
+best cover: 6950     current cover: 6983     best score: 353738     current score: 355169
+best cover: 6983     current cover: 7006     best score: 355169     current score: 356591
+best cover: 7006     current cover: 7074     best score: 356591     current score: 359766
+best cover: 7074     current cover: 7087     best score: 359766     current score: 360420
+best cover: 7087     current cover: 7128     best score: 360420     current score: 361843
+best cover: 7128     current cover: 7152     best score: 361843     current score: 362694
+best cover: 7152     current cover: 7190     best score: 362694     current score: 364956
+best cover: 7190     current cover: 7225     best score: 364956     current score: 366017
+best cover: 7225     current cover: 7248     best score: 366017     current score: 366893
+best cover: 7248     current cover: 7259     best score: 366893     current score: 367576
+best cover: 7259     current cover: 7271     best score: 367576     current score: 368840
+best cover: 7271     current cover: 7321     best score: 368840     current score: 371264
+best cover: 7321     current cover: 7329     best score: 371264     current score: 372051
+best cover: 7329     current cover: 7326     best score: 372051     current score: 372122
+best cover: 7326     current cover: 7375     best score: 372122     current score: 374391
+best cover: 7375     current cover: 7375     best score: 374391     current score: 374391
+best cover: 7375     current cover: 7397     best score: 374391     current score: 375773
+best cover: 7397     current cover: 7397     best score: 375773     current score: 375773
+best cover: 7397     current cover: 7414     best score: 375773     current score: 376662
+best cover: 7414     current cover: 7414     best score: 376662     current score: 376662
+best cover: 7414     current cover: 7435     best score: 376662     current score: 377511
+best cover: 7435     current cover: 7435     best score: 377511     current score: 377511
+best cover: 7435     current cover: 7442     best score: 377511     current score: 377908
+best cover: 7442     current cover: 7442     best score: 377908     current score: 377908
+best cover: 7442     current cover: 7442     best score: 377908     current score: 377890
+best cover: 7442     current cover: 7400     best score: 377908     current score: 376217
+best cover: 7442     current cover: 7431     best score: 377908     current score: 377672
+best cover: 7442     current cover: 7438     best score: 377908     current score: 378340
+best cover: 7438     current cover: 7456     best score: 378340     current score: 378772
+best cover: 7456     current cover: 7456     best score: 378772     current score: 378772
+best cover: 7456     current cover: 7456     best score: 378772     current score: 378772
+best cover: 7456     current cover: 7451     best score: 378772     current score: 378561
+best cover: 7456     current cover: 7459     best score: 378772     current score: 378866
+best cover: 7459     current cover: 7498     best score: 378866     current score: 380807
+best cover: 7498     current cover: 7503     best score: 380807     current score: 380956
+best cover: 7503     current cover: 7503     best score: 380956     current score: 380956
+best cover: 7503     current cover: 7503     best score: 380956     current score: 380956
+best cover: 7503     current cover: 7498     best score: 380956     current score: 380807
+best cover: 7503     current cover: 7503     best score: 380956     current score: 380956
+best cover: 7503     current cover: 7496     best score: 380956     current score: 380673
+best cover: 7503     current cover: 7503     best score: 380956     current score: 380956
+best cover: 7503     current cover: 7498     best score: 380956     current score: 380807
+best cover: 7503     current cover: 7503     best score: 380956     current score: 380956
+best cover: 7503     current cover: 7496     best score: 380956     current score: 380673
+best cover: 7503     current cover: 7503     best score: 380956     current score: 380956
+best cover: 7503     current cover: 7498     best score: 380956     current score: 380807
+best cover: 7503     current cover: 7503     best score: 380956     current score: 380956
+finish local search
+can't find a feasible solution
+only cover 7503 elements
+the score is: 380956
+the solution size is: 68
+31 66 78 80 103 158 175 187 201 223 
+240 260 270 271 276 371 468 487 489 530 
+579 623 626 632 643 646 673 676 683 691 
+814 828 839 849 861 938 1061 1064 1089 1103 
+1192 1195 1202 1204 1227 1228 1236 1239 1246 1322 
+1381 1385 1468 1517 1561 1576 1616 1646 1718 1730 
+1742 1774 1839 1851 1905 1924 1973 1992 
+total score is 507419
+loss is 126463
+
+executing random9.txt
+finish read_data
+finish initial
+finish greedy
+after greedy, 5772 elements have been covered
+now the score is: 291462
+best cover: 5772     current cover: 5999     best score: 291462     current score: 303684
+best cover: 5999     current cover: 6131     best score: 303684     current score: 310542
+best cover: 6131     current cover: 6244     best score: 310542     current score: 315735
+best cover: 6244     current cover: 6324     best score: 315735     current score: 319815
+best cover: 6324     current cover: 6384     best score: 319815     current score: 322986
+best cover: 6384     current cover: 6444     best score: 322986     current score: 325374
+best cover: 6444     current cover: 6483     best score: 325374     current score: 327303
+best cover: 6483     current cover: 6523     best score: 327303     current score: 329389
+best cover: 6523     current cover: 6565     best score: 329389     current score: 331242
+best cover: 6565     current cover: 6595     best score: 331242     current score: 332875
+best cover: 6595     current cover: 6619     best score: 332875     current score: 333879
+best cover: 6619     current cover: 6649     best score: 333879     current score: 334884
+best cover: 6649     current cover: 6689     best score: 334884     current score: 336972
+best cover: 6689     current cover: 6697     best score: 336972     current score: 337601
+best cover: 6697     current cover: 6712     best score: 337601     current score: 338127
+best cover: 6712     current cover: 6722     best score: 338127     current score: 338500
+best cover: 6722     current cover: 6752     best score: 338500     current score: 340154
+best cover: 6752     current cover: 6758     best score: 340154     current score: 340448
+best cover: 6758     current cover: 6760     best score: 340448     current score: 340479
+best cover: 6760     current cover: 6758     best score: 340479     current score: 340448
+best cover: 6760     current cover: 6760     best score: 340479     current score: 340473
+best cover: 6760     current cover: 6759     best score: 340479     current score: 340359
+best cover: 6760     current cover: 6776     best score: 340479     current score: 341560
+best cover: 6776     current cover: 6776     best score: 341560     current score: 341716
+best cover: 6776     current cover: 6774     best score: 341716     current score: 341746
+best cover: 6774     current cover: 6776     best score: 341746     current score: 341716
+best cover: 6776     current cover: 6816     best score: 341746     current score: 343577
+best cover: 6816     current cover: 6818     best score: 343577     current score: 343727
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343672
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6816     best score: 343727     current score: 343577
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343672
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6816     best score: 343727     current score: 343577
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343672
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6816     best score: 343727     current score: 343577
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343672
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6816     best score: 343727     current score: 343577
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343672
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6816     best score: 343727     current score: 343577
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343672
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6816     best score: 343727     current score: 343577
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343672
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6816     best score: 343727     current score: 343577
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343672
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6816     best score: 343727     current score: 343577
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343672
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+best cover: 6818     current cover: 6816     best score: 343727     current score: 343577
+best cover: 6818     current cover: 6818     best score: 343727     current score: 343727
+finish local search
+can't find a feasible solution
+only cover 6818 elements
+the score is: 343727
+the solution size is: 62
+12 71 91 150 173 180 201 254 287 324 
+331 453 480 492 523 542 559 563 570 572 
+585 588 596 607 641 674 739 741 760 795 
+910 934 937 1024 1042 1047 1061 1100 1227 1231 
+1301 1342 1404 1456 1484 1485 1511 1547 1560 1569 
+1648 1666 1681 1683 1786 1790 1820 1826 1864 1886 
+1915 1977 
+total score is 503596
+loss is 159869
+
+executing random3.txt
+finish read_data
+finish initial
+finish greedy
+after greedy, 5829 elements have been covered
+now the score is: 299600
+best cover: 5829     current cover: 5992     best score: 299600     current score: 307609
+best cover: 5992     current cover: 6098     best score: 307609     current score: 312035
+best cover: 6098     current cover: 6145     best score: 312035     current score: 314878
+best cover: 6145     current cover: 6244     best score: 314878     current score: 320125
+best cover: 6244     current cover: 6306     best score: 320125     current score: 323369
+best cover: 6306     current cover: 6352     best score: 323369     current score: 325971
+best cover: 6352     current cover: 6389     best score: 325971     current score: 327877
+best cover: 6389     current cover: 6599     best score: 327877     current score: 338309
+best cover: 6599     current cover: 6634     best score: 338309     current score: 340560
+best cover: 6634     current cover: 6681     best score: 340560     current score: 343000
+best cover: 6681     current cover: 6733     best score: 343000     current score: 345263
+best cover: 6733     current cover: 6762     best score: 345263     current score: 346469
+best cover: 6762     current cover: 6847     best score: 346469     current score: 350527
+best cover: 6847     current cover: 6852     best score: 350527     current score: 351013
+best cover: 6852     current cover: 6878     best score: 351013     current score: 352179
+best cover: 6878     current cover: 6924     best score: 352179     current score: 354330
+best cover: 6924     current cover: 6966     best score: 354330     current score: 356403
+best cover: 6966     current cover: 6977     best score: 356403     current score: 356575
+best cover: 6977     current cover: 7008     best score: 356575     current score: 358337
+best cover: 7008     current cover: 7012     best score: 358337     current score: 358605
+best cover: 7012     current cover: 7004     best score: 358605     current score: 358711
+best cover: 7004     current cover: 7012     best score: 358711     current score: 358605
+best cover: 7012     current cover: 7006     best score: 358711     current score: 358003
+best cover: 7012     current cover: 6943     best score: 358711     current score: 354909
+best cover: 7012     current cover: 7007     best score: 358711     current score: 358039
+best cover: 7012     current cover: 7006     best score: 358711     current score: 358003
+best cover: 7012     current cover: 7007     best score: 358711     current score: 358039
+best cover: 7012     current cover: 7012     best score: 358711     current score: 357955
+best cover: 7012     current cover: 7014     best score: 358711     current score: 358382
+best cover: 7014     current cover: 7054     best score: 358711     current score: 360598
+best cover: 7054     current cover: 7070     best score: 360598     current score: 361036
+best cover: 7070     current cover: 7070     best score: 361036     current score: 361036
+best cover: 7070     current cover: 7088     best score: 361036     current score: 362740
+best cover: 7088     current cover: 7087     best score: 362740     current score: 362777
+best cover: 7087     current cover: 7088     best score: 362777     current score: 362740
+best cover: 7088     current cover: 7132     best score: 362777     current score: 364664
+best cover: 7132     current cover: 7130     best score: 364664     current score: 364651
+best cover: 7132     current cover: 7132     best score: 364664     current score: 364664
+best cover: 7132     current cover: 7133     best score: 364664     current score: 364520
+best cover: 7133     current cover: 7132     best score: 364664     current score: 364664
+best cover: 7133     current cover: 7130     best score: 364664     current score: 364651
+best cover: 7133     current cover: 7132     best score: 364664     current score: 364664
+best cover: 7133     current cover: 7133     best score: 364664     current score: 364520
+best cover: 7133     current cover: 7132     best score: 364664     current score: 364664
+best cover: 7133     current cover: 7130     best score: 364664     current score: 364651
+best cover: 7133     current cover: 7132     best score: 364664     current score: 364664
+best cover: 7133     current cover: 7133     best score: 364664     current score: 364520
+best cover: 7133     current cover: 7132     best score: 364664     current score: 364664
+best cover: 7133     current cover: 7130     best score: 364664     current score: 364651
+best cover: 7133     current cover: 7132     best score: 364664     current score: 364664
+best cover: 7133     current cover: 7133     best score: 364664     current score: 364520
+best cover: 7133     current cover: 7132     best score: 364664     current score: 364664
+best cover: 7133     current cover: 7130     best score: 364664     current score: 364651
+best cover: 7133     current cover: 7132     best score: 364664     current score: 364664
+best cover: 7133     current cover: 7133     best score: 364664     current score: 364520
+best cover: 7133     current cover: 7132     best score: 364664     current score: 364664
+finish local search
+can't find a feasible solution
+only cover 7133 elements
+the score is: 364664
+the solution size is: 65
+12 29 35 109 244 270 281 342 367 376 
+397 443 487 494 549 553 589 660 664 737 
+781 831 836 850 867 892 974 975 976 1002 
+1004 1021 1071 1115 1143 1159 1201 1219 1246 1256 
+1342 1356 1362 1381 1387 1403 1404 1409 1415 1500 
+1556 1567 1583 1592 1641 1660 1679 1723 1762 1793 
+1831 1833 1839 1901 1979 
+total score is 508053
+loss is 143389
+
+executing random5.txt
+finish read_data
+finish initial
+finish greedy
+after greedy, 5514 elements have been covered
+now the score is: 274569
+best cover: 5514     current cover: 5735     best score: 274569     current score: 285687
+best cover: 5735     current cover: 5860     best score: 285687     current score: 291162
+best cover: 5860     current cover: 5919     best score: 291162     current score: 295149
+best cover: 5919     current cover: 5996     best score: 295149     current score: 298858
+best cover: 5996     current cover: 6069     best score: 298858     current score: 302257
+best cover: 6069     current cover: 6106     best score: 302257     current score: 304025
+best cover: 6106     current cover: 6127     best score: 304025     current score: 305666
+best cover: 6127     current cover: 6154     best score: 305666     current score: 306772
+best cover: 6154     current cover: 6177     best score: 306772     current score: 307604
+best cover: 6177     current cover: 6220     best score: 307604     current score: 309752
+best cover: 6220     current cover: 6269     best score: 309752     current score: 311786
+best cover: 6269     current cover: 6336     best score: 311786     current score: 314666
+best cover: 6336     current cover: 6378     best score: 314666     current score: 316798
+best cover: 6378     current cover: 6422     best score: 316798     current score: 318581
+best cover: 6422     current cover: 6433     best score: 318581     current score: 318972
+best cover: 6433     current cover: 6501     best score: 318972     current score: 322766
+best cover: 6501     current cover: 6531     best score: 322766     current score: 324615
+best cover: 6531     current cover: 6560     best score: 324615     current score: 326015
+best cover: 6560     current cover: 6624     best score: 326015     current score: 328976
+best cover: 6624     current cover: 6697     best score: 328976     current score: 331541
+best cover: 6697     current cover: 6716     best score: 331541     current score: 332804
+best cover: 6716     current cover: 6720     best score: 332804     current score: 333513
+best cover: 6720     current cover: 6720     best score: 333513     current score: 333513
+best cover: 6720     current cover: 6721     best score: 333513     current score: 333147
+best cover: 6721     current cover: 6720     best score: 333513     current score: 333513
+best cover: 6721     current cover: 6700     best score: 333513     current score: 332773
+best cover: 6721     current cover: 6697     best score: 333513     current score: 332583
+best cover: 6721     current cover: 6727     best score: 333513     current score: 333972
+best cover: 6727     current cover: 6728     best score: 333972     current score: 333787
+best cover: 6728     current cover: 6744     best score: 333972     current score: 334671
+best cover: 6744     current cover: 6753     best score: 334671     current score: 335057
+best cover: 6753     current cover: 6807     best score: 335057     current score: 337376
+best cover: 6807     current cover: 6832     best score: 337376     current score: 338293
+best cover: 6832     current cover: 6828     best score: 338293     current score: 338224
+best cover: 6832     current cover: 6870     best score: 338293     current score: 340686
+best cover: 6870     current cover: 6870     best score: 340686     current score: 340686
+best cover: 6870     current cover: 6895     best score: 340686     current score: 341908
+best cover: 6895     current cover: 6895     best score: 341908     current score: 341908
+best cover: 6895     current cover: 6905     best score: 341908     current score: 342220
+best cover: 6905     current cover: 6905     best score: 342220     current score: 342220
+best cover: 6905     current cover: 6916     best score: 342220     current score: 342852
+best cover: 6916     current cover: 6916     best score: 342852     current score: 342852
+best cover: 6916     current cover: 6917     best score: 342852     current score: 342934
+best cover: 6917     current cover: 6917     best score: 342934     current score: 342934
+best cover: 6917     current cover: 6917     best score: 342934     current score: 342934
+best cover: 6917     current cover: 6925     best score: 342934     current score: 343303
+best cover: 6925     current cover: 6946     best score: 343303     current score: 344188
+best cover: 6946     current cover: 6946     best score: 344188     current score: 344188
+best cover: 6946     current cover: 6946     best score: 344188     current score: 344188
+best cover: 6946     current cover: 6939     best score: 344188     current score: 343913
+best cover: 6946     current cover: 6946     best score: 344188     current score: 344188
+best cover: 6946     current cover: 6941     best score: 344188     current score: 343738
+best cover: 6946     current cover: 6954     best score: 344188     current score: 344345
+best cover: 6954     current cover: 6981     best score: 344345     current score: 345584
+best cover: 6981     current cover: 6992     best score: 345584     current score: 345542
+best cover: 6992     current cover: 6981     best score: 345584     current score: 345584
+finish local search
+can't find a feasible solution
+only cover 6992 elements
+the score is: 345584
+the solution size is: 65
+6 71 123 147 183 188 237 257 328 350 
+415 422 451 462 516 522 540 551 620 626 
+635 646 668 690 691 755 819 828 840 846 
+898 917 938 948 950 972 1014 1047 1075 1110 
+1176 1178 1184 1224 1261 1268 1276 1403 1422 1509 
+1525 1551 1577 1624 1626 1648 1656 1661 1703 1712 
+1736 1815 1860 1884 1924 
+total score is 497655
+loss is 152071
+
+executing random4.txt
+finish read_data
+finish initial
+finish greedy
+after greedy, 5786 elements have been covered
+now the score is: 290030
+best cover: 5786     current cover: 5894     best score: 290030     current score: 295965
+best cover: 5894     current cover: 5974     best score: 295965     current score: 300466
+best cover: 5974     current cover: 6050     best score: 300466     current score: 304650
+best cover: 6050     current cover: 6100     best score: 304650     current score: 307062
+best cover: 6100     current cover: 6139     best score: 307062     current score: 309294
+best cover: 6139     current cover: 6256     best score: 309294     current score: 314803
+best cover: 6256     current cover: 6294     best score: 314803     current score: 316707
+best cover: 6294     current cover: 6323     best score: 316707     current score: 318803
+best cover: 6323     current cover: 6403     best score: 318803     current score: 323099
+best cover: 6403     current cover: 6457     best score: 323099     current score: 325491
+best cover: 6457     current cover: 6472     best score: 325491     current score: 326366
+best cover: 6472     current cover: 6492     best score: 326366     current score: 327025
+best cover: 6492     current cover: 6505     best score: 327025     current score: 327697
+best cover: 6505     current cover: 6511     best score: 327697     current score: 328102
+best cover: 6511     current cover: 6561     best score: 328102     current score: 330277
+best cover: 6561     current cover: 6577     best score: 330277     current score: 331685
+best cover: 6577     current cover: 6611     best score: 331685     current score: 332910
+best cover: 6611     current cover: 6631     best score: 332910     current score: 333784
+best cover: 6631     current cover: 6647     best score: 333784     current score: 334459
+best cover: 6647     current cover: 6692     best score: 334459     current score: 336896
+best cover: 6692     current cover: 6742     best score: 336896     current score: 338973
+best cover: 6742     current cover: 6758     best score: 338973     current score: 339857
+best cover: 6758     current cover: 6776     best score: 339857     current score: 340076
+best cover: 6776     current cover: 6794     best score: 340076     current score: 341057
+best cover: 6794     current cover: 6792     best score: 341057     current score: 341043
+best cover: 6794     current cover: 6846     best score: 341057     current score: 343658
+best cover: 6846     current cover: 6847     best score: 343658     current score: 344303
+best cover: 6847     current cover: 6922     best score: 344303     current score: 347412
+best cover: 6922     current cover: 6989     best score: 347412     current score: 350380
+best cover: 6989     current cover: 7008     best score: 350380     current score: 351242
+best cover: 7008     current cover: 7016     best score: 351242     current score: 351875
+best cover: 7016     current cover: 7034     best score: 351875     current score: 352665
+best cover: 7034     current cover: 7047     best score: 352665     current score: 353247
+best cover: 7047     current cover: 7059     best score: 353247     current score: 353630
+best cover: 7059     current cover: 7096     best score: 353630     current score: 355538
+best cover: 7096     current cover: 7145     best score: 355538     current score: 358301
+best cover: 7145     current cover: 7145     best score: 358301     current score: 358301
+best cover: 7145     current cover: 7129     best score: 358301     current score: 357210
+best cover: 7145     current cover: 7124     best score: 358301     current score: 357016
+best cover: 7145     current cover: 7129     best score: 358301     current score: 357210
+best cover: 7145     current cover: 7129     best score: 358301     current score: 356992
+best cover: 7145     current cover: 7129     best score: 358301     current score: 357210
+best cover: 7145     current cover: 7124     best score: 358301     current score: 357016
+best cover: 7145     current cover: 7129     best score: 358301     current score: 357210
+best cover: 7145     current cover: 7129     best score: 358301     current score: 356992
+best cover: 7145     current cover: 7129     best score: 358301     current score: 357210
+best cover: 7145     current cover: 7124     best score: 358301     current score: 357016
+best cover: 7145     current cover: 7129     best score: 358301     current score: 357210
+best cover: 7145     current cover: 7129     best score: 358301     current score: 356992
+best cover: 7145     current cover: 7129     best score: 358301     current score: 357210
+best cover: 7145     current cover: 7124     best score: 358301     current score: 357016
+best cover: 7145     current cover: 7129     best score: 358301     current score: 357210
+best cover: 7145     current cover: 7129     best score: 358301     current score: 356992
+best cover: 7145     current cover: 7129     best score: 358301     current score: 357210
+best cover: 7145     current cover: 7124     best score: 358301     current score: 357016
+best cover: 7145     current cover: 7129     best score: 358301     current score: 357210
+finish local search
+can't find a feasible solution
+only cover 7145 elements
+the score is: 358301
+the solution size is: 66
+101 102 167 280 289 293 321 334 362 374 
+386 406 459 470 482 527 528 553 573 578 
+647 664 692 730 731 775 801 823 878 912 
+942 945 946 961 975 978 1057 1083 1084 1088 
+1118 1152 1173 1240 1300 1343 1344 1348 1350 1400 
+1483 1535 1552 1584 1593 1601 1659 1787 1802 1805 
+1834 1859 1877 1891 1903 1966 
+total score is 500536
+loss is 142235
+
+executing random8.txt
+finish read_data
+finish initial
+finish greedy
+after greedy, 5748 elements have been covered
+now the score is: 289089
+best cover: 5748     current cover: 5881     best score: 289089     current score: 295275
+best cover: 5881     current cover: 6021     best score: 295275     current score: 302092
+best cover: 6021     current cover: 6131     best score: 302092     current score: 307854
+best cover: 6131     current cover: 6187     best score: 307854     current score: 310970
+best cover: 6187     current cover: 6243     best score: 310970     current score: 313814
+best cover: 6243     current cover: 6281     best score: 313814     current score: 315393
+best cover: 6281     current cover: 6309     best score: 315393     current score: 316695
+best cover: 6309     current cover: 6334     best score: 316695     current score: 317781
+best cover: 6334     current cover: 6386     best score: 317781     current score: 320332
+best cover: 6386     current cover: 6412     best score: 320332     current score: 322097
+best cover: 6412     current cover: 6428     best score: 322097     current score: 323069
+best cover: 6428     current cover: 6443     best score: 323069     current score: 323759
+best cover: 6443     current cover: 6455     best score: 323759     current score: 324413
+best cover: 6455     current cover: 6506     best score: 324413     current score: 326733
+best cover: 6506     current cover: 6544     best score: 326733     current score: 327573
+best cover: 6544     current cover: 6586     best score: 327573     current score: 329452
+best cover: 6586     current cover: 6699     best score: 329452     current score: 335152
+best cover: 6699     current cover: 6789     best score: 335152     current score: 339828
+best cover: 6789     current cover: 6819     best score: 339828     current score: 341181
+best cover: 6819     current cover: 6843     best score: 341181     current score: 341769
+best cover: 6843     current cover: 6871     best score: 341769     current score: 342724
+best cover: 6871     current cover: 6880     best score: 342724     current score: 342969
+best cover: 6880     current cover: 6937     best score: 342969     current score: 345218
+best cover: 6937     current cover: 6942     best score: 345218     current score: 345411
+best cover: 6942     current cover: 7020     best score: 345411     current score: 349311
+best cover: 7020     current cover: 7048     best score: 349311     current score: 350730
+best cover: 7048     current cover: 7080     best score: 350730     current score: 352792
+best cover: 7080     current cover: 7076     best score: 352792     current score: 352865
+best cover: 7076     current cover: 7091     best score: 352865     current score: 353760
+best cover: 7091     current cover: 7095     best score: 353760     current score: 353743
+best cover: 7095     current cover: 7121     best score: 353760     current score: 355183
+best cover: 7121     current cover: 7121     best score: 355183     current score: 355183
+best cover: 7121     current cover: 7116     best score: 355183     current score: 355248
+best cover: 7116     current cover: 7116     best score: 355248     current score: 355248
+best cover: 7116     current cover: 7119     best score: 355248     current score: 355739
+best cover: 7119     current cover: 7119     best score: 355739     current score: 355739
+best cover: 7119     current cover: 7161     best score: 355739     current score: 357701
+best cover: 7161     current cover: 7161     best score: 357701     current score: 357701
+best cover: 7161     current cover: 7174     best score: 357701     current score: 358047
+best cover: 7174     current cover: 7174     best score: 358047     current score: 358047
+best cover: 7174     current cover: 7177     best score: 358047     current score: 358449
+best cover: 7177     current cover: 7177     best score: 358449     current score: 358449
+best cover: 7177     current cover: 7179     best score: 358449     current score: 358481
+best cover: 7179     current cover: 7179     best score: 358481     current score: 358481
+best cover: 7179     current cover: 7179     best score: 358481     current score: 358481
+best cover: 7179     current cover: 7172     best score: 358481     current score: 357843
+best cover: 7179     current cover: 7179     best score: 358481     current score: 358481
+best cover: 7179     current cover: 7162     best score: 358481     current score: 357392
+best cover: 7179     current cover: 7179     best score: 358481     current score: 358481
+best cover: 7179     current cover: 7172     best score: 358481     current score: 357843
+best cover: 7179     current cover: 7179     best score: 358481     current score: 358481
+best cover: 7179     current cover: 7162     best score: 358481     current score: 357392
+best cover: 7179     current cover: 7179     best score: 358481     current score: 358481
+best cover: 7179     current cover: 7172     best score: 358481     current score: 357843
+best cover: 7179     current cover: 7179     best score: 358481     current score: 358481
+best cover: 7179     current cover: 7162     best score: 358481     current score: 357392
+best cover: 7179     current cover: 7179     best score: 358481     current score: 358481
+finish local search
+can't find a feasible solution
+only cover 7179 elements
+the score is: 358481
+the solution size is: 64
+13 45 120 155 185 195 228 367 391 474 
+485 506 519 553 664 668 701 707 726 731 
+744 830 842 850 874 876 900 905 994 997 
+999 1003 1039 1145 1223 1245 1250 1260 1276 1313 
+1363 1386 1404 1417 1444 1476 1485 1511 1530 1543 
+1561 1649 1711 1720 1755 1799 1858 1860 1895 1943 
+1948 1976 1986 1994 
+total score is 500389
+loss is 141908
 
-finish pre_read
-the element 67320 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 3
-1921 1934 1941 
-add 67320 into 1313
-
-finish pre_read
-the element 52324 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 4
-1313 1921 1934 1941 
-add 52324 into 181
-
-finish pre_read
-the element 45038 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 5
-181 1313 1921 1934 1941 
-add 45038 into 892
-
-finish pre_read
-the element 34645 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 6
-181 892 1313 1921 1934 1941 
-add 34645 into 1712
-
-finish pre_read
-the element 34645 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 6
-181 892 1313 1921 1934 1941 
-add 34645 into 1481
-
-finish pre_read
-the element 71427 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 9
-181 779 892 1313 1481 1921 1934 1941 1963 
-add 71427 into 1594
-
-finish pre_read
-the element 1922 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 10
-181 779 892 1313 1481 1594 1921 1934 1941 1963 
-
-add 1922 into 1174
-
-finish pre_read
-the element 1922 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 10
-181 779 892 1313 1481 1594 1921 1934 1941 1963 
-
-add 1922 into 1286
-
-finish pre_read
-the element 1922 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 10
-181 779 892 1313 1481 1594 1921 1934 1941 1963 
-
-add 1922 into 1859
-
-finish pre_read
-the element 3098 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 11
-181 779 892 1313 1481 1594 1859 1921 1934 1941 
-1963 
-add 3098 into 1662
-
-finish pre_read
-the element 3098 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 11
-181 779 892 1313 1481 1594 1859 1921 1934 1941 
-1963 
-add 3098 into 1370
-
-finish pre_read
-the element 3098 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 11
-181 779 892 1313 1481 1594 1859 1921 1934 1941 
-1963 
-add 3098 into 729
-
-finish pre_read
-the element 46210 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 12
-181 729 779 892 1313 1481 1594 1859 1921 1934 
-1941 1963 
-add 46210 into 1177
-
-finish pre_read
-the element 99636 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 14
-181 729 779 892 1177 1313 1481 1594 1859 1921 
-1934 1941 1954 1963 
-add 99636 into 82
-
-finish pre_read
-the element 99636 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 14
-181 729 779 892 1177 1313 1481 1594 1859 1921 
-1934 1941 1954 1963 
-add 99636 into 1981
-
-finish pre_read
-the element 99636 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 14
-181 729 779 892 1177 1313 1481 1594 1859 1921 
-1934 1941 1954 1963 
-add 99636 into 1747
-
-finish pre_read
-the element 99636 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 14
-181 729 779 892 1177 1313 1481 1594 1859 1921 
-1934 1941 1954 1963 
-add 99636 into 108
-
-finish pre_read
-the element 99636 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 14
-181 729 779 892 1177 1313 1481 1594 1859 1921 
-1934 1941 1954 1963 
-add 99636 into 1276
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1082
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 947
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1088
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 20
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 356
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1413
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1893
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 188
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1685
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1060
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1173
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 817
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 725
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1354
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1709
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 437
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1188
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1655
-
-finish pre_read
-the element 66162 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 15
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 
-add 66162 into 1963
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 826
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1866
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 92
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 488
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1237
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1173
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1665
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1671
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1155
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1413
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1780
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 431
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 495
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1079
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1871
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 867
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1435
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1285
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1112
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1975
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1322
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 172
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 1148
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 491
-
-finish pre_read
-the element 7771 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 16
-181 729 779 892 1177 1276 1313 1481 1594 1859 
-1921 1934 1941 1954 1963 1980 
-add 7771 into 897
-
-finish pre_read
-the element 23628 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 17
-181 729 779 892 897 1177 1276 1313 1481 1594 
-1859 1921 1934 1941 1954 1963 1980 
-add 23628 into 855
-
-finish pre_read
-the element 23628 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 17
-181 729 779 892 897 1177 1276 1313 1481 1594 
-1859 1921 1934 1941 1954 1963 1980 
-add 23628 into 553
-
-finish pre_read
-the element 21520 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 18
-181 553 729 779 892 897 1177 1276 1313 1481 
-1594 1859 1921 1934 1941 1954 1963 1980 
-add 21520 into 1686
-
-finish pre_read
-the element 21520 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 18
-181 553 729 779 892 897 1177 1276 1313 1481 
-1594 1859 1921 1934 1941 1954 1963 1980 
-add 21520 into 395
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 560
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1650
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1221
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 427
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 94
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1709
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1664
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1619
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1727
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1687
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 774
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1492
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1467
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1557
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1781
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 1207
-
-finish pre_read
-the element 74402 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 19
-181 395 553 729 779 892 897 1177 1276 1313 
-1481 1594 1859 1921 1934 1941 1954 1963 1980 
-add 74402 into 333
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 1418
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 671
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 309
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 1092
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 844
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 1809
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 1936
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 93
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 1016
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 489
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 132
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 1411
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 1049
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 134
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 632
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 1828
-
-finish pre_read
-the element 81617 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 21
-181 333 395 553 729 779 892 897 1177 1276 
-1313 1481 1594 1690 1859 1921 1934 1941 1954 1963 
-1980 
-add 81617 into 228
-
-finish pre_read
-the element 46321 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 23
-181 228 333 395 553 729 779 892 897 1177 
-1276 1313 1481 1594 1690 1691 1859 1921 1934 1941 
-1954 1963 1980 
-add 46321 into 694
-
-finish pre_read
-the element 46321 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 23
-181 228 333 395 553 729 779 892 897 1177 
-1276 1313 1481 1594 1690 1691 1859 1921 1934 1941 
-1954 1963 1980 
-add 46321 into 1844
-
-finish pre_read
-the element 46321 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 23
-181 228 333 395 553 729 779 892 897 1177 
-1276 1313 1481 1594 1690 1691 1859 1921 1934 1941 
-1954 1963 1980 
-add 46321 into 199
-
-finish pre_read
-the element 23391 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 24
-181 199 228 333 395 553 729 779 892 897 
-1177 1276 1313 1481 1594 1690 1691 1859 1921 1934 
-1941 1954 1963 1980 
-add 23391 into 773
-
-finish pre_read
-the element 67889 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 25
-181 199 228 333 395 553 729 773 779 892 
-897 1177 1276 1313 1481 1594 1690 1691 1859 1921 
-1934 1941 1954 1963 1980 
-add 67889 into 1532
-
-finish pre_read
-the element 67889 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 25
-181 199 228 333 395 553 729 773 779 892 
-897 1177 1276 1313 1481 1594 1690 1691 1859 1921 
-1934 1941 1954 1963 1980 
-add 67889 into 1326
-
-finish pre_read
-the element 67889 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 25
-181 199 228 333 395 553 729 773 779 892 
-897 1177 1276 1313 1481 1594 1690 1691 1859 1921 
-1934 1941 1954 1963 1980 
-add 67889 into 265
-
-finish pre_read
-the element 67889 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 25
-181 199 228 333 395 553 729 773 779 892 
-897 1177 1276 1313 1481 1594 1690 1691 1859 1921 
-1934 1941 1954 1963 1980 
-add 67889 into 999
-
-finish pre_read
-the element 12919 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 28
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1633 1690 1691 
-1751 1859 1921 1934 1941 1954 1963 1980 
-add 12919 into 883
-
-finish pre_read
-the element 12919 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 28
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1633 1690 1691 
-1751 1859 1921 1934 1941 1954 1963 1980 
-add 12919 into 604
-
-finish pre_read
-the element 12919 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 28
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1633 1690 1691 
-1751 1859 1921 1934 1941 1954 1963 1980 
-add 12919 into 1898
-
-finish pre_read
-the element 12919 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 28
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1633 1690 1691 
-1751 1859 1921 1934 1941 1954 1963 1980 
-add 12919 into 1016
-
-finish pre_read
-the element 12919 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 28
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1633 1690 1691 
-1751 1859 1921 1934 1941 1954 1963 1980 
-add 12919 into 1811
-
-finish pre_read
-the element 12919 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 28
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1633 1690 1691 
-1751 1859 1921 1934 1941 1954 1963 1980 
-add 12919 into 583
-
-finish pre_read
-the element 12919 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 28
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1633 1690 1691 
-1751 1859 1921 1934 1941 1954 1963 1980 
-add 12919 into 434
-
-finish pre_read
-the element 12919 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 28
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1633 1690 1691 
-1751 1859 1921 1934 1941 1954 1963 1980 
-add 12919 into 835
-
-finish pre_read
-the element 12919 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 28
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1633 1690 1691 
-1751 1859 1921 1934 1941 1954 1963 1980 
-add 12919 into 892
-
-finish pre_read
-the element 21283 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 29
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1598 1633 1690 
-1691 1751 1859 1921 1934 1941 1954 1963 1980 
-add 21283 into 1879
-
-finish pre_read
-the element 21283 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 29
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1598 1633 1690 
-1691 1751 1859 1921 1934 1941 1954 1963 1980 
-add 21283 into 1679
-
-finish pre_read
-the element 21283 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 29
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1598 1633 1690 
-1691 1751 1859 1921 1934 1941 1954 1963 1980 
-add 21283 into 1815
-
-finish pre_read
-the element 21283 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 29
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1598 1633 1690 
-1691 1751 1859 1921 1934 1941 1954 1963 1980 
-add 21283 into 124
-
-finish pre_read
-the element 21283 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 29
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1598 1633 1690 
-1691 1751 1859 1921 1934 1941 1954 1963 1980 
-add 21283 into 70
-
-finish pre_read
-the element 21283 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 29
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1598 1633 1690 
-1691 1751 1859 1921 1934 1941 1954 1963 1980 
-add 21283 into 304
-
-finish pre_read
-the element 21283 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 29
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1598 1633 1690 
-1691 1751 1859 1921 1934 1941 1954 1963 1980 
-add 21283 into 608
-
-finish pre_read
-the element 21283 can't be covered!
-no solution
-finish UP
-the pre_solution size is: 29
-181 199 228 333 395 553 729 773 779 892 
-897 999 1177 1276 1313 1481 1594 1598 1633 1690 
-1691 1751 1859 1921 1934 1941 1954 1963 1980 
-add 21283 into 1834
-
-finish pre_read

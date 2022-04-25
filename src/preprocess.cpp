@@ -11,6 +11,7 @@ extern unordered_map<int, unordered_set<int> > M_item;    //elements that covere
 extern unordered_map<int, unordered_set<int> > G_item;    //items that conflict with item i
 extern unordered_map<int, int> element_cover_times;
 extern unordered_set<int> solution;
+extern bool have_solution;
 
 unordered_set<int> pre_solution;
 int uncover_element;
@@ -160,6 +161,7 @@ bool UP(){
         }
         if( status == 0 ){
             cout << "no solution" << endl;
+            have_solution = false;
             is_useful = false;
             break;
         }
@@ -341,16 +343,27 @@ bool rule4(){
     return false;
 }
 
+void init(){
+    element_cover_times.clear();
+    for( int i=1; i<=elementnum; i++ )
+        element_cover_times[i] = 0;
+    have_solution = true;
+    total_to_do_element.clear();
+    total_to_do_item.clear();
+}
+
 void preprocess(){
     bool stop_flag = true;  //if all the process don't have any action then stop
+    init();
     while(1){
         stop_flag = true;
-        if( UP() )          stop_flag = false;
-        if( rule1() )       stop_flag = false;
-        if( rule2() )       stop_flag = false;
-        if( rule3() )       stop_flag = false;
-        if( rule4() )       stop_flag = false;
-        if( stop_flag )     break;
+        if( UP() )              stop_flag = false;
+        if( !have_solution )    break;
+        //if( rule1() )         stop_flag = false;
+        //if( rule2() )           stop_flag = false;
+        if( rule3() )           stop_flag = false;
+        //if( rule4() )           stop_flag = false;
+        if( stop_flag )         break;
     }
     cout << "finish preprocess" << endl;
     cout << "now we decrease " << total_to_do_item.size() << " items and ";

@@ -1,0 +1,10 @@
+./CCEHC -inst data/maxsat/maxsat0.txt -seed 1 -t 120 -p 0.2 -sp 0.0001 >> cclog.txt
+./CCEHC -inst data/maxsat/maxsat1.txt -seed 1 -t 120 -p 0.2 -sp 0.0001 >> cclog.txt
+./CCEHC -inst data/maxsat/maxsat2.txt -seed 1 -t 120 -p 0.2 -sp 0.0001 >> cclog.txt
+./CCEHC -inst data/maxsat/maxsat3.txt -seed 1 -t 120 -p 0.2 -sp 0.0001 >> cclog.txt
+./CCEHC -inst data/maxsat/maxsat4.txt -seed 1 -t 120 -p 0.2 -sp 0.0001 >> cclog.txt
+./CCEHC -inst data/maxsat/maxsat5.txt -seed 1 -t 120 -p 0.2 -sp 0.0001 >> cclog.txt
+./CCEHC -inst data/maxsat/maxsat6.txt -seed 1 -t 120 -p 0.2 -sp 0.0001 >> cclog.txt
+./CCEHC -inst data/maxsat/maxsat7.txt -seed 1 -t 120 -p 0.2 -sp 0.0001 >> cclog.txt
+./CCEHC -inst data/maxsat/maxsat8.txt -seed 1 -t 120 -p 0.2 -sp 0.0001 >> cclog.txt
+./CCEHC -inst data/maxsat/maxsat9.txt -seed 1 -t 120 -p 0.2 -sp 0.0001 >> cclog.txt

@@ -1,4 +1,5 @@
 #include"../include/main.h"
+#include"../include/algorithm.h"
 
 using namespace std;
 
@@ -10,7 +11,8 @@ extern unordered_map<int, unordered_set<int> > N_ele;     //items that can cover
 extern unordered_map<int, unordered_set<int> > M_item;    //elements that covered by item i
 extern unordered_map<int, unordered_set<int> > G_item;    //items that conflict with item i
 extern unordered_map<int, int> weight;
-extern bool is_weight;                                      //whether the example is weighted
+extern bool is_weight;      
+extern unordered_map<int, Item> data;                                //whether the example is weighted
 
 unordered_map<int, Item> read_initdata(string filename){
     unordered_map<int, Item> items;
@@ -58,15 +60,9 @@ unordered_map<int, Item> read_initdata(string filename){
 unordered_map<int, Item> read_data(string filename){
     unordered_map<int, Item> items;
 
-    //initial the three variable, in case that 0
-    for( int i=0; i<itemnum; i++ ){
-        M_item[i] = unordered_set<int>();
-        G_item[i] = unordered_set<int>();
-    }
-    //element counts from 1
-    for( int i=1; i<=elementnum; i++ ){
-        N_ele[i] = unordered_set<int>();
-    }
+    N_ele.clear();
+    M_item.clear();
+    G_item.clear();
 
     ifstream infile;
     infile.open(filename, ios::in);
@@ -82,6 +78,16 @@ unordered_map<int, Item> read_data(string filename){
     }
 
     infile >> itemnum >> elementnum;
+
+    //initial the three variable, in case that 0
+    for( int i=0; i<itemnum; i++ ){
+        M_item[i] = unordered_set<int>();
+        G_item[i] = unordered_set<int>();
+    }
+    //element counts from 1
+    for( int i=1; i<=elementnum; i++ ){
+        N_ele[i] = unordered_set<int>();
+    }
 
     //input element weight
     for( int i=1; i<=elementnum; i++ ){
@@ -143,4 +149,52 @@ unordered_map<int, Item> read_data(string filename){
     // }
 
     return items;
+}
+
+void change_to_maxsat(string input_filename, string output_filename){
+    data = read_data(input_filename);
+    const int INF = get_total_score() + 1;
+
+    int conflict_cnt = 0;
+
+    for( int i=0; i<itemnum; i++ ){
+        for( int j=i+1; j<itemnum; j++ ){
+            if( conflict_graph[i][j] )
+                conflict_cnt++;
+        }
+    }
+
+    ofstream outfile;
+    outfile.open(output_filename, ios::out);
+    if( !outfile.is_open() ){
+        cout << "read file error" << endl;
+        cout << "i am change_to_maxsat" << endl;
+        return ;
+    }
+
+    outfile << "p wcnf " << itemnum << " " << conflict_cnt+elementnum << " " << INF << endl;
+
+    for( int i=0; i<itemnum; i++ ){
+        for( int j=i+1; j<itemnum; j++ ){
+            if( conflict_graph[i][j] ){
+                if( i == 0 )
+                    outfile << INF << " " << "-" << itemnum << " " << "-" << j << " " << 0 << endl;
+                else
+                    outfile << INF << " " << "-" << i << " " << "-" << j << " " << 0 << endl;
+            }
+        }
+    }
+
+    for( int i=1; i<=elementnum; i++ ){
+        outfile << weight[i] << " ";
+        for( auto it=N_ele[i].begin(); it!=N_ele[i].end(); it++ ){
+            if( *it == 0 )
+                outfile << itemnum << " ";
+            else
+                outfile << *it << " ";
+        }
+        outfile << 0 << endl;
+    }
+
+    outfile.close();
 }

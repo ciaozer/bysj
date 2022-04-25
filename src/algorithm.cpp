@@ -5,9 +5,9 @@
 using namespace std;
 
 #define TABUSTEP 3      //the depth of tabu search
-#define CUTOFF 20       //cutoff time in local search
+#define CUTOFF 180     //cutoff time in local search
 #define NOTBETTERCUT 2  //tabu search not better cut
-#define REINFORCE 0     //1 represents use reinforce learning
+#define REINFORCE 1     //1 represents use reinforce learning
 #define REMOVENUM 2     //the number of removed items in perturbation
 
 extern int itemnum, elementnum;
@@ -22,12 +22,15 @@ extern unordered_set<int> best_solution;
 extern unordered_map<int, int> element_cover_times;    //solution covers elements times
 extern unordered_map<int, int> weight; //element is key
 extern bool is_weight;
+extern bool have_solution;
  
 void initial(){
     //clear all the things
     candidate.clear();
     solution.clear();
     best_solution.clear();
+    best_cover_num = 0;
+    best_score = 0;
 
     for( auto it=data.begin(); it!=data.end(); it++ ){
         //no item is in solution, every item is in candidate
@@ -147,6 +150,13 @@ int get_score(unordered_map<int, int> element_cover_times){
     return score;
 }
 
+int get_total_score(){
+    int total = 0;
+    for( int i=1; i<=elementnum; i++ )
+        total += weight[i];
+    return total;
+}
+
 void greedy(){
     int idx;    //the index of the chosen item
     //choose by covernum/conflictnum
@@ -166,8 +176,13 @@ void greedy(){
                 idx = *it;
                 break;
             }
+
             is_conflict = true;
-            current = (double)data[*it].cover_of_candidate * weight[*it] / (double)data[*it].candidate_conflict_num;
+            
+            for( auto it1=data[*it].elements.begin(); it1!=data[*it].elements.end(); it1++ ){
+                current += weight[*it1];
+            }
+            current = (double)current / (double)data[*it].candidate_conflict_num;
             
             //include equal to deal with the situation that current_max = 0, it will never go on
             if( current >= best ){
@@ -444,7 +459,8 @@ void print_solution(unordered_set<int> solution){
 
 void run(string filename){
     data = read_data(filename);
-    preprocess();
+    //preprocess();
+    //if( !have_solution )    return ;
     initial();          //finish some initial works
     greedy();           //construct a initial solution with greedy algorithm 
     local_search(); 

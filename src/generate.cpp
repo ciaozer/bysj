@@ -8,11 +8,11 @@ using namespace std;
 
 #define DENSITY 0.1     //the density of conflict graph
 #define RAND 1000       //the precision of random number
-#define ADD_TIMES 20     //how many times an item will be added
-#define RATE 0.4        //the posibility add into solution 
-#define AVG_COVER_TIMES 15 //the average of element be covered times
-#define ITEMNUM 200
-#define ELEMENTNUM 1000
+#define ADD_TIMES 3     //how many times an item will be added
+#define RATE 0.9        //the posibility add into solution 
+#define AVG_COVER_TIMES 35 //the average of element be covered times
+#define ITEMNUM 2000
+#define ELEMENTNUM 10000
 #define WEIGHT 1
 /*
     0 represents no weight
@@ -285,6 +285,7 @@ void add_uncovered_elements(){
 void generate_add_data_once(string filename){
     add_uncovered_elements();
     generate_data(filename);
+    cout << "finish generate once" << endl;
 }
 
 void generate_add_data(){
@@ -296,11 +297,11 @@ void generate_add_data(){
 
         path = "data/add/add";
         path = path + to_string(i) + ".txt";
-        while( get_cover_num(element_cover_times) != elementnum ){
+        //while( get_cover_num(element_cover_times) != elementnum ){
             generate_add_data_once(path);
-            uncovered.clear();      //ensure the uncovered is right
-            run(path);
-        }
+            //uncovered.clear();      //ensure the uncovered is right
+            //run(path);
+        //}
     }
 }
 
