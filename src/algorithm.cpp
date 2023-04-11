@@ -7,7 +7,7 @@ using namespace std;
 #define TABUSTEP 3      //the depth of tabu search
 #define CUTOFF 180     //cutoff time in local search
 #define NOTBETTERCUT 2  //tabu search not better cut
-#define REINFORCE 1     //1 represents use reinforce learning
+#define REINFORCE 0     //1 represents use reinforce learning
 #define REMOVENUM 2     //the number of removed items in perturbation
 
 extern int itemnum, elementnum;
@@ -41,8 +41,10 @@ void initial(){
     }
 
     //elements count from 1
-    for( int i=1; i<=elementnum; i++ )
-        element_cover_times[i] = 0;
+    for( int i=1; i<=elementnum; i++ ){
+        if( element_cover_times.count(i) == 0 )
+            element_cover_times[i] = 0;
+    }
 
     cout << "finish initial" << endl;
 }
@@ -459,8 +461,8 @@ void print_solution(unordered_set<int> solution){
 
 void run(string filename){
     data = read_data(filename);
-    //preprocess();
-    //if( !have_solution )    return ;
+    // preprocess();
+    // if( !have_solution )    return ;
     initial();          //finish some initial works
     greedy();           //construct a initial solution with greedy algorithm 
     local_search(); 

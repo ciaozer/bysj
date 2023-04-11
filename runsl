@@ -1,12 +1,12 @@
 cd ./0-----SL
-./run300 ../data/maxsat/maxsat0.txt >> ../sllog.txt
-./run300 ../data/maxsat/maxsat1.txt >> ../sllog.txt
-./run300 ../data/maxsat/maxsat2.txt >> ../sllog.txt
-./run300 ../data/maxsat/maxsat3.txt >> ../sllog.txt
-./run300 ../data/maxsat/maxsat4.txt >> ../sllog.txt
-./run300 ../data/maxsat/maxsat5.txt >> ../sllog.txt
-./run300 ../data/maxsat/maxsat6.txt >> ../sllog.txt
-./run300 ../data/maxsat/maxsat7.txt >> ../sllog.txt
-./run300 ../data/maxsat/maxsat8.txt >> ../sllog.txt
-./run300 ../data/maxsat/maxsat9.txt >> ../sllog.txt
+./run300 ../newdata/s0.3/sat0.txt >> ../sllog3.txt
+./run300 ../newdata/s0.3/sat1.txt >> ../sllog3.txt
+./run300 ../newdata/s0.3/sat2.txt >> ../sllog3.txt
+./run300 ../newdata/s0.3/sat3.txt >> ../sllog3.txt
+./run300 ../newdata/s0.3/sat4.txt >> ../sllog3.txt
+./run300 ../newdata/s0.3/sat5.txt >> ../sllog3.txt
+./run300 ../newdata/s0.3/sat6.txt >> ../sllog3.txt
+./run300 ../newdata/s0.3/sat7.txt >> ../sllog3.txt
+./run300 ../newdata/s0.3/sat8.txt >> ../sllog3.txt
+./run300 ../newdata/s0.3/sat9.txt >> ../sllog3.txt
 cd ..

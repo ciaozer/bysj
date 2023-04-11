@@ -1,0 +1,478 @@
+finish read_data
+finish initial
+finish greedy
+after greedy, 2230 elements have been covered
+now the score is: 114411
+best cover: 2230     current cover: 2526     best score: 114411     current score: 128549
+best cover: 2526     current cover: 2749     best score: 128549     current score: 138942
+best cover: 2749     current cover: 2871     best score: 138942     current score: 144981
+best cover: 2871     current cover: 3046     best score: 144981     current score: 154509
+best cover: 3046     current cover: 3156     best score: 154509     current score: 159689
+best cover: 3156     current cover: 3245     best score: 159689     current score: 163747
+best cover: 3245     current cover: 3280     best score: 163747     current score: 165125
+best cover: 3280     current cover: 3289     best score: 165125     current score: 165998
+best cover: 3289     current cover: 3314     best score: 165998     current score: 166948
+best cover: 3314     current cover: 3329     best score: 166948     current score: 167455
+best cover: 3329     current cover: 3406     best score: 167455     current score: 171266
+best cover: 3406     current cover: 3523     best score: 171266     current score: 176691
+best cover: 3523     current cover: 3523     best score: 176691     current score: 176691
+best cover: 3523     current cover: 3591     best score: 176691     current score: 180199
+best cover: 3591     current cover: 3591     best score: 180199     current score: 180199
+best cover: 3591     current cover: 3638     best score: 180199     current score: 182643
+best cover: 3638     current cover: 3638     best score: 182643     current score: 182643
+best cover: 3638     current cover: 3644     best score: 182643     current score: 182950
+best cover: 3644     current cover: 3644     best score: 182950     current score: 182950
+best cover: 3644     current cover: 3649     best score: 182950     current score: 183166
+best cover: 3649     current cover: 3649     best score: 183166     current score: 183166
+best cover: 3649     current cover: 3649     best score: 183166     current score: 183166
+best cover: 3649     current cover: 3653     best score: 183166     current score: 182745
+best cover: 3653     current cover: 3674     best score: 183166     current score: 183525
+best cover: 3674     current cover: 3674     best score: 183525     current score: 183525
+best cover: 3674     current cover: 3674     best score: 183525     current score: 183525
+best cover: 3674     current cover: 3659     best score: 183525     current score: 182775
+best cover: 3674     current cover: 3653     best score: 183525     current score: 182745
+best cover: 3674     current cover: 3674     best score: 183525     current score: 183525
+best cover: 3674     current cover: 3674     best score: 183525     current score: 183525
+best cover: 3674     current cover: 3653     best score: 183525     current score: 182745
+best cover: 3674     current cover: 3674     best score: 183525     current score: 183525
+best cover: 3674     current cover: 3515     best score: 183525     current score: 175546
+best cover: 3674     current cover: 3637     best score: 183525     current score: 182244
+best cover: 3674     current cover: 3657     best score: 183525     current score: 182746
+best cover: 3674     current cover: 3655     best score: 183525     current score: 182781
+best cover: 3674     current cover: 3657     best score: 183525     current score: 182746
+best cover: 3674     current cover: 3657     best score: 183525     current score: 182746
+finish local search
+can't find a feasible solution
+only cover 3674 elements
+the score is: 183525
+the solution size is: 23
+154 315 323 458 531 556 675 748 862 898 
+995 1003 1004 1046 1064 1111 1587 1621 1641 1654 
+1702 1947 1999 
+total score is 502973
+loss is 319448
+
+finish read_data
+finish initial
+finish greedy
+after greedy, 5105 elements have been covered
+now the score is: 261491
+best cover: 5105     current cover: 5338     best score: 261491     current score: 273533
+best cover: 5338     current cover: 5473     best score: 273533     current score: 279513
+best cover: 5473     current cover: 5559     best score: 279513     current score: 283514
+best cover: 5559     current cover: 5670     best score: 283514     current score: 288834
+best cover: 5670     current cover: 5686     best score: 288834     current score: 289371
+best cover: 5686     current cover: 5703     best score: 289371     current score: 289992
+best cover: 5703     current cover: 5703     best score: 289992     current score: 289992
+best cover: 5703     current cover: 5673     best score: 289992     current score: 288498
+best cover: 5703     current cover: 5631     best score: 289992     current score: 286717
+best cover: 5703     current cover: 5698     best score: 289992     current score: 289974
+best cover: 5703     current cover: 5765     best score: 289992     current score: 293390
+best cover: 5765     current cover: 5756     best score: 293390     current score: 293472
+best cover: 5756     current cover: 5756     best score: 293472     current score: 293472
+best cover: 5756     current cover: 5818     best score: 293472     current score: 296255
+best cover: 5818     current cover: 5818     best score: 296255     current score: 296255
+best cover: 5818     current cover: 5845     best score: 296255     current score: 298074
+best cover: 5845     current cover: 5845     best score: 298074     current score: 298074
+best cover: 5845     current cover: 5848     best score: 298074     current score: 298269
+best cover: 5848     current cover: 5848     best score: 298269     current score: 298269
+best cover: 5848     current cover: 5848     best score: 298269     current score: 298284
+best cover: 5848     current cover: 5848     best score: 298284     current score: 298284
+best cover: 5848     current cover: 5849     best score: 298284     current score: 298286
+best cover: 5849     current cover: 5849     best score: 298286     current score: 298286
+best cover: 5849     current cover: 5849     best score: 298286     current score: 298286
+best cover: 5849     current cover: 5712     best score: 298286     current score: 291016
+best cover: 5849     current cover: 5849     best score: 298286     current score: 298286
+best cover: 5849     current cover: 5860     best score: 298286     current score: 298220
+best cover: 5860     current cover: 5849     best score: 298286     current score: 298286
+best cover: 5860     current cover: 5810     best score: 298286     current score: 296879
+best cover: 5860     current cover: 5826     best score: 298286     current score: 297852
+best cover: 5860     current cover: 5819     best score: 298286     current score: 297324
+best cover: 5860     current cover: 5840     best score: 298286     current score: 297946
+best cover: 5860     current cover: 5845     best score: 298286     current score: 298428
+best cover: 5845     current cover: 5845     best score: 298428     current score: 298428
+best cover: 5845     current cover: 5845     best score: 298428     current score: 298428
+best cover: 5845     current cover: 5811     best score: 298428     current score: 296768
+best cover: 5845     current cover: 5840     best score: 298428     current score: 297946
+finish local search
+can't find a feasible solution
+only cover 5845 elements
+the score is: 298428
+the solution size is: 23
+16 118 162 188 244 631 777 1158 1165 1214 
+1317 1321 1323 1363 1426 1428 1512 1708 1778 1789 
+1888 1922 1997 
+total score is 507930
+loss is 209502
+
+finish read_data
+finish initial
+finish greedy
+after greedy, 5237 elements have been covered
+now the score is: 270107
+best cover: 5237     current cover: 5554     best score: 270107     current score: 285507
+best cover: 5554     current cover: 5586     best score: 285507     current score: 287199
+best cover: 5586     current cover: 5604     best score: 287199     current score: 288224
+best cover: 5604     current cover: 5645     best score: 288224     current score: 290194
+best cover: 5645     current cover: 5664     best score: 290194     current score: 291081
+best cover: 5664     current cover: 5683     best score: 291081     current score: 292105
+best cover: 5683     current cover: 5699     best score: 292105     current score: 292818
+best cover: 5699     current cover: 5728     best score: 292818     current score: 294453
+best cover: 5728     current cover: 5728     best score: 294453     current score: 294453
+best cover: 5728     current cover: 5738     best score: 294453     current score: 294762
+best cover: 5738     current cover: 5725     best score: 294762     current score: 294680
+best cover: 5738     current cover: 5741     best score: 294762     current score: 295012
+best cover: 5741     current cover: 5770     best score: 295012     current score: 296292
+best cover: 5770     current cover: 5770     best score: 296292     current score: 296292
+best cover: 5770     current cover: 5801     best score: 296292     current score: 297765
+best cover: 5801     current cover: 5801     best score: 297765     current score: 297765
+best cover: 5801     current cover: 5820     best score: 297765     current score: 298919
+best cover: 5820     current cover: 5820     best score: 298919     current score: 298919
+best cover: 5820     current cover: 5825     best score: 298919     current score: 299184
+best cover: 5825     current cover: 5825     best score: 299184     current score: 299184
+best cover: 5825     current cover: 5825     best score: 299184     current score: 299184
+best cover: 5825     current cover: 5777     best score: 299184     current score: 296824
+best cover: 5825     current cover: 5772     best score: 299184     current score: 296782
+best cover: 5825     current cover: 5737     best score: 299184     current score: 294408
+best cover: 5825     current cover: 5825     best score: 299184     current score: 299184
+best cover: 5825     current cover: 5777     best score: 299184     current score: 296824
+best cover: 5825     current cover: 5772     best score: 299184     current score: 296782
+best cover: 5825     current cover: 5769     best score: 299184     current score: 296463
+best cover: 5825     current cover: 5777     best score: 299184     current score: 296824
+best cover: 5825     current cover: 5764     best score: 299184     current score: 296261
+best cover: 5825     current cover: 5772     best score: 299184     current score: 296782
+best cover: 5825     current cover: 5777     best score: 299184     current score: 296824
+best cover: 5825     current cover: 5825     best score: 299184     current score: 299184
+finish local search
+can't find a feasible solution
+only cover 5825 elements
+the score is: 299184
+the solution size is: 23
+1 165 223 275 506 521 542 579 727 742 
+1115 1126 1162 1209 1321 1546 1563 1570 1670 1671 
+1769 1865 1873 
+total score is 509500
+loss is 210316
+
+finish read_data
+finish initial
+finish greedy
+after greedy, 5470 elements have been covered
+now the score is: 278036
+best cover: 5470     current cover: 5720     best score: 278036     current score: 289745
+best cover: 5720     current cover: 5760     best score: 289745     current score: 291816
+best cover: 5760     current cover: 5774     best score: 291816     current score: 293489
+best cover: 5774     current cover: 5792     best score: 293489     current score: 294751
+best cover: 5792     current cover: 5810     best score: 294751     current score: 295717
+best cover: 5810     current cover: 5844     best score: 295717     current score: 297446
+best cover: 5844     current cover: 5844     best score: 297446     current score: 297446
+best cover: 5844     current cover: 5845     best score: 297446     current score: 297845
+best cover: 5845     current cover: 5845     best score: 297845     current score: 297845
+best cover: 5845     current cover: 5838     best score: 297845     current score: 297665
+best cover: 5845     current cover: 5803     best score: 297845     current score: 296093
+best cover: 5845     current cover: 5820     best score: 297845     current score: 297315
+best cover: 5845     current cover: 5829     best score: 297845     current score: 298058
+best cover: 5829     current cover: 5829     best score: 298058     current score: 298227
+best cover: 5829     current cover: 5829     best score: 298227     current score: 298227
+best cover: 5829     current cover: 5853     best score: 298227     current score: 299732
+best cover: 5853     current cover: 5854     best score: 299732     current score: 299633
+best cover: 5854     current cover: 5853     best score: 299732     current score: 299732
+best cover: 5854     current cover: 5791     best score: 299732     current score: 296300
+best cover: 5854     current cover: 5819     best score: 299732     current score: 298189
+best cover: 5854     current cover: 5869     best score: 299732     current score: 299848
+best cover: 5869     current cover: 5904     best score: 299848     current score: 301581
+best cover: 5904     current cover: 5992     best score: 301581     current score: 305991
+best cover: 5992     current cover: 5992     best score: 305991     current score: 305991
+best cover: 5992     current cover: 6003     best score: 305991     current score: 306384
+best cover: 6003     current cover: 6003     best score: 306384     current score: 306384
+best cover: 6003     current cover: 6010     best score: 306384     current score: 306712
+best cover: 6010     current cover: 6010     best score: 306712     current score: 306712
+best cover: 6010     current cover: 6012     best score: 306712     current score: 306797
+best cover: 6012     current cover: 6012     best score: 306797     current score: 306797
+best cover: 6012     current cover: 6012     best score: 306797     current score: 306797
+finish local search
+can't find a feasible solution
+only cover 6012 elements
+the score is: 306797
+the solution size is: 23
+29 274 343 438 524 617 678 701 736 808 
+831 872 901 1200 1275 1466 1613 1660 1693 1702 
+1719 1808 1988 
+total score is 507252
+loss is 200455
+
+finish read_data
+finish initial
+finish greedy
+after greedy, 5358 elements have been covered
+now the score is: 273560
+best cover: 5358     current cover: 5550     best score: 273560     current score: 283398
+best cover: 5550     current cover: 5664     best score: 283398     current score: 289842
+best cover: 5664     current cover: 5700     best score: 289842     current score: 292224
+best cover: 5700     current cover: 5734     best score: 292224     current score: 294269
+best cover: 5734     current cover: 5734     best score: 294269     current score: 294269
+best cover: 5734     current cover: 5749     best score: 294269     current score: 295019
+best cover: 5749     current cover: 5749     best score: 295019     current score: 295019
+best cover: 5749     current cover: 5767     best score: 295019     current score: 296203
+best cover: 5767     current cover: 5767     best score: 296203     current score: 296203
+best cover: 5767     current cover: 5779     best score: 296203     current score: 296908
+best cover: 5779     current cover: 5779     best score: 296908     current score: 296908
+best cover: 5779     current cover: 5785     best score: 296908     current score: 297037
+best cover: 5785     current cover: 5785     best score: 297037     current score: 297037
+best cover: 5785     current cover: 5785     best score: 297037     current score: 297037
+best cover: 5785     current cover: 5708     best score: 297037     current score: 292824
+best cover: 5785     current cover: 5765     best score: 297037     current score: 296262
+best cover: 5785     current cover: 5823     best score: 297037     current score: 298618
+best cover: 5823     current cover: 5885     best score: 298618     current score: 301181
+best cover: 5885     current cover: 5885     best score: 301181     current score: 301181
+best cover: 5885     current cover: 5885     best score: 301181     current score: 301181
+best cover: 5885     current cover: 5845     best score: 301181     current score: 299056
+best cover: 5885     current cover: 5804     best score: 301181     current score: 297361
+best cover: 5885     current cover: 5854     best score: 301181     current score: 299257
+best cover: 5885     current cover: 5864     best score: 301181     current score: 299483
+best cover: 5885     current cover: 5875     best score: 301181     current score: 300234
+best cover: 5885     current cover: 5875     best score: 301181     current score: 300234
+best cover: 5885     current cover: 5864     best score: 301181     current score: 299483
+best cover: 5885     current cover: 5875     best score: 301181     current score: 300234
+finish local search
+can't find a feasible solution
+only cover 5885 elements
+the score is: 301181
+the solution size is: 24
+20 35 71 78 168 209 245 271 308 398 
+411 448 592 825 893 983 985 993 1112 1185 
+1190 1380 1449 1998 
+total score is 508897
+loss is 207716
+
+finish read_data
+finish initial
+finish greedy
+after greedy, 5433 elements have been covered
+now the score is: 273178
+best cover: 5433     current cover: 5531     best score: 273178     current score: 278497
+best cover: 5531     current cover: 5560     best score: 278497     current score: 280496
+best cover: 5560     current cover: 5643     best score: 280496     current score: 284587
+best cover: 5643     current cover: 5687     best score: 284587     current score: 286615
+best cover: 5687     current cover: 5721     best score: 286615     current score: 287913
+best cover: 5721     current cover: 5742     best score: 287913     current score: 288753
+best cover: 5742     current cover: 5757     best score: 288753     current score: 289498
+best cover: 5757     current cover: 5762     best score: 289498     current score: 289475
+best cover: 5762     current cover: 5757     best score: 289498     current score: 289498
+best cover: 5762     current cover: 5742     best score: 289498     current score: 288753
+best cover: 5762     current cover: 5757     best score: 289498     current score: 289498
+best cover: 5762     current cover: 5762     best score: 289498     current score: 289475
+best cover: 5762     current cover: 5757     best score: 289498     current score: 289498
+best cover: 5762     current cover: 5705     best score: 289498     current score: 287355
+best cover: 5762     current cover: 5762     best score: 289498     current score: 289475
+best cover: 5762     current cover: 5742     best score: 289498     current score: 288753
+best cover: 5762     current cover: 5757     best score: 289498     current score: 289498
+best cover: 5762     current cover: 5703     best score: 289498     current score: 285996
+best cover: 5762     current cover: 5762     best score: 289498     current score: 289475
+best cover: 5762     current cover: 5701     best score: 289498     current score: 286112
+best cover: 5762     current cover: 5703     best score: 289498     current score: 285996
+best cover: 5762     current cover: 5762     best score: 289498     current score: 289475
+best cover: 5762     current cover: 5757     best score: 289498     current score: 289498
+best cover: 5762     current cover: 5762     best score: 289498     current score: 289475
+best cover: 5762     current cover: 5774     best score: 289498     current score: 290203
+best cover: 5774     current cover: 5771     best score: 290203     current score: 290588
+best cover: 5771     current cover: 5771     best score: 290588     current score: 290588
+best cover: 5771     current cover: 5811     best score: 290588     current score: 292139
+best cover: 5811     current cover: 5818     best score: 292139     current score: 292125
+best cover: 5818     current cover: 5811     best score: 292139     current score: 292139
+finish local search
+can't find a feasible solution
+only cover 5818 elements
+the score is: 292139
+the solution size is: 24
+26 120 145 214 293 329 353 496 520 542 
+762 783 843 1072 1144 1230 1277 1305 1402 1439 
+1713 1847 1883 1902 
+total score is 503998
+loss is 211859
+
+finish read_data
+finish initial
+finish greedy
+after greedy, 5602 elements have been covered
+now the score is: 284551
+best cover: 5602     current cover: 5707     best score: 284551     current score: 289485
+best cover: 5707     current cover: 5786     best score: 289485     current score: 293524
+best cover: 5786     current cover: 5825     best score: 293524     current score: 295593
+best cover: 5825     current cover: 5844     best score: 295593     current score: 296368
+best cover: 5844     current cover: 5890     best score: 296368     current score: 298302
+best cover: 5890     current cover: 5957     best score: 298302     current score: 301606
+best cover: 5957     current cover: 6076     best score: 301606     current score: 308254
+best cover: 6076     current cover: 6076     best score: 308254     current score: 308254
+best cover: 6076     current cover: 6069     best score: 308254     current score: 307710
+best cover: 6076     current cover: 6060     best score: 308254     current score: 306400
+best cover: 6076     current cover: 6128     best score: 308254     current score: 309700
+best cover: 6128     current cover: 6128     best score: 309700     current score: 309700
+best cover: 6128     current cover: 6149     best score: 309700     current score: 310964
+best cover: 6149     current cover: 6149     best score: 310964     current score: 310964
+best cover: 6149     current cover: 6163     best score: 310964     current score: 311671
+best cover: 6163     current cover: 6163     best score: 311671     current score: 311671
+best cover: 6163     current cover: 6163     best score: 311671     current score: 311655
+best cover: 6163     current cover: 6128     best score: 311671     current score: 309891
+best cover: 6163     current cover: 6165     best score: 311671     current score: 311762
+best cover: 6165     current cover: 6165     best score: 311762     current score: 311762
+best cover: 6165     current cover: 6165     best score: 311762     current score: 311762
+best cover: 6165     current cover: 6083     best score: 311762     current score: 307402
+best cover: 6165     current cover: 6165     best score: 311762     current score: 311762
+best cover: 6165     current cover: 6130     best score: 311762     current score: 309998
+best cover: 6165     current cover: 6174     best score: 311762     current score: 313140
+best cover: 6174     current cover: 6174     best score: 313140     current score: 313140
+best cover: 6174     current cover: 6174     best score: 313140     current score: 313140
+finish local search
+can't find a feasible solution
+only cover 6174 elements
+the score is: 313140
+the solution size is: 23
+191 286 350 438 543 576 620 634 688 1060 
+1076 1084 1160 1184 1233 1318 1397 1453 1529 1534 
+1696 1927 1974 
+total score is 504119
+loss is 190979
+
+finish read_data
+finish initial
+finish greedy
+after greedy, 5670 elements have been covered
+now the score is: 288507
+best cover: 5670     current cover: 5721     best score: 288507     current score: 291655
+best cover: 5721     current cover: 5759     best score: 291655     current score: 294298
+best cover: 5759     current cover: 5806     best score: 294298     current score: 296329
+best cover: 5806     current cover: 5823     best score: 296329     current score: 297333
+best cover: 5823     current cover: 5840     best score: 297333     current score: 298681
+best cover: 5840     current cover: 5851     best score: 298681     current score: 299692
+best cover: 5851     current cover: 5890     best score: 299692     current score: 301628
+best cover: 5890     current cover: 5890     best score: 301628     current score: 301628
+best cover: 5890     current cover: 5891     best score: 301628     current score: 301353
+best cover: 5891     current cover: 5866     best score: 301628     current score: 300355
+best cover: 5891     current cover: 5911     best score: 301628     current score: 302606
+best cover: 5911     current cover: 5932     best score: 302606     current score: 303599
+best cover: 5932     current cover: 5937     best score: 303599     current score: 303687
+best cover: 5937     current cover: 5932     best score: 303687     current score: 303599
+best cover: 5937     current cover: 5947     best score: 303687     current score: 304633
+best cover: 5947     current cover: 5953     best score: 304633     current score: 304744
+best cover: 5953     current cover: 5947     best score: 304744     current score: 304633
+best cover: 5953     current cover: 5961     best score: 304744     current score: 305340
+best cover: 5961     current cover: 5967     best score: 305340     current score: 305451
+best cover: 5967     current cover: 5961     best score: 305451     current score: 305340
+best cover: 5967     current cover: 5961     best score: 305451     current score: 305235
+best cover: 5967     current cover: 5967     best score: 305451     current score: 305346
+best cover: 5967     current cover: 5961     best score: 305451     current score: 305235
+best cover: 5967     current cover: 5959     best score: 305451     current score: 304810
+best cover: 5967     current cover: 5977     best score: 305451     current score: 305770
+best cover: 5977     current cover: 6018     best score: 305770     current score: 308056
+best cover: 6018     current cover: 6046     best score: 308056     current score: 309707
+best cover: 6046     current cover: 6051     best score: 309707     current score: 309736
+best cover: 6051     current cover: 6046     best score: 309736     current score: 309707
+best cover: 6051     current cover: 6048     best score: 309736     current score: 309850
+best cover: 6048     current cover: 6053     best score: 309850     current score: 309879
+best cover: 6053     current cover: 6048     best score: 309879     current score: 309850
+best cover: 6053     current cover: 6048     best score: 309879     current score: 309850
+best cover: 6053     current cover: 6053     best score: 309879     current score: 309879
+best cover: 6053     current cover: 6048     best score: 309879     current score: 309850
+finish local search
+can't find a feasible solution
+only cover 6053 elements
+the score is: 309879
+the solution size is: 22
+45 372 385 419 456 493 506 521 802 859 
+870 895 1004 1038 1039 1249 1301 1329 1567 1638 
+1906 1999 
+total score is 508013
+loss is 198134
+
+finish read_data
+finish initial
+finish greedy
+after greedy, 5400 elements have been covered
+now the score is: 271170
+best cover: 5400     current cover: 5501     best score: 271170     current score: 275448
+best cover: 5501     current cover: 5530     best score: 275448     current score: 276787
+best cover: 5530     current cover: 5590     best score: 276787     current score: 280146
+best cover: 5590     current cover: 5635     best score: 280146     current score: 282790
+best cover: 5635     current cover: 5672     best score: 282790     current score: 284669
+best cover: 5672     current cover: 5817     best score: 284669     current score: 292188
+best cover: 5817     current cover: 5826     best score: 292188     current score: 292820
+best cover: 5826     current cover: 5826     best score: 292820     current score: 292820
+best cover: 5826     current cover: 5828     best score: 292820     current score: 293195
+best cover: 5828     current cover: 5828     best score: 293195     current score: 293195
+best cover: 5828     current cover: 5856     best score: 293195     current score: 294039
+best cover: 5856     current cover: 5856     best score: 294039     current score: 294039
+best cover: 5856     current cover: 5866     best score: 294039     current score: 294740
+best cover: 5866     current cover: 5866     best score: 294740     current score: 294740
+best cover: 5866     current cover: 5874     best score: 294740     current score: 295188
+best cover: 5874     current cover: 5874     best score: 295188     current score: 295188
+best cover: 5874     current cover: 5875     best score: 295188     current score: 295195
+best cover: 5875     current cover: 5875     best score: 295195     current score: 295195
+best cover: 5875     current cover: 5875     best score: 295195     current score: 295195
+best cover: 5875     current cover: 5821     best score: 295195     current score: 291846
+best cover: 5875     current cover: 5829     best score: 295195     current score: 292082
+best cover: 5875     current cover: 5870     best score: 295195     current score: 294770
+best cover: 5875     current cover: 5875     best score: 295195     current score: 295195
+best cover: 5875     current cover: 5870     best score: 295195     current score: 294770
+best cover: 5875     current cover: 5870     best score: 295195     current score: 294770
+best cover: 5875     current cover: 5836     best score: 295195     current score: 293054
+best cover: 5875     current cover: 5875     best score: 295195     current score: 295195
+finish local search
+can't find a feasible solution
+only cover 5875 elements
+the score is: 295195
+the solution size is: 24
+50 203 232 342 355 575 577 642 643 742 
+814 815 1041 1220 1227 1353 1364 1420 1504 1617 
+1637 1665 1869 1964 
+total score is 500513
+loss is 205318
+
+finish read_data
+finish initial
+finish greedy
+after greedy, 5419 elements have been covered
+now the score is: 273581
+best cover: 5419     current cover: 5562     best score: 273581     current score: 281122
+best cover: 5562     current cover: 5682     best score: 281122     current score: 286479
+best cover: 5682     current cover: 5690     best score: 286479     current score: 287136
+best cover: 5690     current cover: 5775     best score: 287136     current score: 291136
+best cover: 5775     current cover: 5775     best score: 291136     current score: 291136
+best cover: 5775     current cover: 5769     best score: 291136     current score: 291282
+best cover: 5769     current cover: 5769     best score: 291282     current score: 291282
+best cover: 5769     current cover: 5813     best score: 291282     current score: 293689
+best cover: 5813     current cover: 5813     best score: 293689     current score: 293689
+best cover: 5813     current cover: 5826     best score: 293689     current score: 293973
+best cover: 5826     current cover: 5826     best score: 293973     current score: 293973
+best cover: 5826     current cover: 5830     best score: 293973     current score: 294177
+best cover: 5830     current cover: 5830     best score: 294177     current score: 294177
+best cover: 5830     current cover: 5830     best score: 294177     current score: 294190
+best cover: 5830     current cover: 5830     best score: 294190     current score: 294190
+best cover: 5830     current cover: 5832     best score: 294190     current score: 294288
+best cover: 5832     current cover: 5832     best score: 294288     current score: 294288
+best cover: 5832     current cover: 5832     best score: 294288     current score: 294288
+best cover: 5832     current cover: 5826     best score: 294288     current score: 293857
+best cover: 5832     current cover: 5865     best score: 294288     current score: 295858
+best cover: 5865     current cover: 5865     best score: 295858     current score: 295858
+best cover: 5865     current cover: 5865     best score: 295858     current score: 295858
+best cover: 5865     current cover: 5819     best score: 295858     current score: 293669
+best cover: 5865     current cover: 5838     best score: 295858     current score: 294555
+best cover: 5865     current cover: 5910     best score: 295858     current score: 298764
+best cover: 5910     current cover: 5943     best score: 298764     current score: 301047
+best cover: 5943     current cover: 5962     best score: 301047     current score: 302544
+best cover: 5962     current cover: 5967     best score: 302544     current score: 303089
+best cover: 5967     current cover: 5976     best score: 303089     current score: 303685
+best cover: 5976     current cover: 6021     best score: 303685     current score: 306072
+best cover: 6021     current cover: 6021     best score: 306072     current score: 306072
+best cover: 6021     current cover: 6021     best score: 306072     current score: 306072
+finish local search
+can't find a feasible solution
+only cover 6021 elements
+the score is: 306072
+the solution size is: 23
+173 261 296 315 326 467 502 524 544 857 
+888 1044 1064 1078 1113 1137 1392 1401 1555 1629 
+1867 1879 1975 
+total score is 505757
+loss is 199685
+

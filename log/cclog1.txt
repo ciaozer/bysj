@@ -1,0 +1,132 @@
+c This is the CCEHC solver, Version: 2021.03.08.11
+c instance = final_data/sat/sat0.txt
+c problem type = unweighted_partial
+c seed = 1
+c num_vars = 500
+c num_clauses = 37576
+c num_hclauses = 12576
+c num_sclauses = 25000
+c prob = 0.2
+c sp = 0.0001
+c large_clause_count_threshold = 5
+o 7216
+o 6838
+o 6754
+o 6568
+o 6205
+o 5868
+o 5562
+o 5289
+o 5142
+o 4939
+o 4930
+o 4763
+o 4606
+o 4462
+o 4337
+o 4246
+o 4137
+o 4052
+o 3872
+o 3703
+o 3575
+o 3455
+o 3343
+o 3259
+o 3188
+o 3156
+o 3134
+o 3124
+o 3050
+o 2955
+o 2876
+o 2733
+o 2632
+o 2559
+o 2504
+o 2502
+o 2501
+o 2484
+o 2475
+o 2446
+o 2430
+o 2402
+o 2397
+o 2331
+o 2302
+o 2296
+o 2190
+o 2172
+o 2170
+o 2153
+o 2148
+o 2135
+o 2020
+o 1973
+o 1950
+c This is the CCEHC solver, Version: 2021.03.08.11
+c instance = final_data/sat/sat0.txt
+c problem type = unweighted_partial
+c seed = 1
+c num_vars = 500
+c num_clauses = 37576
+c num_hclauses = 12576
+c num_sclauses = 25000
+c prob = 0.2
+c sp = 0.0001
+c large_clause_count_threshold = 5
+o 7216
+o 6838
+o 6754
+o 6568
+o 6205
+o 5868
+o 5562
+o 5289
+o 5142
+o 4939
+o 4930
+o 4763
+o 4606
+o 4462
+o 4337
+o 4246
+o 4137
+o 4052
+o 3872
+o 3703
+o 3575
+o 3455
+o 3343
+o 3259
+o 3188
+o 3156
+o 3134
+o 3124
+o 3050
+o 2955
+o 2876
+o 2733
+o 2632
+o 2559
+o 2504
+o 2502
+o 2501
+o 2484
+o 2475
+o 2446
+o 2430
+o 2402
+o 2397
+o 2331
+o 2302
+o 2296
+o 2190
+o 2172
+o 2170
+o 2153
+o 2148
+o 2135
+o 2020
+o 1973
+o 1950

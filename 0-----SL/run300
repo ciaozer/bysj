@@ -1,5 +1,5 @@
 #!/bin/bash
-wl=120
+wl=180
 mem=32768
 
 echo "c [MSE2021] -- begin -- [MSE2021]"

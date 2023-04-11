@@ -1522,3 +1522,14 @@
 ../MSE19Un/wb_4m8s4.dimacs.filtered.wcnf	233	135.47
 ../MSE19Un/wdbc_train_0_DNF_5_1.wcnf	21	9.94
 ../MSE19Un/we.wcnf	 -1	 -1
+../final_data/sat.txt	4966	1.67
+../final_data/sat/sat0.txt	4466	0.23
+../final_data/sat/sat1.txt	5012	0.22
+../final_data/sat/sat2.txt	4155	2.37
+../final_data/sat/sat3.txt	4408	2.17
+../final_data/sat/sat4.txt	3771	2.70
+../final_data/sat/sat5.txt	3623	2.75
+../final_data/sat/sat6.txt	4593	2.36
+../final_data/sat/sat7.txt	4236	2.06
+../final_data/sat/sat8.txt	4145	0.19
+../final_data/sat/sat9.txt	4350	0.12

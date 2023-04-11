@@ -1,0 +1,776 @@
+c [MSE2021] -- begin -- [MSE2021]
+0.19/0.21	c
+0.19/0.21	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.19/0.21	c Version:	 MaxSAT Evaluation 2021
+0.19/0.21	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.19/0.21	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.19/0.21	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.19/0.21	c Contact:	 leizd@ios.ac.cn
+0.19/0.21	c WARNING: for repeatability, setting FPU to use double precision
+0.19/0.21	c |                                                                                                       |
+0.19/0.21	c ========================================[ Problem Statistics ]===========================================
+0.19/0.21	c |                                                                                                       |
+0.19/0.21	c |  Problem Format:             MaxSAT                                                                   |
+0.19/0.21	c |  Problem Type:           Unweighted                                                                   |
+0.19/0.21	c |  Number of variables:           500                                                                   |
+0.19/0.21	c |  Number of hard clauses:      12576                                                                   |
+0.19/0.21	c |  Number of soft clauses:      25000                                                                   |
+0.19/0.21	c |  Number of cardinality:           0                                                                   |
+0.19/0.21	c |  Number of PB :                   0                                                                   |
+0.19/0.21	c |  Parse time:                   0.02 s                                                                 |
+0.19/0.21	c |                                                                                                       |
+0.19/0.21	c | best-alg-selector overriden target_vars_bump_val to 0, since it hadn't been set by the user |
+0.19/0.21	c | best-alg-selector overriden ms_model_per_sec_thr to 2, since it hadn't been set by the user |
+0.19/0.21	c | best-alg-selector overriden ms_mutation_classes to 0, since it hadn't been set by the user |
+0.19/0.21	c | best-alg-selector overriden ms_chrono to 100, since it hadn't been set by the user |
+0.19/0.21	c ==========================================[ Solver Settings ]============================================
+0.19/0.21	c |                                                                                                       |
+0.19/0.21	c |  Algorithm:                     OBV                                                                   |
+0.19/0.21	c |  Cardinality Encoding:       Modulo Totalizer                                                         |
+0.19/0.21	c |  Limit number conflicts:       1000                                                                   |
+0.19/0.21	c |  Limit number iterations: 2147483647                                                                   |
+0.19/0.21	c |  Global limit number conflicts:   F                                                                   |
+0.19/0.21	c |                                                                                                       |
+0.19/0.21	c Mrs. Beaver incomplete stage
+0.19/0.21	c befor creat var literal arrays 
+0.19/0.23	c before build neighbor
+0.19/0.23	c build instime is 0.03
+0.19/0.23	c using neighbor 
+0.19/0.28	c build satlike instance done!
+0.19/0.28	c changing to satlike solver!!!
+0.19/0.28	c problem weighted = 0
+15.33/15.35	c satlike search done!
+119.98/120.04	c Predicted size is 333350000 vs. the size-based limit 1000000
+119.98/120.04	c Predicted size is 329500000 vs. the size-based limit 1000000
+119.98/120.04	c Predicted size is 295100000 vs. the size-based limit 1000000
+119.98/120.04	c Predicted size is 283050000 vs. the size-based limit 1000000
+119.98/120.04	c Predicted size is 282250000 vs. the size-based limit 1000000
+119.98/120.04	c Predicted size is 247450000 vs. the size-based limit 1000000
+119.98/120.04	c Predicted size is 236600000 vs. the size-based limit 1000000
+119.98/120.04	c Predicted size is 226350000 vs. the size-based limit 1000000
+119.98/120.04	c Predicted size is 217400000 vs. the size-based limit 1000000
+119.98/120.04	c Predicted size is 208350000 vs. the size-based limit 1000000
+119.98/120.04	c Predicted size is 208350000 vs. the size-based limit 1000000
+119.98/120.04	c Predicted size is 208350000 vs. the size-based limit 1000000
+119.98/120.04	c Iteration #1
+119.98/120.04	c Predicted size is 208350000 vs. the size-based limit 1000000
+119.98/120.04	c Iteration #2
+119.98/120.04	c Predicted size is 208350000 vs. the size-based limit 1000000
+119.98/120.04	c Iteration #3
+119.98/120.04	o 3847
+119.98/120.04	c timeo 48 3847 
+119.98/120.04	s SATISFIABLE
+119.98/120.04	o 3847 
+# WCTIME: wall clock time in seconds
+WCTIME=120.059
+# CPUTIME: CPU time in seconds
+CPUTIME=120.008
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=119.708
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.299869
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.957
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=126456
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.29/0.32	c
+0.29/0.32	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.29/0.32	c Version:	 MaxSAT Evaluation 2021
+0.29/0.32	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.29/0.32	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.29/0.32	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.29/0.32	c Contact:	 leizd@ios.ac.cn
+0.29/0.32	c WARNING: for repeatability, setting FPU to use double precision
+0.29/0.32	c |                                                                                                       |
+0.29/0.32	c ========================================[ Problem Statistics ]===========================================
+0.29/0.32	c |                                                                                                       |
+0.29/0.32	c |  Problem Format:             MaxSAT                                                                   |
+0.29/0.32	c |  Problem Type:           Unweighted                                                                   |
+0.29/0.32	c |  Number of variables:           500                                                                   |
+0.29/0.32	c |  Number of hard clauses:      12398                                                                   |
+0.29/0.32	c |  Number of soft clauses:      25000                                                                   |
+0.29/0.32	c |  Number of cardinality:           0                                                                   |
+0.29/0.32	c |  Number of PB :                   0                                                                   |
+0.29/0.32	c |  Parse time:                   0.02 s                                                                 |
+0.29/0.32	c |                                                                                                       |
+0.29/0.32	c | best-alg-selector overriden target_vars_bump_val to 0, since it hadn't been set by the user |
+0.29/0.32	c | best-alg-selector overriden ms_model_per_sec_thr to 2, since it hadn't been set by the user |
+0.29/0.32	c | best-alg-selector overriden ms_mutation_classes to 0, since it hadn't been set by the user |
+0.29/0.32	c | best-alg-selector overriden ms_chrono to 100, since it hadn't been set by the user |
+0.29/0.32	c ==========================================[ Solver Settings ]============================================
+0.29/0.32	c |                                                                                                       |
+0.29/0.32	c |  Algorithm:                     OBV                                                                   |
+0.29/0.32	c |  Cardinality Encoding:       Modulo Totalizer                                                         |
+0.29/0.32	c |  Limit number conflicts:       1000                                                                   |
+0.29/0.32	c |  Limit number iterations: 2147483647                                                                   |
+0.29/0.32	c |  Global limit number conflicts:   F                                                                   |
+0.29/0.32	c |                                                                                                       |
+0.29/0.32	c Mrs. Beaver incomplete stage
+0.29/0.32	c befor creat var literal arrays 
+0.29/0.37	c before build neighbor
+0.29/0.37	c build instime is 0.07
+0.29/0.37	c using neighbor 
+0.69/0.70	c build satlike instance done!
+0.69/0.70	c changing to satlike solver!!!
+0.69/0.70	c problem weighted = 0
+15.77/15.82	c satlike search done!
+119.99/120.06	c Predicted size is 306650000 vs. the size-based limit 1000000
+119.99/120.06	c Predicted size is 306500000 vs. the size-based limit 1000000
+119.99/120.06	c Predicted size is 306050000 vs. the size-based limit 1000000
+119.99/120.06	c Predicted size is 290250000 vs. the size-based limit 1000000
+119.99/120.06	c Predicted size is 281650000 vs. the size-based limit 1000000
+119.99/120.06	c Predicted size is 266350000 vs. the size-based limit 1000000
+119.99/120.06	c Predicted size is 252850000 vs. the size-based limit 1000000
+119.99/120.06	c Predicted size is 231200000 vs. the size-based limit 1000000
+119.99/120.06	c Predicted size is 222000000 vs. the size-based limit 1000000
+119.99/120.06	c Predicted size is 222000000 vs. the size-based limit 1000000
+119.99/120.06	c Predicted size is 222000000 vs. the size-based limit 1000000
+119.99/120.06	c Iteration #1
+119.99/120.06	o 4353
+119.99/120.06	c timeo 39 4353 
+119.99/120.06	o 4182
+119.99/120.06	c timeo 44 4182 
+119.99/120.06	c Predicted size is 209050000 vs. the size-based limit 1000000
+119.99/120.06	c Iteration #2
+119.99/120.06	c Predicted size is 209050000 vs. the size-based limit 1000000
+119.99/120.06	c Iteration #3
+119.99/120.06	o 4110
+119.99/120.06	c timeo 58 4110 
+119.99/120.06	o 4030
+119.99/120.06	c timeo 58 4030 
+119.99/120.06	s SATISFIABLE
+119.99/120.06	o 4030 
+# WCTIME: wall clock time in seconds
+WCTIME=120.106
+# CPUTIME: CPU time in seconds
+CPUTIME=120.071
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=119.619
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.45186
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9703
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=164896
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.39/0.49	c
+0.39/0.49	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.39/0.49	c Version:	 MaxSAT Evaluation 2021
+0.39/0.49	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.39/0.49	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.39/0.49	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.39/0.49	c Contact:	 leizd@ios.ac.cn
+0.39/0.49	c WARNING: for repeatability, setting FPU to use double precision
+0.39/0.49	c |                                                                                                       |
+0.39/0.49	c ========================================[ Problem Statistics ]===========================================
+0.39/0.49	c |                                                                                                       |
+0.39/0.49	c |  Problem Format:             MaxSAT                                                                   |
+0.39/0.49	c |  Problem Type:           Unweighted                                                                   |
+0.39/0.49	c |  Number of variables:           500                                                                   |
+0.39/0.49	c |  Number of hard clauses:      12388                                                                   |
+0.39/0.49	c |  Number of soft clauses:      25000                                                                   |
+0.39/0.49	c |  Number of cardinality:           0                                                                   |
+0.39/0.49	c |  Number of PB :                   0                                                                   |
+0.39/0.49	c |  Parse time:                   0.03 s                                                                 |
+0.39/0.49	c |                                                                                                       |
+0.39/0.49	c | best-alg-selector overriden target_vars_bump_val to 0, since it hadn't been set by the user |
+0.39/0.49	c | best-alg-selector overriden ms_model_per_sec_thr to 2, since it hadn't been set by the user |
+0.39/0.49	c | best-alg-selector overriden ms_mutation_classes to 0, since it hadn't been set by the user |
+0.39/0.49	c | best-alg-selector overriden ms_chrono to 100, since it hadn't been set by the user |
+0.39/0.49	c ==========================================[ Solver Settings ]============================================
+0.39/0.49	c |                                                                                                       |
+0.39/0.49	c |  Algorithm:                     OBV                                                                   |
+0.39/0.49	c |  Cardinality Encoding:       Modulo Totalizer                                                         |
+0.39/0.49	c |  Limit number conflicts:       1000                                                                   |
+0.39/0.49	c |  Limit number iterations: 2147483647                                                                   |
+0.39/0.49	c |  Global limit number conflicts:   F                                                                   |
+0.39/0.49	c |                                                                                                       |
+0.39/0.49	c Mrs. Beaver incomplete stage
+0.39/0.49	c befor creat var literal arrays 
+0.49/0.56	c before build neighbor
+0.49/0.56	c build instime is 0.12
+0.49/0.56	c using neighbor 
+1.39/1.45	c build satlike instance done!
+1.39/1.45	c changing to satlike solver!!!
+1.39/1.45	c problem weighted = 0
+16.47/16.58	c satlike search done!
+120.02/120.11	c Predicted size is 252850000 vs. the size-based limit 1000000
+120.02/120.11	c Predicted size is 241750000 vs. the size-based limit 1000000
+120.02/120.11	c Predicted size is 206750000 vs. the size-based limit 1000000
+120.02/120.11	c Predicted size is 201050000 vs. the size-based limit 1000000
+120.02/120.11	c Predicted size is 192600000 vs. the size-based limit 1000000
+120.02/120.11	c Predicted size is 185450000 vs. the size-based limit 1000000
+120.02/120.11	c Predicted size is 175350000 vs. the size-based limit 1000000
+120.02/120.11	c Predicted size is 175350000 vs. the size-based limit 1000000
+120.02/120.11	c Predicted size is 175350000 vs. the size-based limit 1000000
+120.02/120.11	c Iteration #1
+120.02/120.11	c Predicted size is 175350000 vs. the size-based limit 1000000
+120.02/120.11	c Iteration #2
+120.02/120.11	o 3317
+120.02/120.11	c timeo 99 3317 
+120.02/120.11	o 3178
+120.02/120.11	c timeo 106 3178 
+120.02/120.11	c Predicted size is 158850000 vs. the size-based limit 1000000
+120.02/120.11	c Iteration #3
+120.02/120.11	s SATISFIABLE
+120.02/120.11	o 3178 
+# WCTIME: wall clock time in seconds
+WCTIME=120.177
+# CPUTIME: CPU time in seconds
+CPUTIME=120.116
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=119.432
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.68368
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9489
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=138380
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.39/0.47	c
+0.39/0.47	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.39/0.47	c Version:	 MaxSAT Evaluation 2021
+0.39/0.47	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.39/0.47	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.39/0.47	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.39/0.47	c Contact:	 leizd@ios.ac.cn
+0.39/0.47	c WARNING: for repeatability, setting FPU to use double precision
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c ========================================[ Problem Statistics ]===========================================
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c |  Problem Format:             MaxSAT                                                                   |
+0.39/0.47	c |  Problem Type:           Unweighted                                                                   |
+0.39/0.47	c |  Number of variables:           500                                                                   |
+0.39/0.47	c |  Number of hard clauses:      12588                                                                   |
+0.39/0.47	c |  Number of soft clauses:      25000                                                                   |
+0.39/0.47	c |  Number of cardinality:           0                                                                   |
+0.39/0.47	c |  Number of PB :                   0                                                                   |
+0.39/0.47	c |  Parse time:                   0.02 s                                                                 |
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c | best-alg-selector overriden target_vars_bump_val to 0, since it hadn't been set by the user |
+0.39/0.47	c | best-alg-selector overriden ms_model_per_sec_thr to 2, since it hadn't been set by the user |
+0.39/0.47	c | best-alg-selector overriden ms_mutation_classes to 0, since it hadn't been set by the user |
+0.39/0.47	c | best-alg-selector overriden ms_chrono to 100, since it hadn't been set by the user |
+0.39/0.47	c ==========================================[ Solver Settings ]============================================
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c |  Algorithm:                     OBV                                                                   |
+0.39/0.47	c |  Cardinality Encoding:       Modulo Totalizer                                                         |
+0.39/0.47	c |  Limit number conflicts:       1000                                                                   |
+0.39/0.47	c |  Limit number iterations: 2147483647                                                                   |
+0.39/0.47	c |  Global limit number conflicts:   F                                                                   |
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c Mrs. Beaver incomplete stage
+0.39/0.47	c befor creat var literal arrays 
+0.49/0.56	c before build neighbor
+0.49/0.56	c build instime is 0.13
+0.49/0.56	c using neighbor 
+1.49/1.60	c build satlike instance done!
+1.49/1.60	c changing to satlike solver!!!
+1.49/1.60	c problem weighted = 0
+16.78/16.88	c satlike search done!
+120.04/120.13	c Predicted size is 342050000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 313450000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 297000000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 277050000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 276750000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 266550000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 264600000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 250800000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 240800000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 238050000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 236850000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 236850000 vs. the size-based limit 1000000
+120.04/120.13	c Predicted size is 236850000 vs. the size-based limit 1000000
+120.04/120.13	c Iteration #1
+120.04/120.13	o 4661
+120.04/120.13	c timeo 34 4661 
+120.04/120.13	o 4529
+120.04/120.13	c timeo 62 4529 
+120.04/120.13	o 4283
+120.04/120.13	c timeo 89 4283 
+120.04/120.13	c Predicted size is 214100000 vs. the size-based limit 1000000
+120.04/120.13	c Iteration #2
+120.04/120.13	c Predicted size is 214100000 vs. the size-based limit 1000000
+120.04/120.13	c Iteration #3
+120.04/120.13	o 3804
+120.04/120.13	c timeo 104 3804 
+120.04/120.13	s SATISFIABLE
+120.04/120.13	o 3804 
+# WCTIME: wall clock time in seconds
+WCTIME=120.178
+# CPUTIME: CPU time in seconds
+CPUTIME=120.141
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=119.613
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.527845
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9691
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=119396
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.40/0.42	c
+0.40/0.42	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.40/0.42	c Version:	 MaxSAT Evaluation 2021
+0.40/0.42	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.40/0.42	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.40/0.42	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.40/0.42	c Contact:	 leizd@ios.ac.cn
+0.40/0.42	c WARNING: for repeatability, setting FPU to use double precision
+0.40/0.42	c |                                                                                                       |
+0.40/0.42	c ========================================[ Problem Statistics ]===========================================
+0.40/0.42	c |                                                                                                       |
+0.40/0.42	c |  Problem Format:             MaxSAT                                                                   |
+0.40/0.42	c |  Problem Type:           Unweighted                                                                   |
+0.40/0.42	c |  Number of variables:           500                                                                   |
+0.40/0.42	c |  Number of hard clauses:      12464                                                                   |
+0.40/0.42	c |  Number of soft clauses:      25000                                                                   |
+0.40/0.42	c |  Number of cardinality:           0                                                                   |
+0.40/0.42	c |  Number of PB :                   0                                                                   |
+0.40/0.42	c |  Parse time:                   0.03 s                                                                 |
+0.40/0.42	c |                                                                                                       |
+0.40/0.42	c | best-alg-selector overriden target_vars_bump_val to 0, since it hadn't been set by the user |
+0.40/0.42	c | best-alg-selector overriden ms_model_per_sec_thr to 2, since it hadn't been set by the user |
+0.40/0.42	c | best-alg-selector overriden ms_mutation_classes to 0, since it hadn't been set by the user |
+0.40/0.42	c | best-alg-selector overriden ms_chrono to 100, since it hadn't been set by the user |
+0.40/0.42	c ==========================================[ Solver Settings ]============================================
+0.40/0.42	c |                                                                                                       |
+0.40/0.42	c |  Algorithm:                     OBV                                                                   |
+0.40/0.42	c |  Cardinality Encoding:       Modulo Totalizer                                                         |
+0.40/0.42	c |  Limit number conflicts:       1000                                                                   |
+0.40/0.42	c |  Limit number iterations: 2147483647                                                                   |
+0.40/0.42	c |  Global limit number conflicts:   F                                                                   |
+0.40/0.42	c |                                                                                                       |
+0.40/0.42	c Mrs. Beaver incomplete stage
+0.40/0.42	c befor creat var literal arrays 
+0.40/0.50	c before build neighbor
+0.40/0.50	c build instime is 0.11
+0.40/0.50	c using neighbor 
+1.58/1.61	c build satlike instance done!
+1.58/1.61	c changing to satlike solver!!!
+1.58/1.61	c problem weighted = 0
+16.81/16.87	c satlike search done!
+120.01/120.12	c Predicted size is 323650000 vs. the size-based limit 1000000
+120.01/120.12	c Predicted size is 323400000 vs. the size-based limit 1000000
+120.01/120.12	c Predicted size is 310400000 vs. the size-based limit 1000000
+120.01/120.12	c Predicted size is 254500000 vs. the size-based limit 1000000
+120.01/120.12	c Predicted size is 253100000 vs. the size-based limit 1000000
+120.01/120.12	c Predicted size is 244950000 vs. the size-based limit 1000000
+120.01/120.12	c Predicted size is 234900000 vs. the size-based limit 1000000
+120.01/120.12	c Predicted size is 229550000 vs. the size-based limit 1000000
+120.01/120.12	c Predicted size is 229550000 vs. the size-based limit 1000000
+120.01/120.12	c Predicted size is 229550000 vs. the size-based limit 1000000
+120.01/120.12	c Iteration #1
+120.01/120.12	c Predicted size is 229550000 vs. the size-based limit 1000000
+120.01/120.12	c Iteration #2
+120.01/120.12	o 4447
+120.01/120.12	c timeo 54 4447 
+120.01/120.12	o 4306
+120.01/120.12	c timeo 105 4306 
+120.01/120.12	c Predicted size is 215250000 vs. the size-based limit 1000000
+120.01/120.12	c Iteration #3
+120.01/120.12	o 4281
+120.01/120.12	c timeo 110 4281 
+120.01/120.12	s SATISFIABLE
+120.01/120.12	o 4281 
+# WCTIME: wall clock time in seconds
+WCTIME=120.202
+# CPUTIME: CPU time in seconds
+CPUTIME=120.141
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=119.386
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.755757
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9496
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=145292
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.39/0.47	c
+0.39/0.47	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.39/0.47	c Version:	 MaxSAT Evaluation 2021
+0.39/0.47	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.39/0.47	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.39/0.47	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.39/0.47	c Contact:	 leizd@ios.ac.cn
+0.39/0.47	c WARNING: for repeatability, setting FPU to use double precision
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c ========================================[ Problem Statistics ]===========================================
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c |  Problem Format:             MaxSAT                                                                   |
+0.39/0.47	c |  Problem Type:           Unweighted                                                                   |
+0.39/0.47	c |  Number of variables:           500                                                                   |
+0.39/0.47	c |  Number of hard clauses:      12418                                                                   |
+0.39/0.47	c |  Number of soft clauses:      25000                                                                   |
+0.39/0.47	c |  Number of cardinality:           0                                                                   |
+0.39/0.47	c |  Number of PB :                   0                                                                   |
+0.39/0.47	c |  Parse time:                   0.03 s                                                                 |
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c | best-alg-selector overriden target_vars_bump_val to 0, since it hadn't been set by the user |
+0.39/0.47	c | best-alg-selector overriden ms_model_per_sec_thr to 2, since it hadn't been set by the user |
+0.39/0.47	c | best-alg-selector overriden ms_mutation_classes to 0, since it hadn't been set by the user |
+0.39/0.47	c | best-alg-selector overriden ms_chrono to 100, since it hadn't been set by the user |
+0.39/0.47	c ==========================================[ Solver Settings ]============================================
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c |  Algorithm:                     OBV                                                                   |
+0.39/0.47	c |  Cardinality Encoding:       Modulo Totalizer                                                         |
+0.39/0.47	c |  Limit number conflicts:       1000                                                                   |
+0.39/0.47	c |  Limit number iterations: 2147483647                                                                   |
+0.39/0.47	c |  Global limit number conflicts:   F                                                                   |
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c Mrs. Beaver incomplete stage
+0.39/0.47	c befor creat var literal arrays 
+0.50/0.55	c before build neighbor
+0.50/0.55	c build instime is 0.15
+0.50/0.55	c using neighbor 
+1.50/1.56	c build satlike instance done!
+1.50/1.56	c changing to satlike solver!!!
+1.50/1.56	c problem weighted = 0
+16.67/16.76	c satlike search done!
+120.02/120.14	c Predicted size is 325150000 vs. the size-based limit 1000000
+120.02/120.14	c Predicted size is 325150000 vs. the size-based limit 1000000
+120.02/120.14	c Predicted size is 325150000 vs. the size-based limit 1000000
+120.02/120.14	c Iteration #1
+120.02/120.14	o 6449
+120.02/120.14	c timeo 21 6449 
+120.02/120.14	c Predicted size is 322400000 vs. the size-based limit 1000000
+120.02/120.14	c Iteration #2
+120.02/120.14	o 6319
+120.02/120.14	c timeo 27 6319 
+120.02/120.14	c Predicted size is 315900000 vs. the size-based limit 1000000
+120.02/120.14	c Iteration #3
+120.02/120.14	o 6018
+120.02/120.14	c timeo 35 6018 
+120.02/120.14	o 5583
+120.02/120.14	c timeo 36 5583 
+120.02/120.14	o 5116
+120.02/120.14	c timeo 36 5116 
+120.02/120.14	o 4486
+120.02/120.14	c timeo 37 4486 
+120.02/120.14	o 4448
+120.02/120.14	c timeo 38 4448 
+120.02/120.14	o 4155
+120.02/120.14	c timeo 38 4155 
+120.02/120.14	o 4124
+120.02/120.14	c timeo 39 4124 
+120.02/120.14	s SATISFIABLE
+120.02/120.14	o 4124 
+# WCTIME: wall clock time in seconds
+WCTIME=120.191
+# CPUTIME: CPU time in seconds
+CPUTIME=120.115
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=119.744
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.371812
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9368
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=88416
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.40/0.47	c
+0.40/0.47	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.40/0.47	c Version:	 MaxSAT Evaluation 2021
+0.40/0.47	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.40/0.47	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.40/0.47	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.40/0.47	c Contact:	 leizd@ios.ac.cn
+0.40/0.47	c WARNING: for repeatability, setting FPU to use double precision
+0.40/0.47	c |                                                                                                       |
+0.40/0.47	c ========================================[ Problem Statistics ]===========================================
+0.40/0.47	c |                                                                                                       |
+0.40/0.47	c |  Problem Format:             MaxSAT                                                                   |
+0.40/0.47	c |  Problem Type:           Unweighted                                                                   |
+0.40/0.47	c |  Number of variables:           500                                                                   |
+0.40/0.47	c |  Number of hard clauses:      12454                                                                   |
+0.40/0.47	c |  Number of soft clauses:      25000                                                                   |
+0.40/0.47	c |  Number of cardinality:           0                                                                   |
+0.40/0.47	c |  Number of PB :                   0                                                                   |
+0.40/0.47	c |  Parse time:                   0.03 s                                                                 |
+0.40/0.47	c |                                                                                                       |
+0.40/0.47	c | best-alg-selector overriden target_vars_bump_val to 0, since it hadn't been set by the user |
+0.40/0.47	c | best-alg-selector overriden ms_model_per_sec_thr to 2, since it hadn't been set by the user |
+0.40/0.47	c | best-alg-selector overriden ms_mutation_classes to 0, since it hadn't been set by the user |
+0.40/0.47	c | best-alg-selector overriden ms_chrono to 100, since it hadn't been set by the user |
+0.40/0.47	c ==========================================[ Solver Settings ]============================================
+0.40/0.47	c |                                                                                                       |
+0.40/0.47	c |  Algorithm:                     OBV                                                                   |
+0.40/0.47	c |  Cardinality Encoding:       Modulo Totalizer                                                         |
+0.40/0.47	c |  Limit number conflicts:       1000                                                                   |
+0.40/0.47	c |  Limit number iterations: 2147483647                                                                   |
+0.40/0.47	c |  Global limit number conflicts:   F                                                                   |
+0.40/0.47	c |                                                                                                       |
+0.40/0.47	c Mrs. Beaver incomplete stage
+0.40/0.47	c befor creat var literal arrays 
+0.49/0.56	c before build neighbor
+0.49/0.56	c build instime is 0.12
+0.49/0.56	c using neighbor 
+1.49/1.50	c build satlike instance done!
+1.49/1.50	c changing to satlike solver!!!
+1.49/1.50	c problem weighted = 0
+16.48/16.63	c satlike search done!
+119.96/120.13	c Predicted size is 315350000 vs. the size-based limit 1000000
+119.96/120.13	c Predicted size is 282200000 vs. the size-based limit 1000000
+119.96/120.13	c Predicted size is 276100000 vs. the size-based limit 1000000
+119.96/120.13	c Predicted size is 259700000 vs. the size-based limit 1000000
+119.96/120.13	c Predicted size is 233150000 vs. the size-based limit 1000000
+119.96/120.13	c Predicted size is 228850000 vs. the size-based limit 1000000
+119.96/120.13	c Predicted size is 218550000 vs. the size-based limit 1000000
+119.96/120.13	c Predicted size is 208200000 vs. the size-based limit 1000000
+119.96/120.13	c Predicted size is 208200000 vs. the size-based limit 1000000
+119.96/120.13	c Predicted size is 208200000 vs. the size-based limit 1000000
+119.96/120.13	c Iteration #1
+119.96/120.13	s SATISFIABLE
+119.96/120.13	o 4165 
+# WCTIME: wall clock time in seconds
+WCTIME=120.172
+# CPUTIME: CPU time in seconds
+CPUTIME=120.047
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=119.419
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.627532
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.8953
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=150040
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.11/0.15	c
+0.11/0.15	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.11/0.15	c Version:	 MaxSAT Evaluation 2021
+0.11/0.15	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.11/0.15	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.11/0.15	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.11/0.15	c Contact:	 leizd@ios.ac.cn
+0.11/0.15	c WARNING: for repeatability, setting FPU to use double precision
+0.11/0.15	c |                                                                                                       |
+0.11/0.15	c ========================================[ Problem Statistics ]===========================================
+0.11/0.15	c |                                                                                                       |
+0.11/0.15	c |  Problem Format:             MaxSAT                                                                   |
+0.11/0.15	c |  Problem Type:           Unweighted                                                                   |
+0.11/0.15	c |  Number of variables:           500                                                                   |
+0.11/0.15	c |  Number of hard clauses:      12545                                                                   |
+0.11/0.15	c |  Number of soft clauses:      25000                                                                   |
+0.11/0.15	c |  Number of cardinality:           0                                                                   |
+0.11/0.15	c |  Number of PB :                   0                                                                   |
+0.11/0.15	c |  Parse time:                   0.02 s                                                                 |
+0.11/0.15	c |                                                                                                       |
+0.11/0.15	c | best-alg-selector overriden target_vars_bump_val to 0, since it hadn't been set by the user |
+0.11/0.15	c | best-alg-selector overriden ms_model_per_sec_thr to 2, since it hadn't been set by the user |
+0.11/0.15	c | best-alg-selector overriden ms_mutation_classes to 0, since it hadn't been set by the user |
+0.11/0.15	c | best-alg-selector overriden ms_chrono to 100, since it hadn't been set by the user |
+0.11/0.15	c ==========================================[ Solver Settings ]============================================
+0.11/0.15	c |                                                                                                       |
+0.11/0.15	c |  Algorithm:                     OBV                                                                   |
+0.11/0.15	c |  Cardinality Encoding:       Modulo Totalizer                                                         |
+0.11/0.15	c |  Limit number conflicts:       1000                                                                   |
+0.11/0.15	c |  Limit number iterations: 2147483647                                                                   |
+0.11/0.15	c |  Global limit number conflicts:   F                                                                   |
+0.11/0.15	c |                                                                                                       |
+0.11/0.15	c Mrs. Beaver incomplete stage
+0.11/0.15	c befor creat var literal arrays 
+0.11/0.16	c before build neighbor
+0.11/0.16	c build instime is 0.02
+0.11/0.16	c using neighbor 
+0.11/0.18	c build satlike instance done!
+0.11/0.18	c changing to satlike solver!!!
+0.11/0.18	c problem weighted = 0
+15.19/15.21	c satlike search done!
+120.04/120.06	c Predicted size is 249900000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 242450000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 238500000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 232200000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 230350000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 230350000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 230350000 vs. the size-based limit 1000000
+120.04/120.06	c Iteration #1
+120.04/120.06	o 4442
+120.04/120.06	c timeo 18 4442 
+120.04/120.06	o 4335
+120.04/120.06	c timeo 19 4335 
+120.04/120.06	o 4137
+120.04/120.06	c timeo 31 4137 
+120.04/120.06	o 4016
+120.04/120.06	c timeo 31 4016 
+120.04/120.06	c Predicted size is 200750000 vs. the size-based limit 1000000
+120.04/120.06	c Iteration #2
+120.04/120.06	c Predicted size is 200750000 vs. the size-based limit 1000000
+120.04/120.06	c Iteration #3
+120.04/120.06	s SATISFIABLE
+120.04/120.06	o 4016 
+# WCTIME: wall clock time in seconds
+WCTIME=120.083
+# CPUTIME: CPU time in seconds
+CPUTIME=120.074
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=119.83
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.243978
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9919
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=157388
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.09/0.17	c
+0.09/0.17	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.09/0.17	c Version:	 MaxSAT Evaluation 2021
+0.09/0.17	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.09/0.17	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.09/0.17	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.09/0.17	c Contact:	 leizd@ios.ac.cn
+0.09/0.17	c WARNING: for repeatability, setting FPU to use double precision
+0.09/0.17	c |                                                                                                       |
+0.09/0.17	c ========================================[ Problem Statistics ]===========================================
+0.09/0.17	c |                                                                                                       |
+0.09/0.17	c |  Problem Format:             MaxSAT                                                                   |
+0.09/0.17	c |  Problem Type:           Unweighted                                                                   |
+0.09/0.17	c |  Number of variables:           500                                                                   |
+0.09/0.17	c |  Number of hard clauses:      12449                                                                   |
+0.09/0.17	c |  Number of soft clauses:      25000                                                                   |
+0.09/0.17	c |  Number of cardinality:           0                                                                   |
+0.09/0.17	c |  Number of PB :                   0                                                                   |
+0.09/0.17	c |  Parse time:                   0.02 s                                                                 |
+0.09/0.17	c |                                                                                                       |
+0.09/0.17	c | best-alg-selector overriden target_vars_bump_val to 0, since it hadn't been set by the user |
+0.09/0.17	c | best-alg-selector overriden ms_model_per_sec_thr to 2, since it hadn't been set by the user |
+0.09/0.17	c | best-alg-selector overriden ms_mutation_classes to 0, since it hadn't been set by the user |
+0.09/0.17	c | best-alg-selector overriden ms_chrono to 100, since it hadn't been set by the user |
+0.09/0.17	c ==========================================[ Solver Settings ]============================================
+0.09/0.17	c |                                                                                                       |
+0.09/0.17	c |  Algorithm:                     OBV                                                                   |
+0.09/0.17	c |  Cardinality Encoding:       Modulo Totalizer                                                         |
+0.09/0.17	c |  Limit number conflicts:       1000                                                                   |
+0.09/0.17	c |  Limit number iterations: 2147483647                                                                   |
+0.09/0.17	c |  Global limit number conflicts:   F                                                                   |
+0.09/0.17	c |                                                                                                       |
+0.09/0.17	c Mrs. Beaver incomplete stage
+0.09/0.17	c befor creat var literal arrays 
+0.19/0.20	c before build neighbor
+0.19/0.20	c build instime is 0.04
+0.19/0.20	c using neighbor 
+0.19/0.27	c build satlike instance done!
+0.19/0.27	c changing to satlike solver!!!
+0.19/0.27	c problem weighted = 0
+15.29/15.30	c satlike search done!
+120.05/120.07	c Predicted size is 252650000 vs. the size-based limit 1000000
+120.05/120.07	c Predicted size is 249250000 vs. the size-based limit 1000000
+120.05/120.07	c Predicted size is 243650000 vs. the size-based limit 1000000
+120.05/120.07	c Predicted size is 237000000 vs. the size-based limit 1000000
+120.05/120.07	c Predicted size is 225600000 vs. the size-based limit 1000000
+120.05/120.07	c Predicted size is 214300000 vs. the size-based limit 1000000
+120.05/120.07	c Predicted size is 209000000 vs. the size-based limit 1000000
+120.05/120.07	c Predicted size is 199150000 vs. the size-based limit 1000000
+120.05/120.07	c Predicted size is 199050000 vs. the size-based limit 1000000
+120.05/120.07	c Predicted size is 199050000 vs. the size-based limit 1000000
+120.05/120.07	c Predicted size is 199050000 vs. the size-based limit 1000000
+120.05/120.07	c Iteration #1
+120.05/120.07	o 3848
+120.05/120.07	c timeo 20 3848 
+120.05/120.07	o 3754
+120.05/120.07	c timeo 22 3754 
+120.05/120.07	o 3675
+120.05/120.07	c timeo 27 3675 
+120.05/120.07	o 3593
+120.05/120.07	c timeo 27 3593 
+120.05/120.07	o 3525
+120.05/120.07	c timeo 27 3525 
+120.05/120.07	c Predicted size is 176200000 vs. the size-based limit 1000000
+120.05/120.07	c Iteration #2
+120.05/120.07	c Predicted size is 176200000 vs. the size-based limit 1000000
+120.05/120.07	c Iteration #3
+120.05/120.07	s SATISFIABLE
+120.05/120.07	o 3525 
+# WCTIME: wall clock time in seconds
+WCTIME=120.082
+# CPUTIME: CPU time in seconds
+CPUTIME=120.072
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=119.944
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.127991
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9919
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=88680
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.19/0.20	c
+0.19/0.20	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.19/0.20	c Version:	 MaxSAT Evaluation 2021
+0.19/0.20	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.19/0.20	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.19/0.20	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.19/0.20	c Contact:	 leizd@ios.ac.cn
+0.19/0.20	c WARNING: for repeatability, setting FPU to use double precision
+0.19/0.20	c |                                                                                                       |
+0.19/0.20	c ========================================[ Problem Statistics ]===========================================
+0.19/0.20	c |                                                                                                       |
+0.19/0.20	c |  Problem Format:             MaxSAT                                                                   |
+0.19/0.20	c |  Problem Type:           Unweighted                                                                   |
+0.19/0.20	c |  Number of variables:           500                                                                   |
+0.19/0.20	c |  Number of hard clauses:      12358                                                                   |
+0.19/0.20	c |  Number of soft clauses:      25000                                                                   |
+0.19/0.20	c |  Number of cardinality:           0                                                                   |
+0.19/0.20	c |  Number of PB :                   0                                                                   |
+0.19/0.20	c |  Parse time:                   0.02 s                                                                 |
+0.19/0.20	c |                                                                                                       |
+0.19/0.20	c | best-alg-selector overriden target_vars_bump_val to 0, since it hadn't been set by the user |
+0.19/0.20	c | best-alg-selector overriden ms_model_per_sec_thr to 2, since it hadn't been set by the user |
+0.19/0.20	c | best-alg-selector overriden ms_mutation_classes to 0, since it hadn't been set by the user |
+0.19/0.20	c | best-alg-selector overriden ms_chrono to 100, since it hadn't been set by the user |
+0.19/0.20	c ==========================================[ Solver Settings ]============================================
+0.19/0.20	c |                                                                                                       |
+0.19/0.20	c |  Algorithm:                     OBV                                                                   |
+0.19/0.20	c |  Cardinality Encoding:       Modulo Totalizer                                                         |
+0.19/0.20	c |  Limit number conflicts:       1000                                                                   |
+0.19/0.20	c |  Limit number iterations: 2147483647                                                                   |
+0.19/0.20	c |  Global limit number conflicts:   F                                                                   |
+0.19/0.20	c |                                                                                                       |
+0.19/0.20	c Mrs. Beaver incomplete stage
+0.19/0.20	c befor creat var literal arrays 
+0.19/0.22	c before build neighbor
+0.19/0.22	c build instime is 0.03
+0.19/0.22	c using neighbor 
+0.19/0.25	c build satlike instance done!
+0.19/0.25	c changing to satlike solver!!!
+0.19/0.25	c problem weighted = 0
+15.19/15.28	c satlike search done!
+120.04/120.06	c Predicted size is 348700000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 287450000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 273700000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 259050000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 244200000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 236850000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 236750000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 225100000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 225100000 vs. the size-based limit 1000000
+120.04/120.06	c Predicted size is 225100000 vs. the size-based limit 1000000
+120.04/120.06	c Iteration #1
+120.04/120.06	c Predicted size is 225100000 vs. the size-based limit 1000000
+120.04/120.06	c Iteration #2
+120.04/120.06	c Predicted size is 225100000 vs. the size-based limit 1000000
+120.04/120.06	c Iteration #3
+120.04/120.06	s SATISFIABLE
+120.04/120.06	o 4503 
+# WCTIME: wall clock time in seconds
+WCTIME=120.086
+# CPUTIME: CPU time in seconds
+CPUTIME=120.077
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=119.853
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.223979
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9923
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=118628
+c [MSE2021] -- end -- [MSE2021]

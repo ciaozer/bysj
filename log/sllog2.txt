@@ -1,0 +1,470 @@
+c [MSE2021] -- begin -- [MSE2021]
+0.57/0.66	c
+0.57/0.66	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.57/0.66	c Version:	 MaxSAT Evaluation 2021
+0.57/0.66	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.57/0.66	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.57/0.66	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.57/0.66	c Contact:	 leizd@ios.ac.cn
+0.57/0.66	c WARNING: for repeatability, setting FPU to use double precision
+0.57/0.66	c |                                                                                                       |
+0.57/0.66	c ========================================[ Problem Statistics ]===========================================
+0.57/0.66	c |                                                                                                       |
+0.57/0.66	c |  Problem Format:             MaxSAT                                                                   |
+0.57/0.66	c |  Problem Type:             Weighted                                                                   |
+0.57/0.66	c |  Number of variables:          2000                                                                   |
+0.57/0.66	c |  Number of hard clauses:     999629                                                                   |
+0.57/0.66	c |  Number of soft clauses:      10000                                                                   |
+0.57/0.66	c |  Number of cardinality:           0                                                                   |
+0.57/0.66	c |  Number of PB :                   0                                                                   |
+0.57/0.66	c |  Parse time:                   0.12 s                                                                 |
+0.57/0.66	c |                                                                                                       |
+0.57/0.66	c Limiting number of clusters to number of weights
+0.57/0.66	c all_weights = true;
+0.57/0.66	c #Diff Weights= 100 | #Modified Weights= 100
+0.57/0.66	c befor creat var literal arrays 
+0.67/0.78	c before build neighbor
+0.67/0.78	c build instime is 0.17
+0.67/0.78	c using neighbor 
+1.17/1.22	c build satlike instance done!
+1.17/1.22	c changing to satlike solver!!!
+1.17/1.22	c problem weighted = 1
+16.26/16.37	c satlike search done!
+179.98/180.03	s SATISFIABLE
+179.98/180.03	o 299248 
+# WCTIME: wall clock time in seconds
+WCTIME=180.086
+# CPUTIME: CPU time in seconds
+CPUTIME=180.046
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=179.242
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.803919
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9778
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=483312
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.69/0.74	c
+0.69/0.74	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.69/0.74	c Version:	 MaxSAT Evaluation 2021
+0.69/0.74	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.69/0.74	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.69/0.74	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.69/0.74	c Contact:	 leizd@ios.ac.cn
+0.69/0.74	c WARNING: for repeatability, setting FPU to use double precision
+0.69/0.74	c |                                                                                                       |
+0.69/0.74	c ========================================[ Problem Statistics ]===========================================
+0.69/0.74	c |                                                                                                       |
+0.69/0.74	c |  Problem Format:             MaxSAT                                                                   |
+0.69/0.74	c |  Problem Type:             Weighted                                                                   |
+0.69/0.74	c |  Number of variables:          2000                                                                   |
+0.69/0.74	c |  Number of hard clauses:    1000421                                                                   |
+0.69/0.74	c |  Number of soft clauses:      10000                                                                   |
+0.69/0.74	c |  Number of cardinality:           0                                                                   |
+0.69/0.74	c |  Number of PB :                   0                                                                   |
+0.69/0.74	c |  Parse time:                   0.13 s                                                                 |
+0.69/0.74	c |                                                                                                       |
+0.69/0.74	c Limiting number of clusters to number of weights
+0.69/0.74	c all_weights = true;
+0.69/0.74	c #Diff Weights= 100 | #Modified Weights= 100
+0.69/0.74	c befor creat var literal arrays 
+0.89/0.91	c before build neighbor
+0.89/0.91	c build instime is 0.25
+0.89/0.91	c using neighbor 
+1.39/1.47	c build satlike instance done!
+1.39/1.47	c changing to satlike solver!!!
+1.39/1.47	c problem weighted = 1
+17.09/17.14	c satlike search done!
+179.99/180.06	s SATISFIABLE
+179.99/180.06	o 305735 
+# WCTIME: wall clock time in seconds
+WCTIME=180.173
+# CPUTIME: CPU time in seconds
+CPUTIME=180.113
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=179.017
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=1.09581
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9666
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=515752
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.58/0.62	c
+0.58/0.62	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.58/0.62	c Version:	 MaxSAT Evaluation 2021
+0.58/0.62	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.58/0.62	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.58/0.62	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.58/0.62	c Contact:	 leizd@ios.ac.cn
+0.58/0.62	c WARNING: for repeatability, setting FPU to use double precision
+0.58/0.62	c |                                                                                                       |
+0.58/0.62	c ========================================[ Problem Statistics ]===========================================
+0.58/0.62	c |                                                                                                       |
+0.58/0.62	c |  Problem Format:             MaxSAT                                                                   |
+0.58/0.62	c |  Problem Type:             Weighted                                                                   |
+0.58/0.62	c |  Number of variables:          2000                                                                   |
+0.58/0.62	c |  Number of hard clauses:     998833                                                                   |
+0.58/0.62	c |  Number of soft clauses:      10000                                                                   |
+0.58/0.62	c |  Number of cardinality:           0                                                                   |
+0.58/0.62	c |  Number of PB :                   0                                                                   |
+0.58/0.62	c |  Parse time:                   0.13 s                                                                 |
+0.58/0.62	c |                                                                                                       |
+0.58/0.62	c Limiting number of clusters to number of weights
+0.58/0.62	c all_weights = true;
+0.58/0.62	c #Diff Weights= 100 | #Modified Weights= 100
+0.58/0.62	c befor creat var literal arrays 
+0.69/0.74	c before build neighbor
+0.69/0.74	c build instime is 0.17
+0.69/0.74	c using neighbor 
+1.12/1.19	c build satlike instance done!
+1.12/1.19	c changing to satlike solver!!!
+1.12/1.19	c problem weighted = 1
+16.42/16.52	c satlike search done!
+179.90/180.02	s SATISFIABLE
+179.90/180.02	o 293299 
+# WCTIME: wall clock time in seconds
+WCTIME=180.062
+# CPUTIME: CPU time in seconds
+CPUTIME=179.949
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=178.93
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=1.01976
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9377
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=483976
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.79/0.86	c
+0.79/0.86	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.79/0.86	c Version:	 MaxSAT Evaluation 2021
+0.79/0.86	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.79/0.86	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.79/0.86	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.79/0.86	c Contact:	 leizd@ios.ac.cn
+0.79/0.86	c WARNING: for repeatability, setting FPU to use double precision
+0.79/0.86	c |                                                                                                       |
+0.79/0.86	c ========================================[ Problem Statistics ]===========================================
+0.79/0.86	c |                                                                                                       |
+0.79/0.86	c |  Problem Format:             MaxSAT                                                                   |
+0.79/0.86	c |  Problem Type:             Weighted                                                                   |
+0.79/0.86	c |  Number of variables:          2000                                                                   |
+0.79/0.86	c |  Number of hard clauses:     999626                                                                   |
+0.79/0.86	c |  Number of soft clauses:      10000                                                                   |
+0.79/0.86	c |  Number of cardinality:           0                                                                   |
+0.79/0.86	c |  Number of PB :                   0                                                                   |
+0.79/0.86	c |  Parse time:                   0.12 s                                                                 |
+0.79/0.86	c |                                                                                                       |
+0.79/0.86	c Limiting number of clusters to number of weights
+0.79/0.86	c all_weights = true;
+0.79/0.86	c #Diff Weights= 100 | #Modified Weights= 100
+0.79/0.86	c befor creat var literal arrays 
+1.07/1.13	c before build neighbor
+1.07/1.13	c build instime is 0.34
+1.07/1.13	c using neighbor 
+2.22/2.30	c build satlike instance done!
+2.22/2.30	c changing to satlike solver!!!
+2.22/2.30	c problem weighted = 1
+17.68/17.73	c satlike search done!
+179.89/180.03	s SATISFIABLE
+179.89/180.03	o 304412 
+# WCTIME: wall clock time in seconds
+WCTIME=180.071
+# CPUTIME: CPU time in seconds
+CPUTIME=179.944
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=179.068
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.875708
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9293
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=514324
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.69/0.72	c
+0.69/0.72	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.69/0.72	c Version:	 MaxSAT Evaluation 2021
+0.69/0.72	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.69/0.72	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.69/0.72	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.69/0.72	c Contact:	 leizd@ios.ac.cn
+0.69/0.72	c WARNING: for repeatability, setting FPU to use double precision
+0.69/0.72	c |                                                                                                       |
+0.69/0.72	c ========================================[ Problem Statistics ]===========================================
+0.69/0.72	c |                                                                                                       |
+0.69/0.72	c |  Problem Format:             MaxSAT                                                                   |
+0.69/0.72	c |  Problem Type:             Weighted                                                                   |
+0.69/0.72	c |  Number of variables:          2000                                                                   |
+0.69/0.72	c |  Number of hard clauses:    1000277                                                                   |
+0.69/0.72	c |  Number of soft clauses:      10000                                                                   |
+0.69/0.72	c |  Number of cardinality:           0                                                                   |
+0.69/0.72	c |  Number of PB :                   0                                                                   |
+0.69/0.72	c |  Parse time:                   0.13 s                                                                 |
+0.69/0.72	c |                                                                                                       |
+0.69/0.72	c Limiting number of clusters to number of weights
+0.69/0.72	c all_weights = true;
+0.69/0.72	c #Diff Weights= 100 | #Modified Weights= 100
+0.69/0.72	c befor creat var literal arrays 
+0.79/0.84	c before build neighbor
+0.79/0.84	c build instime is 0.17
+0.79/0.84	c using neighbor 
+1.19/1.28	c build satlike instance done!
+1.19/1.28	c changing to satlike solver!!!
+1.19/1.28	c problem weighted = 1
+16.58/16.64	c satlike search done!
+179.97/180.04	s SATISFIABLE
+179.97/180.04	o 302373 
+# WCTIME: wall clock time in seconds
+WCTIME=180.079
+# CPUTIME: CPU time in seconds
+CPUTIME=180.031
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=179.115
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.915893
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9737
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=470844
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.59/0.61	c
+0.59/0.61	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.59/0.61	c Version:	 MaxSAT Evaluation 2021
+0.59/0.61	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.59/0.61	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.59/0.61	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.59/0.61	c Contact:	 leizd@ios.ac.cn
+0.59/0.61	c WARNING: for repeatability, setting FPU to use double precision
+0.59/0.61	c |                                                                                                       |
+0.59/0.61	c ========================================[ Problem Statistics ]===========================================
+0.59/0.61	c |                                                                                                       |
+0.59/0.61	c |  Problem Format:             MaxSAT                                                                   |
+0.59/0.61	c |  Problem Type:             Weighted                                                                   |
+0.59/0.61	c |  Number of variables:          2000                                                                   |
+0.59/0.61	c |  Number of hard clauses:    1000443                                                                   |
+0.59/0.61	c |  Number of soft clauses:      10000                                                                   |
+0.59/0.61	c |  Number of cardinality:           0                                                                   |
+0.59/0.61	c |  Number of PB :                   0                                                                   |
+0.59/0.61	c |  Parse time:                   0.14 s                                                                 |
+0.59/0.61	c |                                                                                                       |
+0.59/0.61	c Limiting number of clusters to number of weights
+0.59/0.61	c all_weights = true;
+0.59/0.61	c #Diff Weights= 100 | #Modified Weights= 100
+0.59/0.61	c befor creat var literal arrays 
+0.69/0.74	c before build neighbor
+0.69/0.74	c build instime is 0.17
+0.69/0.74	c using neighbor 
+1.11/1.14	c build satlike instance done!
+1.11/1.14	c changing to satlike solver!!!
+1.11/1.14	c problem weighted = 1
+16.41/16.45	c satlike search done!
+179.99/180.02	s SATISFIABLE
+179.99/180.02	o 299581 
+# WCTIME: wall clock time in seconds
+WCTIME=180.063
+# CPUTIME: CPU time in seconds
+CPUTIME=180.04
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=179.177
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.863886
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9874
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=514236
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.39/0.47	c
+0.39/0.47	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.39/0.47	c Version:	 MaxSAT Evaluation 2021
+0.39/0.47	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.39/0.47	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.39/0.47	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.39/0.47	c Contact:	 leizd@ios.ac.cn
+0.39/0.47	c WARNING: for repeatability, setting FPU to use double precision
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c ========================================[ Problem Statistics ]===========================================
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c |  Problem Format:             MaxSAT                                                                   |
+0.39/0.47	c |  Problem Type:             Weighted                                                                   |
+0.39/0.47	c |  Number of variables:          2000                                                                   |
+0.39/0.47	c |  Number of hard clauses:     999207                                                                   |
+0.39/0.47	c |  Number of soft clauses:      10000                                                                   |
+0.39/0.47	c |  Number of cardinality:           0                                                                   |
+0.39/0.47	c |  Number of PB :                   0                                                                   |
+0.39/0.47	c |  Parse time:                   0.12 s                                                                 |
+0.39/0.47	c |                                                                                                       |
+0.39/0.47	c Limiting number of clusters to number of weights
+0.39/0.47	c all_weights = true;
+0.39/0.47	c #Diff Weights= 100 | #Modified Weights= 100
+0.39/0.47	c befor creat var literal arrays 
+0.49/0.55	c before build neighbor
+0.49/0.55	c build instime is 0.12
+0.49/0.55	c using neighbor 
+0.69/0.78	c build satlike instance done!
+0.69/0.78	c changing to satlike solver!!!
+0.69/0.78	c problem weighted = 1
+15.79/15.89	c satlike search done!
+179.96/180.02	s SATISFIABLE
+179.96/180.02	o 310920 
+# WCTIME: wall clock time in seconds
+WCTIME=180.047
+# CPUTIME: CPU time in seconds
+CPUTIME=179.999
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=179.239
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.759912
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9736
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=482960
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.39/0.49	c
+0.39/0.49	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.39/0.49	c Version:	 MaxSAT Evaluation 2021
+0.39/0.49	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.39/0.49	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.39/0.49	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.39/0.49	c Contact:	 leizd@ios.ac.cn
+0.39/0.49	c WARNING: for repeatability, setting FPU to use double precision
+0.39/0.49	c |                                                                                                       |
+0.39/0.49	c ========================================[ Problem Statistics ]===========================================
+0.39/0.49	c |                                                                                                       |
+0.39/0.49	c |  Problem Format:             MaxSAT                                                                   |
+0.39/0.49	c |  Problem Type:             Weighted                                                                   |
+0.39/0.49	c |  Number of variables:          2000                                                                   |
+0.39/0.49	c |  Number of hard clauses:     999251                                                                   |
+0.39/0.49	c |  Number of soft clauses:      10000                                                                   |
+0.39/0.49	c |  Number of cardinality:           0                                                                   |
+0.39/0.49	c |  Number of PB :                   0                                                                   |
+0.39/0.49	c |  Parse time:                   0.12 s                                                                 |
+0.39/0.49	c |                                                                                                       |
+0.39/0.49	c Limiting number of clusters to number of weights
+0.39/0.49	c all_weights = true;
+0.39/0.49	c #Diff Weights= 100 | #Modified Weights= 100
+0.39/0.49	c befor creat var literal arrays 
+0.49/0.58	c before build neighbor
+0.49/0.58	c build instime is 0.11
+0.49/0.58	c using neighbor 
+0.79/0.82	c build satlike instance done!
+0.79/0.82	c changing to satlike solver!!!
+0.79/0.82	c problem weighted = 1
+15.89/15.92	c satlike search done!
+179.99/180.02	s SATISFIABLE
+179.99/180.02	o 292137 
+# WCTIME: wall clock time in seconds
+WCTIME=180.05
+# CPUTIME: CPU time in seconds
+CPUTIME=180.037
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=179.349
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.687959
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9932
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=483044
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.58/0.67	c
+0.58/0.67	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.58/0.67	c Version:	 MaxSAT Evaluation 2021
+0.58/0.67	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.58/0.67	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.58/0.67	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.58/0.67	c Contact:	 leizd@ios.ac.cn
+0.58/0.67	c WARNING: for repeatability, setting FPU to use double precision
+0.58/0.67	c |                                                                                                       |
+0.58/0.67	c ========================================[ Problem Statistics ]===========================================
+0.58/0.67	c |                                                                                                       |
+0.58/0.67	c |  Problem Format:             MaxSAT                                                                   |
+0.58/0.67	c |  Problem Type:             Weighted                                                                   |
+0.58/0.67	c |  Number of variables:          2000                                                                   |
+0.58/0.67	c |  Number of hard clauses:     999553                                                                   |
+0.58/0.67	c |  Number of soft clauses:      10000                                                                   |
+0.58/0.67	c |  Number of cardinality:           0                                                                   |
+0.58/0.67	c |  Number of PB :                   0                                                                   |
+0.58/0.67	c |  Parse time:                   0.15 s                                                                 |
+0.58/0.67	c |                                                                                                       |
+0.58/0.67	c Limiting number of clusters to number of weights
+0.58/0.67	c all_weights = true;
+0.58/0.67	c #Diff Weights= 100 | #Modified Weights= 100
+0.58/0.67	c befor creat var literal arrays 
+0.68/0.78	c before build neighbor
+0.68/0.78	c build instime is 0.16
+0.68/0.78	c using neighbor 
+1.19/1.21	c build satlike instance done!
+1.19/1.21	c changing to satlike solver!!!
+1.19/1.21	c problem weighted = 1
+16.43/16.49	c satlike search done!
+179.99/180.02	s SATISFIABLE
+179.99/180.02	o 308480 
+# WCTIME: wall clock time in seconds
+WCTIME=180.048
+# CPUTIME: CPU time in seconds
+CPUTIME=180.026
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=179.171
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.855916
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.9879
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=514268
+c [MSE2021] -- end -- [MSE2021]
+c [MSE2021] -- begin -- [MSE2021]
+0.39/0.46	c
+0.39/0.46	c SATLike based on TT-Open-WBO-Inc:	 an Anytime MaxSAT Solver -- based on Glucose4.1 (core version)
+0.39/0.46	c Version:	 MaxSAT Evaluation 2021
+0.39/0.46	c Author of SATLike:	 ZhengDong Lei, Fei Geng
+0.39/0.46	c Author of TT-Open-WBO-Inc:	 Alexander Nadel
+0.39/0.46	c Authors of the baseline solver Open-WBO-Inc:	 Saurabh Joshi, Prateek Kumar, Ruben Martins, Sukrut Rao
+0.39/0.46	c Contact:	 leizd@ios.ac.cn
+0.39/0.46	c WARNING: for repeatability, setting FPU to use double precision
+0.39/0.46	c |                                                                                                       |
+0.39/0.46	c ========================================[ Problem Statistics ]===========================================
+0.39/0.46	c |                                                                                                       |
+0.39/0.46	c |  Problem Format:             MaxSAT                                                                   |
+0.39/0.46	c |  Problem Type:             Weighted                                                                   |
+0.39/0.46	c |  Number of variables:          2000                                                                   |
+0.39/0.46	c |  Number of hard clauses:     999206                                                                   |
+0.39/0.46	c |  Number of soft clauses:      10000                                                                   |
+0.39/0.46	c |  Number of cardinality:           0                                                                   |
+0.39/0.46	c |  Number of PB :                   0                                                                   |
+0.39/0.46	c |  Parse time:                   0.12 s                                                                 |
+0.39/0.46	c |                                                                                                       |
+0.39/0.46	c Limiting number of clusters to number of weights
+0.39/0.46	c all_weights = true;
+0.39/0.46	c #Diff Weights= 100 | #Modified Weights= 100
+0.39/0.46	c befor creat var literal arrays 
+0.49/0.55	c before build neighbor
+0.49/0.55	c build instime is 0.12
+0.49/0.55	c using neighbor 
+0.69/0.79	c build satlike instance done!
+0.69/0.79	c changing to satlike solver!!!
+0.69/0.79	c problem weighted = 1
+15.89/15.94	c satlike search done!
+179.99/180.02	s SATISFIABLE
+179.99/180.02	o 300535 
+# WCTIME: wall clock time in seconds
+WCTIME=180.047
+# CPUTIME: CPU time in seconds
+CPUTIME=180.034
+# USERTIME: CPU time spent in user mode in seconds
+USERTIME=179.426
+# SYSTEMTIME: CPU time spent in system mode in seconds
+SYSTEMTIME=0.607966
+# CPUUSAGE: CPUTIME/WCTIME in percent
+CPUUSAGE=99.993
+# MAXVM: maximum virtual memory used in KiB
+MAXVM=514432
+c [MSE2021] -- end -- [MSE2021]

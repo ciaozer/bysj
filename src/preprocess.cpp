@@ -361,7 +361,7 @@ void preprocess(){
         if( !have_solution )    break;
         //if( rule1() )         stop_flag = false;
         //if( rule2() )           stop_flag = false;
-        if( rule3() )           stop_flag = false;
+        //if( rule3() )           stop_flag = false;
         //if( rule4() )           stop_flag = false;
         if( stop_flag )         break;
     }

@@ -11,7 +11,7 @@ using namespace std;
 */
 
 string filename = "check.txt";
-string input_filename_for_check = "up.txt";
+string input_filename_for_check = "final_data/pre/pre1.txt";
 
 //extern string input_filename;
 extern int itemnum, elementnum;

@@ -1,12 +1,12 @@
 cd SATLike3.0
-./SATLike3.0 ../data/maxsat100/maxsat0.txt >> ../satlikelog.txt
-./SATLike3.0 ../data/maxsat100/maxsat1.txt >> ../satlikelog.txt
-./SATLike3.0 ../data/maxsat100/maxsat2.txt >> ../satlikelog.txt
-./SATLike3.0 ../data/maxsat100/maxsat3.txt >> ../satlikelog.txt
-./SATLike3.0 ../data/maxsat100/maxsat4.txt >> ../satlikelog.txt
-./SATLike3.0 ../data/maxsat100/maxsat5.txt >> ../satlikelog.txt
-./SATLike3.0 ../data/maxsat100/maxsat6.txt >> ../satlikelog.txt
-./SATLike3.0 ../data/maxsat100/maxsat7.txt >> ../satlikelog.txt
-./SATLike3.0 ../data/maxsat100/maxsat8.txt >> ../satlikelog.txt
-./SATLike3.0 ../data/maxsat100/maxsat9.txt >> ../satlikelog.txt
+./SATLike3.0 ../newdata/s0.3/sat0.txt >> ../satlikelog3.txt
+./SATLike3.0 ../newdata/s0.3/sat1.txt >> ../satlikelog3.txt
+./SATLike3.0 ../newdata/s0.3/sat2.txt >> ../satlikelog3.txt
+./SATLike3.0 ../newdata/s0.3/sat3.txt >> ../satlikelog3.txt
+./SATLike3.0 ../newdata/s0.3/sat4.txt >> ../satlikelog3.txt
+./SATLike3.0 ../newdata/s0.3/sat5.txt >> ../satlikelog3.txt
+./SATLike3.0 ../newdata/s0.3/sat6.txt >> ../satlikelog3.txt
+./SATLike3.0 ../newdata/s0.3/sat7.txt >> ../satlikelog3.txt
+./SATLike3.0 ../newdata/s0.3/sat8.txt >> ../satlikelog3.txt
+./SATLike3.0 ../newdata/s0.3/sat9.txt >> ../satlikelog3.txt
 cd ..
