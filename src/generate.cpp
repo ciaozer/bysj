@@ -6,13 +6,8 @@
 
 using namespace std;
 
-#define DENSITY 0.2        // the density of conflict graph
-#define RAND 1000          // the precision of random number
-#define ADD_TIMES 1        // how many times an item will be added
-#define RATE 1             // the posibility add into solution
-#define AVG_COVER_TIMES 35 // the average of element be covered times
-#define ITEMNUM 2000
-#define ELEMENTNUM 10000
+#define RAND 1000   // the precision of random number
+#define ADD_TIMES 1 // how many times an item will be added
 #define WEIGHT 1
 /*
     0 represents no weight
@@ -36,6 +31,12 @@ extern unordered_set<int> pre_solution;
 extern int uncover_element;
 extern unordered_set<int> total_to_do_item;
 extern unordered_map<int, int> weight; // element is key
+
+extern double DENSITY;      // the density of conflict graph
+extern double RATE;         // the posibility add into solution
+extern int AVG_COVER_TIMES; // the average of element be covered times
+extern int ITEMNUM;
+extern int ELEMENTNUM;
 
 map<int, Item> ordered_data;
 map<int, int> ordered_weight;
