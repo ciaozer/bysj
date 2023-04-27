@@ -1,6 +1,7 @@
 #include "../include/main.h"
 #include "../include/generate.h"
 #include "../include/read.h"
+#include "../include/algorithm.h"
 
 extern char *instance;
 extern double DENSITY;          // the density of conflict graph
@@ -17,6 +18,9 @@ void parse_args(int argc, char *argv[]){
         cout << "example: ./main -g itemnum elementnum density avg_cover_times path" << endl;
         cout << "-s: change to sat" << endl;
         cout << "example: ./main -s path_of_scpc path_of_sat rate" << endl;
+        cout << "-r: run" << endl;
+        cout << "example: ./main -r path" << endl;
+        fflush(stdout);
         return ;
     }
     
@@ -31,6 +35,10 @@ void parse_args(int argc, char *argv[]){
         generate_random_once(argv[6]);
     }
     
+    else if ( string(argv[1]).compare(string("-r")) == 0 ){
+        run(argv[2]);
+    }
+
     else if ( string(argv[1]).compare(string("-s")) == 0 )
     {
         cout << "changing to sat" << endl;
@@ -45,6 +53,9 @@ void parse_args(int argc, char *argv[]){
         cout << "example: ./main -g itemnum elementnum density avg_cover_times path" << endl;
         cout << "-s: change to sat" << endl;
         cout << "example: ./main -s path_of_scpc path_of_sat rate" << endl;
+        cout << "-r: run" << endl;
+        cout << "example: ./main -r path" << endl;
+        fflush(stdout);
         return ;
     }
 }
