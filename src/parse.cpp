@@ -10,22 +10,29 @@ extern int AVG_COVER_TIMES;     // the average of element be covered times
 extern int ITEMNUM;
 extern int ELEMENTNUM;
 
+void print_usage(){
+    cerr << "Usage: " << "./main" << " [function] [parameters...]" << endl;
+    cout << "function:" << endl;
+    cout << "-g: geneate data" << endl;
+    cout << "example: ./main -g itemnum elementnum density avg_cover_times path" << endl;
+    cout << "-s: change to sat" << endl;
+    cout << "example: ./main -s path_of_scpc path_of_sat rate" << endl;
+    cout << "-r: run" << endl;
+    cout << "example: ./main -r path" << endl;
+    fflush(stdout);
+}
+
 void parse_args(int argc, char *argv[]){
     if ( argc < 2 ) {
-        cerr << "Usage: " << argv[0] << " [function] [parameters...]" << endl;
-        cout << "function:" << endl;
-        cout << "-g: geneate data" << endl;
-        cout << "example: ./main -g itemnum elementnum density avg_cover_times path" << endl;
-        cout << "-s: change to sat" << endl;
-        cout << "example: ./main -s path_of_scpc path_of_sat rate" << endl;
-        cout << "-r: run" << endl;
-        cout << "example: ./main -r path" << endl;
-        fflush(stdout);
+        print_usage();
         return ;
     }
     
     if ( string(argv[1]).compare(string("-g")) == 0 )
     {
+        if( argc != 7 ){
+            print_usage();
+        }
         ITEMNUM = atoi(argv[2]);
         ELEMENTNUM = atoi(argv[3]);
         DENSITY = atof(argv[4]);
@@ -36,26 +43,26 @@ void parse_args(int argc, char *argv[]){
     }
     
     else if ( string(argv[1]).compare(string("-r")) == 0 ){
+        if( argc != 3 )
+        {
+            print_usage();
+        }
         run(argv[2]);
     }
 
     else if ( string(argv[1]).compare(string("-s")) == 0 )
     {
+        if( argc != 5 )
+        {
+            print_usage();
+        }
         cout << "changing to sat" << endl;
         change_to_sat(argv[2], argv[3], atof(argv[4]));
     }
 
     else
     {
-        cerr << "Usage: " << argv[0] << " [function] [parameters...]" << endl;
-        cout << "function:" << endl;
-        cout << "-g: geneate data" << endl;
-        cout << "example: ./main -g itemnum elementnum density avg_cover_times path" << endl;
-        cout << "-s: change to sat" << endl;
-        cout << "example: ./main -s path_of_scpc path_of_sat rate" << endl;
-        cout << "-r: run" << endl;
-        cout << "example: ./main -r path" << endl;
-        fflush(stdout);
+        print_usage();
         return ;
     }
 }
