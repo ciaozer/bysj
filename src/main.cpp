@@ -5,6 +5,7 @@
 #include "../include/check.h"
 #include "../include/generate.h"
 #include "../include/preprocess.h"
+#include "../include/parse.h"
 // the order is important
 
 using namespace std;
@@ -43,35 +44,7 @@ double RATE = 1;          // the posibility add into solution
 int AVG_COVER_TIMES = 50; // the average of element be covered times
 int ITEMNUM = 2000;
 int ELEMENTNUM = 10000;
-string GENERATE_POSITION;
-
-void parse_args(int argc, char *argv[])
-{
-    if ( argv[1][1] == 'g' )
-    {
-        ITEMNUM = atoi(argv[2]);
-        ELEMENTNUM = atoi(argv[3]);
-        DENSITY = atof(argv[4]);
-        AVG_COVER_TIMES = atoi(argv[5]);
-        printf("ITEMNUM = %d\nELEMENTNUM = %d\nDENSITY = %lf\nAVG_COVER_TIMES = %d\n", ITEMNUM, ELEMENTNUM, DENSITY, AVG_COVER_TIMES);
-        generate_random_once(argv[6]);
-    }
-    else if ( argv[1][1] == 'r' )
-    {
-        printf("i'm -r\n");
-    }
-    else if ( argv[1][1] == 's' )
-    {
-        printf("0\n");
-        change_to_sat(argv[2], argv[3], atof(argv[4]));
-    }
-    else
-    {
-        printf("unknown commend\n");
-    }
-
-    return;
-}
+char *instance;
 
 int main(int argc, char *argv[])
 {

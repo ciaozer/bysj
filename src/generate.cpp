@@ -219,7 +219,7 @@ void generate_random_once(string filename)
         data[i] = itemtmp;
     }
 
-    // generate cover first or conflict message will lose
+    // generate cover first or conflict message will lose.3
     generate_conflict_graph();
     generate_data(filename);
 }
